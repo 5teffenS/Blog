@@ -7,3 +7,47 @@
     scroll-behavior: smooth;
 }
 
+header{
+    background-color: var(--primary-green);
+    display: flex;
+   
+    color: var(--font-color);
+    gap: 70px;
+    height: 140px;
+    justify-content: flex-start;
+    align-items: center;
+  
+    padding-top: 32px;
+    padding-left: 146px
+}
+
+
+
+nav a{
+    color: var(--font-color);
+    text-decoration: none;
+    font-size: 1.5em;
+    font-family: 'Arima';
+}
+
+nav{
+    display: flex;
+    gap: 72px;
+}
+
+header img{
+    height: 70px;
+    width: 70px;
+
+}
+
+.sub-header{
+    width: 100%;
+    background-color: var(--primary-yellow);
+    height: 533px;
+}
+
+
+
+
+
