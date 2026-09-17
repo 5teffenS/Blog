@@ -9,27 +9,32 @@
 
 /* ######################### article01 style ######################### */
 
+#article01 {
+    background-color: var(--primary-gelb);
+}
+
 .carousel-slider {
-    background-color: rgba(255, 255, 255, 0.001);
-    height: 300px;
+    /* background-color: rgba(255, 255, 255, 0.001); */
+    background-color: black;
+    height: 440px;
 
     display: flex;
     
-    gap: 1%;
+    /* gap: 1%; */
 }
 
 .carousel-slider-element {
-    /* z-index: 1; */
+    z-index: 1;
 
     display: flex;
-    align-items: center;
+    /* justify-content: center; */
+    /* align-items: center; */
 
-    width: 150px;
-    height: auto;
-
+    width: 200px;
+    /* height: auto; */
+    
     padding: 2%;
-    border-radius: 10%;
-
+    
     transform: perspective(250px) rotateY(20deg) translateX(-20px);
     transform-origin: 50% 50%;
 
@@ -37,26 +42,31 @@
 }
 
 .carousel-slider-element img {
-    opacity: 0.5;
+    /* opacity: 0.5; */
+    border-radius: 40px;
+    
+    width: 300px;
+    /* height: auto; */
+    padding: 2%;
 }
 
 .carousel-slider-element:hover {
     z-index: 2;
-    background-color: black;
-
+    
     transform: perspective(250px) rotateY(0deg) translateX(0px) scaleX(1.5) scaleY(1.2);
 }
 
 .carousel-slider-element:hover img {
-    border-radius: 10%;
+    width: 200px;
+
+    /* padding: 2%; */
 }
 
 .carousel-slider-element:hover~.carousel-slider-element {
-    background-color: rgba(207, 117, 6, 0.5);
-
     transform: perspective(250px) rotateY(-20deg) translateX(20px);
 }
 
 .carousel-slider-element:hover~.carousel-slider-element img {
-    image-rendering: pixelated;
+    width: 200px;
+    /* padding: 2%; */
 }
