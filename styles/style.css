@@ -60,3 +60,147 @@
 .carousel-slider-element:hover~.carousel-slider-element img {
     image-rendering: pixelated;
 }
+
+/*Carousel Landing Page */
+
+.carousel {
+  position: relative;
+  width: 1200px;
+  height: 533px;
+  overflow: hidden;
+
+  border-top-right-radius: 100px;
+}
+
+
+/* Radio Buttons verstecken */
+
+.carousel input {
+  display: none;
+}
+
+
+/* Slides */
+
+.slides {
+  display: flex;
+  width: 300%;
+  height: 100%;
+  transition: transform 0.4s ease;
+}
+
+.slide {
+  position: relative;
+  width: 33.333%;
+  height: 100%;
+  flex-shrink: 0;
+
+  background-size: cover;
+  background-position: center;
+}
+
+
+/* Hintergrundbilder */
+
+.slide1 {
+  background-image: url("../assets/img/woman-walking-on-beach.jpg");
+}
+
+.slide2 {
+  background-image: url("../assets/img/scandinavia.jpg");
+}
+
+.slide3 {
+  background-image: url("../assets/img/pattaya.jpg");
+}
+
+
+/* Text */
+
+.textblock {
+  position: absolute;
+  width: 881px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  top: 54px;
+  left: 38px;
+
+  padding: 16px 24px;
+
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.textblock > h3{
+    font-family: 'Palanquin Dark';
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 100%;
+
+    color: #ffffff;
+}
+
+.textblock > p{
+  font-family: 'Palanquin';
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 110%;
+
+  color: #ffffff;
+}
+
+
+/* Slide wechseln */
+
+#slide1:checked ~ .slides {
+  transform: translateX(0);
+}
+
+#slide2:checked ~ .slides {
+  transform: translateX(-33.333%);
+}
+
+#slide3:checked ~ .slides {
+  transform: translateX(-66.666%);
+}
+
+
+/* Dots */
+
+.dots {
+  position: absolute;
+  left: 50%;
+  bottom: 24px;
+
+  transform: translateX(-50%);
+
+  display: flex;
+  gap: 8px;
+}
+
+.dots label {
+  width: 24px;
+  height: 24px;
+
+  border-radius: 50%;
+  background: white;
+
+  cursor: pointer;
+
+  transition: width 0.3s ease, background 0.3s ease;
+}
+
+
+/* Aktiver Dot */
+
+#slide1:checked ~ .dots label:nth-child(1),
+#slide2:checked ~ .dots label:nth-child(2),
+#slide3:checked ~ .dots label:nth-child(3) {
+  width: 40px;
+  border-radius: 20px;
+  background: #FFD400;
+}
