@@ -1,11 +1,17 @@
 * {
     box-sizing: border-box;
-    
+
     margin: 0;
     padding: 0;
 
     scroll-behavior: smooth;
 }
+
+
+
+
+
+
 
 header{
     background-color: var(--primary-green);
@@ -51,3 +57,56 @@ header img{
 
 
 
+/* ######################### article01 style ######################### */
+
+.carousel-slider {
+    background-color: rgba(255, 255, 255, 0.001);
+    height: 300px;
+
+    display: flex;
+    
+    gap: 1%;
+}
+
+.carousel-slider-element {
+    /* z-index: 1; */
+
+    display: flex;
+    align-items: center;
+
+    width: 150px;
+    height: auto;
+
+    padding: 2%;
+    border-radius: 10%;
+
+    transform: perspective(250px) rotateY(20deg) translateX(-20px);
+    transform-origin: 50% 50%;
+
+    transition: all 255ms ease-in-out;
+}
+
+.carousel-slider-element img {
+    opacity: 0.5;
+}
+
+.carousel-slider-element:hover {
+    z-index: 2;
+    background-color: black;
+
+    transform: perspective(250px) rotateY(0deg) translateX(0px) scaleX(1.5) scaleY(1.2);
+}
+
+.carousel-slider-element:hover img {
+    border-radius: 10%;
+}
+
+.carousel-slider-element:hover~.carousel-slider-element {
+    background-color: rgba(207, 117, 6, 0.5);
+
+    transform: perspective(250px) rotateY(-20deg) translateX(20px);
+}
+
+.carousel-slider-element:hover~.carousel-slider-element img {
+    image-rendering: pixelated;
+}
