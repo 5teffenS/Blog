@@ -22,17 +22,18 @@ header{
     padding-left: 146px
 }
 
-nav a{
+.navbar-header{
+    display: flex;
+    gap: 72px;
+}
+
+.navbar-header a{
     color: var(--font-color);
     text-decoration: none;
     font-size: 1.5em;
     font-family: 'Arima';
 }
 
-nav{
-    display: flex;
-    gap: 72px;
-}
 
 header img{
     height: 70px;
@@ -320,3 +321,64 @@ header img{
   border-radius: 20px;
   background: #FFD400;
 }
+
+
+
+
+
+/*--------------------FOOTER------------------------------------*/
+
+
+footer{
+    background-color: var(--primary-green);
+    display: flex;
+   
+    color: var(--font-color);
+    gap: 70px;
+    height: 140px;
+    
+    align-items: center;
+    justify-content: space-between;
+  
+    padding-top: 32px;
+    padding-left: 146px;
+    padding-right: 146px
+}
+
+
+.navbar-footer a{
+    color: var(--font-color);
+    text-decoration: none;
+    font-size: 1.125em;
+    font-family: 'Arima';
+
+    display: flex;;
+    gap: 8px;
+    align-items: center;
+}
+
+.navbar-footer{
+    display: flex;
+    gap: 72px;
+}
+
+footer img{
+    height: 32px;
+    width: 32px;
+}
+
+.navbar>img{
+    width: 24px;
+    height: 24px;
+}
+
+.social-icons{
+    display: flex;
+    gap: 16px;
+}
+
+.youtube{
+    width: 44px;
+    height: 32px;
+}
+
