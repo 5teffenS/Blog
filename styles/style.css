@@ -21,13 +21,10 @@ header{
     padding-left: 146px
 }
 
+header img{
+    height: 70px;
+    width: 70px;
 
-
-nav a{
-    color: var(--font-color);
-    text-decoration: none;
-    font-size: 1.5em;
-    font-family: 'Arima';
 }
 
 nav{
@@ -35,10 +32,11 @@ nav{
     gap: 72px;
 }
 
-header img{
-    height: 70px;
-    width: 70px;
-
+nav a{
+    color: var(--font-color);
+    text-decoration: none;
+    font-size: 1.5em;
+    font-family: 'Arima';
 }
 
 .sub-header{
