@@ -360,6 +360,7 @@ footer{
 .navbar-footer{
     display: flex;
     gap: 72px;
+    align-items: center;
 }
 
 footer img{
