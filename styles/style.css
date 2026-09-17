@@ -7,14 +7,6 @@
     scroll-behavior: smooth;
 }
 
-/* ######################### article01 style ######################### */
-
-<<<<<<< HEAD
-#article01 {
-    background-color: var(--primary-gelb);
-}
-
-=======
 /* ######################### HEADER ######################### */
 header{
     background-color: var(--primary-green);
@@ -54,11 +46,14 @@ header img{
     height: 533px;
 }
 
-/* ######################### HEADER ######################### */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ######################### article01 style ######################### */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
+#article01 {
+    background-color: var(--primary-gelb);
+}
 
-
->>>>>>> 6be9b643ecaaf3b828ea674d44d11cf44b24a8bb
 .carousel-slider {
     /* background-color: rgba(255, 255, 255, 0.001); */
     background-color: black;
@@ -113,18 +108,5 @@ header img{
 }
 
 .carousel-slider-element:hover~.carousel-slider-element img {
-<<<<<<< HEAD
     width: 200px;
-    /* padding: 2%; */
 }
-=======
-    image-rendering: pixelated;
-}
-
-
-
-
-
-
-
->>>>>>> 6be9b643ecaaf3b828ea674d44d11cf44b24a8bb
