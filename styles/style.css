@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    
+
     margin: 0;
     padding: 0;
 
@@ -9,10 +9,56 @@
 
 /* ######################### article01 style ######################### */
 
+<<<<<<< HEAD
 #article01 {
     background-color: var(--primary-gelb);
 }
 
+=======
+/* ######################### HEADER ######################### */
+header{
+    background-color: var(--primary-green);
+    display: flex;
+   
+    color: var(--font-color);
+    gap: 70px;
+    height: 140px;
+    justify-content: flex-start;
+    align-items: center;
+  
+    padding-top: 32px;
+    padding-left: 146px
+}
+
+nav a{
+    color: var(--font-color);
+    text-decoration: none;
+    font-size: 1.5em;
+    font-family: 'Arima';
+}
+
+nav{
+    display: flex;
+    gap: 72px;
+}
+
+header img{
+    height: 70px;
+    width: 70px;
+
+}
+
+.sub-header{
+    width: 100%;
+    background-color: var(--primary-yellow);
+    height: 533px;
+}
+
+/* ######################### HEADER ######################### */
+
+
+
+>>>>>>> 6be9b643ecaaf3b828ea674d44d11cf44b24a8bb
 .carousel-slider {
     /* background-color: rgba(255, 255, 255, 0.001); */
     background-color: black;
@@ -67,6 +113,18 @@
 }
 
 .carousel-slider-element:hover~.carousel-slider-element img {
+<<<<<<< HEAD
     width: 200px;
     /* padding: 2%; */
 }
+=======
+    image-rendering: pixelated;
+}
+
+
+
+
+
+
+
+>>>>>>> 6be9b643ecaaf3b828ea674d44d11cf44b24a8bb
