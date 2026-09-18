@@ -52,9 +52,25 @@ header img {
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* ######################### article01 style ######################### */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+h2 {
+    font-family: 'Arima';
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 120%;
+
+    color: var(--primary-green);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 8px;
+}
+
+
 
 #article01 {
-    background-color: var(--primary-gelb);
+    background-color: var(--primary-yellow);
 }
 
 .carousel-slider {
@@ -324,11 +340,75 @@ header img {
     background: #FFD400;
 }
 
+/* ######################### accordion ######################### */
+
+
+/* Container für das gesamte Akkordeon */
 
 
 
+.accordion {
+    margin: 20px auto;
+    font-family: sans-serif;
+    font-size: 24px;
+    color: #54370D;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
 
-/* ######################### HEADER ######################### */
+/* Das einzelne Akkordeon-Element */
+.accordion-item {
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    background: #fff;
+
+    margin: 20px;
+}
+
+/* Die Überschrift / Klickfläche */
+.accordion-item summary {
+    padding: 16px 14px;
+    background-color: #F1C953;
+    list-style: none;
+    /* Versteckt den Standard-Browser-Pfeil */
+
+
+    /* Text links, Pfeil-Bild rechts */
+    align-items: center;
+    cursor: pointer;
+
+    display: flex;
+    /* Aktiviert Flexbox */
+    justify-content: space-between;
+
+}
+
+.accordion-item img {
+    width: 24px;
+    height: 24px;
+}
+
+
+/* Pfeil drehen, wenn das Akkordeon offen ist */
+.accordion-item summary::after {
+    transition: transform 0.8s ease;
+}
+
+/* Der Inhalt / Text */
+.accordion-content {
+    padding: 15px;
+    line-height: 1.5;
+}
+
+
+.accordion-item[open] summary img {
+    transform: rotate(-180deg);
+}
+
+
+
+/* ######################### FOOTER ######################### */
 
 
 footer {
@@ -358,7 +438,7 @@ footer {
     font-family: 'Arima';
 
     display: flex;
-    
+
     gap: 8px;
     align-items: center;
 }
