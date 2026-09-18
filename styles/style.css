@@ -79,8 +79,8 @@ h2 {
     height: 440px;
 
     display: flex;
-
-    /* gap: 1%; */
+    
+    gap: 1%;
 }
 
 .carousel-slider-element {
@@ -94,8 +94,8 @@ h2 {
     /* height: auto; */
 
     padding: 2%;
-
-    transform: perspective(250px) rotateY(20deg) translateX(-20px);
+    
+    transform: perspective(400px) rotateY(20deg) translateX(-20px);
     transform-origin: 50% 50%;
 
     transition: all 255ms ease-in-out;
@@ -107,13 +107,13 @@ h2 {
 
     width: 300px;
     /* height: auto; */
-    padding: 2%;
+    /* padding: 2%; */
 }
 
 .carousel-slider-element:hover {
     z-index: 2;
-
-    transform: perspective(250px) rotateY(0deg) translateX(0px) scaleX(1.5) scaleY(1.2);
+    
+    transform: perspective(400px) rotateY(0deg) translateX(0px) scaleX(1.5) scaleY(1.2);
 }
 
 .carousel-slider-element:hover img {
@@ -123,7 +123,7 @@ h2 {
 }
 
 .carousel-slider-element:hover~.carousel-slider-element {
-    transform: perspective(250px) rotateY(-20deg) translateX(20px);
+    transform: perspective(400px) rotateY(-20deg) translateX(20px);
 }
 
 .carousel-slider-element:hover~.carousel-slider-element img {
