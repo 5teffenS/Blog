@@ -52,21 +52,6 @@ header img {
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* ######################### article01 style ######################### */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-h2 {
-    font-family: 'Arima';
-    font-weight: 700;
-    font-size: 52px;
-    line-height: 120%;
-
-    color: var(--primary-green);
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    gap: 8px;
-}
-
 
 
 #article01 {
@@ -180,6 +165,15 @@ h2 {
     align-items: center;
     gap: 8px;
     justify-content: center;
+
+    font-family: 'Arima';
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 120%;
+
+    color: var(--primary-green);
+    gap: 8px;
+
 }
 
 .icon-header>h2 {
