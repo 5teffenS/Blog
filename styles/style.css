@@ -337,10 +337,6 @@ header img {
 /* ######################### accordeon ######################### */
 
 
-/* Container für das gesamte Akkordeon */
-
-
-
 .accordeon {
     margin: 20px auto;
     font-family: 'Palanquin';
@@ -353,29 +349,19 @@ header img {
     gap: 8px;
 }
 
-/* Das einzelne Akkordeon-Element */
+
 .accordeon-item {
     margin: 20px;
 }
 
-/* Die Überschrift / Klickfläche */
+
 .accordeon-item summary {
     padding: 16px 14px;
     background-color: var(--primary-yellow);
-    list-style: none;
-
     border-radius: 12px;
-    /* Versteckt den Standard-Browser-Pfeil */
-
-
-    /* Text links, Pfeil-Bild rechts */
     align-items: center;
-    cursor: pointer;
-
     display: flex;
-    /* Aktiviert Flexbox */
     justify-content: space-between;
-
 }
 
 .accordeon-item img {
@@ -383,24 +369,30 @@ header img {
     height: 24px;
 }
 
-
-/* Pfeil drehen, wenn das Akkordeon offen ist */
-.accordeon-item summary::after {
-    transition: transform 0.8s ease;
-}
-
-/* Der Inhalt / Text */
 .accordeon-content {
     padding: 15px;
-    line-height: 1.5;
-}
 
+    opacity: 0;
+    transform: translateY(-10px);
+
+    transition:
+        opacity 0.3s ease,
+        transform 0.3s ease,
+        display 0.3s ease allow-discrete;
+}
 
 .accordeon-item[open] summary img {
     transform: rotate(-180deg);
 }
 
-
+.accordeon-item[open] .accordeon-content {
+    opacity: 1;
+    
+    @starting-style {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+}
 
 /* ######################### FOOTER ######################### */
 
@@ -417,7 +409,6 @@ footer {
     justify-content: space-between;
 
     padding: 60px 120px;
-
 }
 
 .footer {
@@ -461,4 +452,25 @@ footer img {
 .youtube {
     width: 44px;
     height: 32px;
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ######################### article02 style ######################### */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 88px;
+    margin-bottom: 88px;
+
+}
+
+
+.video-container video {
+    border-radius: 53px;
+    width: 931px;
+    height: 520px;
+
 }
