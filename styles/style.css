@@ -55,12 +55,12 @@ header img {
 
 
 #article01 {
-    background-color: var(--primary-yellow);
+    
 }
 
 .carousel-slider {
-    /* background-color: rgba(255, 255, 255, 0.001); */
-    background-color: black;
+
+  
     height: 440px;
 
     display: flex;
