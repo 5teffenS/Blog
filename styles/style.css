@@ -59,6 +59,7 @@ header img {
     gap: 8px;
     justify-content: space-between;
     width: 100%;
+
 }
 
 .article01-top h2 {
@@ -93,9 +94,7 @@ header img {
 
     display: flex;
     flex-direction: row;
-    /* Erzwingt die horizontale Reihe */
     align-items: center;
-    /* Zentriert die Blöcke untereinander vertikal */
     gap: 20px;
 
 
@@ -120,10 +119,8 @@ header img {
     background-color: rgba(78, 164, 135, 0.2);
     border-radius: 30px;
 
-    width: 272px;
-    height: auto;
-    height: 50px;
-
+    padding: 30px;
+    width: 500px;
 
 }
 
@@ -153,7 +150,12 @@ header img {
     border-radius: 50%;
     width: 120px;
     height: 120px;
+
+    object-fit: cover;
+    display: block;
     margin: 0 auto;
+
+
 }
 
 
