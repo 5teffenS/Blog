@@ -57,6 +57,7 @@ header img {
 .article01-top {
     display: flex;
     gap: 8px;
+    justify-content: space-between;
 }
 
 .article01-top h2 {
@@ -78,39 +79,73 @@ header img {
 }
 
 .article01-top p {
-    
+
     color: var(--secondary-brown);
     font-size: 32px;
 
     font-family: 'Palanquin';
     font-weight: 400;
-    
+
 }
 
-.page-information{
+.page-information {
 
     display: flex;
-    flex-direction: row;  /* Erzwingt die horizontale Reihe */
-    align-items: center;  /* Zentriert die Blöcke untereinander vertikal */
-    gap: 20px; 
+    flex-direction: row;
+    /* Erzwingt die horizontale Reihe */
+    align-items: center;
+    /* Zentriert die Blöcke untereinander vertikal */
+    gap: 20px;
 
-    
+
 }
 
-.page-information p{
+.page-information p {
     font-size: 16px;
-    margin: 0;           
-    display: flex;        
-    align-items: center;  
-    gap: 6px;   
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 6px;
 }
 
-.page-information img{
+.page-information img {
     width: 16px;
     height: 18px;
     color: var(--primary-green);
- 
+
 }
+
+.profile {
+    background-color: rgba(78, 164, 135, 0.2);
+    border-radius: 30px;
+
+    width: 30px;
+    height: 50px;
+}
+
+.profile h4 {
+    font-family: 'Arima';
+    font-weight: 700;
+}
+
+.profile h5 {
+    font-size: 18px;
+    font-family: 'Arima';
+    font-weight: 400;
+}
+
+.profile p {
+    font-size: 16px;
+    font-family: 'Palanquin';
+    font-weight: 400;
+}
+
+.profile img{
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+}
+
 
 /* ######################### accordeon ######################### */
 
