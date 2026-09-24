@@ -60,6 +60,8 @@ header img {
     justify-content: space-between;
     width: 100%;
 
+    
+
 }
 
 .article01-top h2 {
@@ -120,7 +122,13 @@ header img {
     border-radius: 30px;
 
     padding: 30px;
-    width: 500px;
+    height: fit-content;
+
+    display: flex;
+    flex-direction: column;
+
+    width: 300px;
+    
 
 }
 
@@ -138,6 +146,10 @@ header img {
     font-weight: 400;
     text-align: center;
     color: var(--secondary-brown);
+
+    padding-bottom: 16px;
+
+    
 }
 
 .profile p {
@@ -152,8 +164,9 @@ header img {
     height: 120px;
 
     object-fit: cover;
-    display: block;
     margin: 0 auto;
+
+    
 
 
 }
