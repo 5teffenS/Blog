@@ -49,6 +49,49 @@ header img {
     height: 533px;
 }
 
+.hero-web-textblock {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 345px;
+    height: 227px;
+
+    padding-top: 143px;
+    padding-left: 104px;
+
+    position: relative;
+    animation: move 2s infinite;
+
+}
+
+
+@keyframes move {
+    0% {
+        left: 1000px;
+    }
+
+
+    100% {
+        left: 0px;
+    }
+}
+
+
+.hero-web-textblock h3 {
+    font-family: 'Arima';
+    font-weight: 700;
+    font-size: 60px;
+    color: var(--secondary-brown);
+}
+
+.hero-web-textblock p {
+    font-family: 'Palanquin';
+    font-weight: 500;
+    font-size: 28px;
+    color: var(--secondary-brown);
+    line-height: 1.2;
+}
+
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* ######################### article01 style ######################### */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -60,7 +103,7 @@ header img {
     justify-content: space-between;
     width: 100%;
 
-    
+
 
 }
 
@@ -89,6 +132,7 @@ header img {
 
     font-family: 'Palanquin';
     font-weight: 400;
+    line-height: 1.2;
 
 }
 
@@ -131,7 +175,7 @@ header img {
     flex-shrink: 0;
 
     align-items: center;
-    
+
 
 }
 
@@ -152,7 +196,7 @@ header img {
 
     padding-bottom: 16px;
 
-    
+
 }
 
 .profile p {
@@ -169,7 +213,7 @@ header img {
     object-fit: cover;
     margin: 0 auto;
 
-    
+
 
 
 }
