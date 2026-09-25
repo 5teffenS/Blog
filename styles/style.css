@@ -34,8 +34,24 @@ header {
     font-family: 'Arima';
     font-style: normal;
     font-weight: 700;
+
+    transition: 0.3s color ease-in-out;
+
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: contain;
+
 }
 
+.navbar-header a:active{
+    color: var(--primary-yellow);
+    transition: color 0s; 
+    
+}
+
+.navbar-header a:hover{
+    background-image: url('../assets/img/highlights.svg'); 
+}
 
 header img {
     height: 72px;
