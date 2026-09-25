@@ -19,7 +19,7 @@ header {
   align-items: center;
 
 
-  padding-left: 146px
+    padding: 60px 120px;
 }
 
 .navbar-header {
@@ -53,18 +53,140 @@ header img {
 /* ######################### article01 style ######################### */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
-#article01 {
-  background-color: var(--primary-gelb);
+
+.article01-top {
+    display: flex;
+    gap: 8px;
+    justify-content: space-between;
+    width: 100%;
+
+    
+
 }
 
+.article01-top h2 {
+    color: var(--primary-green);
+    font-size: 40px;
+
+    font-family: 'Palanquin';
+    font-weight: 600;
+}
+
+.article01-top h1 {
+    font-family: 'Palanquin';
+    font-weight: 600;
+    color: var(--primary-yellow);
+    font-size: 64px;
+
+    font-family: 'Arima';
+    font-weight: 700;
+}
+
+.article01-top p {
+
+    color: var(--secondary-brown);
+    font-size: 32px;
+
+    font-family: 'Palanquin';
+    font-weight: 400;
+
+}
+
+.page-information {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+
+
+}
+
+.page-information p {
+    font-size: 16px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.page-information img {
+    width: 16px;
+    height: 18px;
+    color: var(--primary-green);
+
+}
+
+.profile {
+    background-color: rgba(78, 164, 135, 0.2);
+    border-radius: 30px;
+
+    padding: 32px 24px;
+    height: fit-content;
+
+    display: flex;
+    flex-direction: column;
+
+    width: 272px;
+    flex-shrink: 0;
+
+    align-items: center;
+    
+
+}
+
+.profile h4 {
+    font-family: 'Arima';
+    font-weight: 700;
+
+    color: var(--secondary-brown);
+    text-align: center;
+}
+
+.profile h5 {
+    font-size: 18px;
+    font-family: 'Arima';
+    font-weight: 400;
+    text-align: center;
+    color: var(--secondary-brown);
+
+    padding-bottom: 16px;
+
+    
+}
+
+.profile p {
+    font-size: 16px;
+    font-family: 'Palanquin';
+    font-weight: 400;
+}
+
+.profile img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+
+    object-fit: cover;
+    margin: 0 auto;
+
+    
+
+
+}
+
+
+/* ######################### accordeon ######################### */
+
+
+
 .carousel-slider {
-  /* background-color: rgba(255, 255, 255, 0.001); */
-  background-color: black;
-  height: 440px;
+
+
+    height: 440px;
 
   display: flex;
 
-  /* gap: 1%; */
+    gap: 1%;
 }
 
 .carousel-slider-element {
@@ -79,8 +201,8 @@ header img {
 
   padding: 2%;
 
-  transform: perspective(250px) rotateY(20deg) translateX(-20px);
-  transform-origin: 50% 50%;
+    transform: perspective(400px) rotateY(20deg) translateX(-20px);
+    transform-origin: 50% 50%;
 
   transition: all 255ms ease-in-out;
 }
@@ -89,15 +211,15 @@ header img {
   /* opacity: 0.5; */
   border-radius: 40px;
 
-  width: 300px;
-  /* height: auto; */
-  padding: 2%;
+    width: 300px;
+    /* height: auto; */
+    /* padding: 2%; */
 }
 
 .carousel-slider-element:hover {
   z-index: 2;
 
-  transform: perspective(250px) rotateY(0deg) translateX(0px) scaleX(1.5) scaleY(1.2);
+    transform: perspective(400px) rotateY(0deg) translateX(0px) scaleX(1.5) scaleY(1.2);
 }
 
 .carousel-slider-element:hover img {
@@ -107,7 +229,7 @@ header img {
 }
 
 .carousel-slider-element:hover~.carousel-slider-element {
-  transform: perspective(250px) rotateY(-20deg) translateX(20px);
+    transform: perspective(400px) rotateY(-20deg) translateX(20px);
 }
 
 .carousel-slider-element:hover~.carousel-slider-element img {
@@ -160,10 +282,19 @@ header img {
 
 
 .icon-header {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: center;
+
+    font-family: 'Arima';
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 120%;
+
+    color: var(--primary-green);
+    gap: 8px;
+
 }
 
 .icon-header>h2 {
@@ -320,7 +451,67 @@ header img {
   height: 100%;
 }
 
-/* ######################### HEADER ######################### */
+/* ######################### accordeon ######################### */
+
+
+.accordeon {
+    margin: 20px auto;
+    font-family: 'Palanquin';
+    font-style: bold;
+    font-weight: 700;
+    font-size: 24px;
+    color: #54370D;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+
+.accordeon-item {
+    margin: 20px;
+}
+
+
+.accordeon-item summary {
+    padding: 16px 14px;
+    background-color: var(--primary-yellow);
+    border-radius: 12px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.accordeon-item img {
+    width: 24px;
+    height: 24px;
+}
+
+.accordeon-content {
+    padding: 15px;
+
+    opacity: 0;
+    transform: translateY(-10px);
+
+    transition:
+        opacity 0.3s ease,
+        transform 0.3s ease,
+        display 0.3s ease allow-discrete;
+}
+
+.accordeon-item[open] summary img {
+    transform: rotate(-180deg);
+}
+
+.accordeon-item[open] .accordeon-content {
+    opacity: 1;
+
+    @starting-style {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+}
+
+/* ######################### FOOTER ######################### */
 
 
 footer {
@@ -334,8 +525,7 @@ footer {
   align-items: center;
   justify-content: space-between;
 
-  padding: 60px 120px;
-
+    padding: 60px 120px;
 }
 
 .footer {
@@ -349,10 +539,10 @@ footer {
   font-size: 1;
   font-family: 'Arima';
 
-  display: flex;
+    display: flex;
 
-  gap: 8px;
-  align-items: center;
+    gap: 8px;
+    align-items: center;
 }
 
 .navbar-footer {
@@ -379,6 +569,27 @@ footer img {
 .youtube {
   width: 44px;
   height: 32px;
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ######################### article02 style ######################### */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 88px;
+    margin-bottom: 88px;
+
+}
+
+
+.video-container video {
+    border-radius: 53px;
+    width: 931px;
+    height: 520px;
+
 }
 
 /* ######################### SHARE SECCTION ######################### */
