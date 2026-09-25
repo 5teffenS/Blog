@@ -1,98 +1,52 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 /* ######################### HEADER ######################### */
 header {
-    background-color: var(--primary-green);
-    display: flex;
+  background-color: var(--primary-green);
+  display: flex;
 
-    color: var(--font-color);
-    gap: 70px;
-    height: 128px;
-    justify-content: flex-start;
-    align-items: center;
+  color: var(--font-color);
+  gap: 70px;
+  height: 128px;
+  justify-content: flex-start;
+  align-items: center;
 
 
     padding: 60px 120px;
 }
 
 .navbar-header {
-    display: flex;
-    gap: 72px;
+  display: flex;
+  gap: 72px;
 }
 
 .navbar-header a {
-    color: var(--font-color);
-    text-decoration: none;
-    font-size: 1.5em;
-    font-family: 'Arima';
-    font-style: normal;
-    font-weight: 700;
+  color: var(--font-color);
+  text-decoration: none;
+  font-size: 1.5em;
+  font-family: 'Arima';
+  font-style: normal;
+  font-weight: 700;
 }
 
 
 header img {
-    height: 72px;
-    width: 72px;
+  height: 72px;
+  width: 72px;
 
 }
 
 .sub-header {
-    width: 100%;
-    background-color: var(--primary-yellow);
-    height: 533px;
-    
-    padding-top: 143px;
-    padding-left: 104px;
-}
-
-.hero-web-textblock {
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-    width: 345px;
-    
-    height: 227px;
-
-
-
-    position: relative;
-    animation: move 2s;
-
-}
-
-
-@keyframes move {
-    0% {
-        left: 1000px;
-    }
-
-
-    100% {
-        left: 0px;
-    }
-}
-
-
-.hero-web-textblock h3 {
-    font-family: 'Arima';
-    font-weight: 700;
-    font-size: 60px;
-    color: var(--secondary-brown);
-}
-
-.hero-web-textblock p {
-    font-family: 'Palanquin';
-    font-weight: 500;
-    font-size: 28px;
-    color: var(--secondary-brown);
-    line-height: 1.2;
+  width: 100%;
+  background-color: var(--primary-yellow);
+  height: 533px;
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -231,32 +185,32 @@ header img {
 
     height: 440px;
 
-    display: flex;
+  display: flex;
 
     gap: 1%;
 }
 
 .carousel-slider-element {
-    z-index: 1;
+  z-index: 1;
 
-    display: flex;
-    /* justify-content: center; */
-    /* align-items: center; */
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
 
-    width: 200px;
-    /* height: auto; */
+  width: 200px;
+  /* height: auto; */
 
-    padding: 2%;
+  padding: 2%;
 
     transform: perspective(400px) rotateY(20deg) translateX(-20px);
     transform-origin: 50% 50%;
 
-    transition: all 255ms ease-in-out;
+  transition: all 255ms ease-in-out;
 }
 
 .carousel-slider-element img {
-    /* opacity: 0.5; */
-    border-radius: 40px;
+  /* opacity: 0.5; */
+  border-radius: 40px;
 
     width: 300px;
     /* height: auto; */
@@ -264,15 +218,15 @@ header img {
 }
 
 .carousel-slider-element:hover {
-    z-index: 2;
+  z-index: 2;
 
     transform: perspective(400px) rotateY(0deg) translateX(0px) scaleX(1.5) scaleY(1.2);
 }
 
 .carousel-slider-element:hover img {
-    width: 200px;
+  width: 200px;
 
-    /* padding: 2%; */
+  /* padding: 2%; */
 }
 
 .carousel-slider-element:hover~.carousel-slider-element {
@@ -280,7 +234,7 @@ header img {
 }
 
 .carousel-slider-element:hover~.carousel-slider-element img {
-    width: 200px;
+  width: 200px;
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -288,43 +242,43 @@ header img {
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 .content {
-    display: flex;
-    flex-direction: column;
-    gap: 120px;
-    margin: 120px;
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+  margin: 120px;
 
 }
 
 .highlights {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-    gap: 88px;
+  gap: 88px;
 }
 
 .header {
-    display: flex;
-    align-items: center;
-    gap: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .header {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .header>p {
-    font-family: 'Palanquin';
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 110%;
-    text-align: center;
+  font-family: 'Palanquin';
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 110%;
+  text-align: center;
 
-    color: #54370D;
+  color: #54370D;
 }
 
 
@@ -345,161 +299,157 @@ header img {
 }
 
 .icon-header>h2 {
-    font-family: 'Arima';
-    font-weight: 700;
-    font-size: 52px;
-    line-height: 120%;
+  font-family: 'Arima';
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 120%;
 
-    color: var(--primary-green);
+  color: var(--primary-green);
 }
 
 .icon-header>img {
-    width: 48px;
-    height: 48px;
+  width: 48px;
+  height: 48px;
 }
 
-/*Carousel Landing Page */
+.slider-a {
+  width: 100%;
+  height: 533px;
+  border-top-right-radius: 100px;
 
-.carousel {
-    position: relative;
-    width: 100%;
-    height: 533px;
-    overflow: hidden;
 
-    border-top-right-radius: 100px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+
+
+  align-items: flex-end;
+  overflow: hidden;
 }
 
-
-/* Radio Buttons verstecken */
-
-.carousel input {
-    display: none;
+.slider-a input {
+  z-index: 2;
 }
 
+.slider-a-wrapper {
+  z-index: 1;
+  width: 300%;
+  height: 100%;
 
-/* Slides */
+  position: absolute;
 
-.slides {
-    display: flex;
-    width: 300%;
-    height: 100%;
-    transition: transform 0.4s ease;
-}
+  display: flex;
 
-.slide {
-    position: relative;
-    width: 33.333%;
-    height: 100%;
-    flex-shrink: 0;
-
-    background-size: cover;
-    background-position: center;
+  transition: all 1s ease-in-out;
 }
 
 
-/* Hintergrundbilder */
+.slider-a-element {
+  width: calc(100% / 3);
+  height: 100%;
+  position: relative;
 
-.slide1 {
-    background-image: url("../assets/img/woman-walking-on-beach.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
-.slide2 {
-    background-image: url("../assets/img/scandinavia.jpg");
+.element-one {
+  background-image: url(../assets/img/woman-walking-on-beach.jpg);
 }
 
-.slide3 {
-    background-image: url("../assets/img/pattaya.jpg");
+.element-two {
+  background-image: url(../assets/img/scandinavia.jpg);
+}
+
+.element-three {
+  background-image: url(../assets/img/pattaya.jpg);
 }
 
 
-/* Text */
+.slider-a input[value="one"]:checked~.slider-a-wrapper {
+  transform: translate(calc(100% / 3));
+}
+
+
+.slider-a input[value="two"]:checked~.slider-a-wrapper {
+  transform: translate(0);
+}
+
+
+.slider-a input[value="three"]:checked~.slider-a-wrapper {
+  transform: translate(calc(-100% / 3));
+}
+
+.slider-a input {
+  appearance: none;
+  -webkit-appearance: none;
+  border: none;
+  outline: none;
+  width: 28px;
+  height: 28px;
+  border-radius: 14px;
+  background-color: #ffffff;
+  margin: 0 11px 44px 11px;
+  cursor: pointer;
+  transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+.slider-a input:checked {
+  width: 40px;
+  height: 28px;
+  border-radius: 20px;
+  background-color: var(--primary-yellow);
+}
 
 .textblock {
-    position: absolute;
-    width: 75%;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
+  position: absolute;
+  transform: translateZ(0);
 
-    top: 54px;
-    left: 38px;
+  width: 75%;
 
-    padding: 16px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    border-left: 1px solid rgba(255, 255, 255, 0.2);
-    border-right: 1px solid rgba(255, 255, 255, 0.2);
+  top: 54px;
+  left: 38px;
+
+  padding: 16px 24px;
+
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+
+
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
 }
+
 
 .textblock>h3 {
-    font-family: 'Palanquin Dark';
-    font-size: 48px;
-    font-weight: 600;
-    line-height: 100%;
+  font-family: 'Palanquin Dark';
 
-    color: #ffffff;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 100%;
+
+  color: #ffffff;
 }
+
 
 .textblock>p {
-    font-family: 'Palanquin';
-    font-size: 28px;
-    font-weight: 400;
-    line-height: 110%;
+  font-family: 'Palanquin';
 
-    color: #ffffff;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 110%;
+
+  color: #ffffff;
 }
 
-
-/* Slide wechseln */
-
-#slide1:checked~.slides {
-    transform: translateX(0);
-}
-
-#slide2:checked~.slides {
-    transform: translateX(-33.333%);
-}
-
-#slide3:checked~.slides {
-    transform: translateX(-66.666%);
-}
-
-
-/* Dots */
-
-.dots {
-    position: absolute;
-    left: 50%;
-    bottom: 24px;
-
-    transform: translateX(-50%);
-
-    display: flex;
-    gap: 8px;
-}
-
-.dots label {
-    width: 24px;
-    height: 24px;
-
-    border-radius: 50%;
-    background: white;
-
-    cursor: pointer;
-
-    transition: width 0.3s ease, background 0.3s ease;
-}
-
-
-/* Aktiver Dot */
-
-#slide1:checked~.dots label:nth-child(1),
-#slide2:checked~.dots label:nth-child(2),
-#slide3:checked~.dots label:nth-child(3) {
-    width: 40px;
-    border-radius: 20px;
-    background: #FFD400;
+.slide-link {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 /* ######################### accordeon ######################### */
@@ -566,29 +516,29 @@ header img {
 
 
 footer {
-    background-color: var(--primary-green);
-    display: flex;
+  background-color: var(--primary-green);
+  display: flex;
 
-    color: var(--font-color);
-    gap: 70px;
-    height: 152px;
+  color: var(--font-color);
+  gap: 70px;
+  height: 152px;
 
-    align-items: center;
-    justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
 
     padding: 60px 120px;
 }
 
 .footer {
-    align-items: center;
+  align-items: center;
 }
 
 
 .navbar-footer a {
-    color: var(--font-color);
-    text-decoration: none;
-    font-size: 1;
-    font-family: 'Arima';
+  color: var(--font-color);
+  text-decoration: none;
+  font-size: 1;
+  font-family: 'Arima';
 
     display: flex;
 
@@ -597,29 +547,29 @@ footer {
 }
 
 .navbar-footer {
-    display: flex;
-    gap: 72px;
-    align-items: center;
+  display: flex;
+  gap: 72px;
+  align-items: center;
 }
 
 footer img {
-    height: 32px;
-    width: 32px;
+  height: 32px;
+  width: 32px;
 }
 
 .navbar-footer>img {
-    width: 24px;
-    height: 24px;
+  width: 24px;
+  height: 24px;
 }
 
 .social-icons {
-    display: flex;
-    gap: 16px;
+  display: flex;
+  gap: 16px;
 }
 
 .youtube {
-    width: 44px;
-    height: 32px;
+  width: 44px;
+  height: 32px;
 }
 
 
@@ -641,4 +591,123 @@ footer img {
     width: 931px;
     height: 520px;
 
+}
+
+/* ######################### SHARE SECCTION ######################### */
+
+.share-section{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+
+  width: 463px;
+  gap: 48px;
+}
+
+.share-section > p{
+  font-family: 'Arima';
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 120%;
+
+  text-align: center;
+
+  color: #54370D;
+}
+
+.share-section > img{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+
+
+
+
+/* ######################### SHARE ICON ######################### */
+
+.share-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  height: 54px;
+}
+
+
+/* Checkbox verstecken */
+#share-toggle {
+  display: none;
+}
+
+
+/* Dein bisheriger Button */
+.icon-btn {
+  font-family: 'Arima';
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 120%;
+
+  color: var(--primary-yellow);
+
+  width: fit-content;
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 0px 24px;
+
+  background-color: var(--primary-green);
+  border: none;
+  border-radius: 40px;
+
+  cursor: pointer;
+}
+
+
+/* Bereich rechts */
+.share-expanded {
+  height: 54px;
+  display: none;
+  align-items: center;
+  gap: 8px;
+}
+
+
+/* Nach Klick anzeigen */
+#share-toggle:checked ~ .share-expanded {
+  display: flex;
+}
+
+
+/* Nur das Icon im Share-Button verschwinden lassen */
+#share-toggle:checked + .icon-btn .share-icon {
+  display: none;
+}
+
+
+/* Links */
+.share-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.share-links a {
+  font-family: 'Arima';
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 120%;
+
+  color: var(--primary-green);
+
+  text-decoration: underline;
+}
+
+.share-links a:hover {
+  font-weight: 700;
 }
