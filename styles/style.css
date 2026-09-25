@@ -47,6 +47,9 @@ header img {
     width: 100%;
     background-color: var(--primary-yellow);
     height: 533px;
+    
+    padding-top: 143px;
+    padding-left: 104px;
 }
 
 .hero-web-textblock {
@@ -54,13 +57,13 @@ header img {
     flex-direction: column;
     gap: 32px;
     width: 345px;
+    
     height: 227px;
 
-    padding-top: 143px;
-    padding-left: 104px;
+
 
     position: relative;
-    animation: move 2s infinite;
+    animation: move 2s;
 
 }
 
