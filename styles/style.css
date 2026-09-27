@@ -636,14 +636,10 @@ footer img {
   height: 54px;
 }
 
-
-/* Checkbox verstecken */
 #share-toggle {
   display: none;
 }
 
-
-/* Dein bisheriger Button */
 .icon-btn {
   font-family: 'Arima';
   font-size: 24px;
@@ -668,8 +664,6 @@ footer img {
   cursor: pointer;
 }
 
-
-/* Bereich rechts */
 .share-expanded {
   height: 54px;
   display: none;
@@ -677,20 +671,14 @@ footer img {
   gap: 8px;
 }
 
-
-/* Nach Klick anzeigen */
 #share-toggle:checked ~ .share-expanded {
   display: flex;
 }
 
-
-/* Nur das Icon im Share-Button verschwinden lassen */
 #share-toggle:checked + .icon-btn .share-icon {
   display: none;
 }
 
-
-/* Links */
 .share-links {
   display: flex;
   flex-direction: column;
@@ -710,4 +698,61 @@ footer img {
 
 .share-links a:hover {
   font-weight: 700;
+}
+
+/* ######################### PRO TIPPS SECTION ######################### */
+
+.protipp-section{
+  position: relative;
+  display: flex;
+  background-color: rgba(78, 164, 135, 0.2);
+  margin-left: 35.5px;
+  margin-right: 35.5px;
+
+  padding: 26px 16px 24px 16px;
+  border-radius: 30px;
+}
+
+.protipp-section ol{
+  margin: 0;
+  padding-left: 24px;
+}
+
+.protipp-section li{
+  font-family: 'Palanquin';
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 120%;
+
+  color: rgba(61, 61, 61, 1);
+}
+
+.badge{
+  position: absolute;
+  left: -47px;
+  top: -47px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 4px 16px 4px 4px;
+  gap: 4px;
+  border-radius: 10px;
+  transform: rotate(-13.67deg);
+  
+
+  background-color: var(--primary-green);
+
+}
+
+.badge > img{
+  width: 50px;
+  height: 50px;
+}
+
+.badge > p{
+  font-family: 'Palanquin';
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 120%;
+  color: var(--primary-yellow);
 }
