@@ -528,7 +528,7 @@ header img {
 /* ########################## contact form ########################### */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
-.contact-section > p {
+.contact-section {
   font-family: 'Palanquin';
   font-size: 24px;
   font-weight: 500;
@@ -537,8 +537,10 @@ header img {
   text-align: center;
 
   color: #54370D;
+}
 
-  padding-top: 32px;
+.contact-form {
+    padding-top: 32px;
 }
 
 .contact-elements {
