@@ -34,8 +34,24 @@ header {
   font-family: 'Arima';
   font-style: normal;
   font-weight: 700;
+
+    transition: 0.3s color ease-in-out;
+
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: contain;
+
 }
 
+.navbar-header a:active{
+    color: var(--primary-yellow);
+    transition: color 0s; 
+    
+}
+
+.navbar-header a:hover{
+    background-image: url('../assets/img/highlights.svg'); 
+}
 
 header img {
   height: 72px;
@@ -48,6 +64,51 @@ header img {
   background-color: var(--primary-yellow);
   height: 533px;
 }
+
+
+.hero-web-textblock {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 345px;
+    
+    height: 227px;
+
+
+
+    position: relative;
+    animation: move 2s;
+
+}
+
+
+@keyframes move {
+    0% {
+        left: 1000px;
+    }
+
+
+    100% {
+        left: 0px;
+    }
+}
+
+
+.hero-web-textblock h3 {
+    font-family: 'Arima';
+    font-weight: 700;
+    font-size: 60px;
+    color: var(--secondary-brown);
+}
+
+.hero-web-textblock p {
+    font-family: 'Palanquin';
+    font-weight: 500;
+    font-size: 28px;
+    color: var(--secondary-brown);
+    line-height: 1.2;
+}
+
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* ######################### article01 style ######################### */
