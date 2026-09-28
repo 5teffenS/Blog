@@ -250,6 +250,15 @@ header img {
 /* ####################### landing page slider ####################### */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
+content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* gap: 120px; */
+  margin: 120px;
+
+}
+
 .content {
   display: flex;
   flex-direction: column;
