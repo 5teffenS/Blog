@@ -181,7 +181,7 @@ header img {
 
 
 .carousel-slider {
-    background-color: black;
+    /* background-color: black; */
     height: 60dvh; /* 500px; */
     width: 1300px;
     /* min-width: calc(50% - 720px); */
