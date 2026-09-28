@@ -308,6 +308,8 @@ header img {
 
 }
 
+
+
 .icon-header>h2 {
   font-family: 'Arima';
   font-weight: 700;
@@ -522,7 +524,7 @@ header img {
     }
 }
 
-.contact-section > p{
+.contact-section > p {
   font-family: 'Palanquin';
   font-size: 24px;
   font-weight: 500;
@@ -531,6 +533,8 @@ header img {
   text-align: center;
 
   color: #54370D;
+
+  padding-top: 32px;
 }
 
 /* ######################### FOOTER ######################### */
