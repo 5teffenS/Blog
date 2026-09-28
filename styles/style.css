@@ -700,34 +700,35 @@ input[type=submit]:hover {
 
 
 footer {
+
   background-color: var(--primary-green);
   display: flex;
-
   color: var(--font-color);
   gap: 70px;
-  height: 152px;
+  
+  /* ÄNDERUNG: min-height statt height nutzen & border-box hinzufügen */
+  min-height: 152px;
+  box-sizing: border-box; 
 
   align-items: center;
   justify-content: space-between;
-
   padding: 60px 120px;
 }
 
-.footer {
-  align-items: center;
-}
 
 
 .navbar-footer a {
   color: var(--font-color);
   text-decoration: none;
-  font-size: 1;
+  font-size: 1em;
   font-family: 'Arima';
 
   display: flex;
+  flex-direction: row;
 
   gap: 8px;
   align-items: center;
+  white-space: nowrap; 
 }
 
 .navbar-footer {
