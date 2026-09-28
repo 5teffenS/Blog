@@ -49,9 +49,6 @@ header img {
     height: 533px;
 }
 
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-/* ######################### article01 style ######################### */
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 h2 {
     font-family: 'Arima';
     font-weight: 700;
@@ -67,35 +64,42 @@ h2 {
     gap: 8px;
 }
 
-
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ######################### article01 style ######################### */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 #article01 {
     background-color: var(--primary-yellow);
+    display: flex;
+    justify-content: center;
+
+    padding: 0 calc(50% - 720px);
 }
 
 .carousel-slider {
-    /* background-color: rgba(255, 255, 255, 0.001); */
     background-color: black;
-    height: 440px;
+    height: 60dvh; /* 500px; */
+    width: 1300px;
+    /* min-width: calc(50% - 720px); */
 
     display: flex;
-    
-    gap: 1%;
+    justify-content: center;
+    align-items: center;
 }
 
 .carousel-slider-element {
     z-index: 1;
 
     display: flex;
-    /* justify-content: center; */
-    /* align-items: center; */
-
-    width: 200px;
-    /* height: auto; */
-
-    padding: 2%;
+    justify-content: center;
     
-    transform: perspective(400px) rotateY(20deg) translateX(-20px);
+    width: 160px;
+    height: 90%;
+    max-height: 440px;
+
+    /* background-color: rgba(255, 255, 255, 0.001); */
+    
+    transform: perspective(300px) rotateY(10deg) translateX(0px) ;
     transform-origin: 50% 50%;
 
     transition: all 255ms ease-in-out;
@@ -103,31 +107,39 @@ h2 {
 
 .carousel-slider-element img {
     /* opacity: 0.5; */
-    border-radius: 40px;
-
+    border-radius: 20px;
+    
     width: 300px;
-    /* height: auto; */
-    /* padding: 2%; */
+    
+    object-fit: cover;
+    object-position: center;
+
+    /* https://smoothshadows.com/#djEsMSw1LDAuMTUsMjQsMjAsNSwjMDMwNzEyLCNmM2Y0ZjYsI2ZmZmZmZiwz */
+    box-shadow: 0px 1px 1px rgba(3, 7, 18, 0.03),
+        1px 3px 4px rgba(3, 7, 18, 0.06),
+        2px 7px 9px rgba(3, 7, 18, 0.09),
+        3px 13px 15px rgba(3, 7, 18, 0.12),
+        5px 20px 24px rgba(3, 7, 18, 0.15);
 }
 
 .carousel-slider-element:hover {
     z-index: 2;
     
-    transform: perspective(400px) rotateY(0deg) translateX(0px) scaleX(1.5) scaleY(1.2);
+    transform: rotateY(0deg) translateX(0px) scaleX(1.05) scaleY(1.05);
+    margin: 0 160px;
 }
 
 .carousel-slider-element:hover img {
-    width: 200px;
-
-    /* padding: 2%; */
+    width: 300px;
+    
 }
 
 .carousel-slider-element:hover~.carousel-slider-element {
-    transform: perspective(400px) rotateY(-20deg) translateX(20px);
+    transform: perspective(300px) rotateY(-10deg) translateX(0px) ;
 }
 
 .carousel-slider-element:hover~.carousel-slider-element img {
-    width: 200px;
+    width: 300px;
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
