@@ -712,10 +712,13 @@ textarea {
 
 .privacy-label {
   display: block;
+  
   position: relative;
+
   padding-left: 35px;
   margin-bottom: 12px;
-  cursor: pointer;
+
+  /* cursor: pointer; */
   font-size: 16px;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -726,7 +729,7 @@ textarea {
 .privacy-label input {
   position: absolute;
   opacity: 0;
-  cursor: pointer;
+  /* cursor: pointer; */
   height: 0;
   width: 0;
 }
@@ -784,6 +787,8 @@ textarea {
   font-weight: 500;
   text-decoration: none;
   color: var(--primary-green);
+
+  padding: 0 5px;
 }
 
 .privacy-policy a:hover {
@@ -797,11 +802,6 @@ textarea {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.privacy-div~input[type="checkbox"]:checked {
-  background-color: #121416;
-  border-color: #eb2532;
 }
 
 .send-btn {
