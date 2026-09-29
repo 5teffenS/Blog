@@ -724,6 +724,44 @@ input[type=submit]:hover {
   background-color: #45a049;
 }
 
+.send-btn {
+  font-family: 'Arima';
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 120%;
+
+  color: var(--inactive-color);
+
+  width: fit-content;
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+  /* gap: 8px; */
+
+  padding: 0px 24px;
+
+  border: 1px solid var(--inactive-color);
+  border-radius: 40px;
+
+  cursor: pointer;
+}
+
+.share-expanded {
+  height: 54px;
+  display: none;
+  align-items: center;
+  gap: 8px;
+}
+
+#send-toggle:checked~.share-expanded {
+  display: flex;
+}
+
+#send-toggle:checked+.send-btn .send-icon {
+  display: none;
+}
+
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* ############################# imprint ############################# */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */

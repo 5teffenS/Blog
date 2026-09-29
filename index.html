@@ -214,8 +214,10 @@
             <h2>Contact form</h2>
         </div>
 
-        <p>Have a question or an idea to collaborate?<br>in touch-I’d love to hear from you and explore how we can work
-            together.</p>
+        <article>
+            <p>Have a question or an idea to collaborate?<br>in touch-I’d love to hear from you and explore how we can work
+                together.</p>
+        </article>
 
         <section class="contact-form">
 
@@ -232,21 +234,21 @@
                     <label for="subject">How can I help?</label>
                     <textarea id="subject" name="subject" placeholder="Write something.."
                         style="height:200px"></textarea>
+                    
+                    <div> <!-- privacy policy checkbox and send button -->
+                        <input type="checkbox" id="send-toggle">
 
-                    <input type="submit" value="Submit">
+                        <label for="send-toggle" class="send-btn">
+                            Send
+                        </label>
+                    </div>
 
                 </form>
 
-                <input type="checkbox" id="send-toggle">
+                
 
-                <label for="send-toggle" class="icon-btn">
-                    Send
-                </label>
-
-                <div class="send-expanded">
-                    test
-                </div>
             </div>
+
         </section>
 
     </section>
