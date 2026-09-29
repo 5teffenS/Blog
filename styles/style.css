@@ -739,6 +739,7 @@ textarea {
   width: 18px;
   background-color: #eee;
   border: 3px solid var(--secondary-brown);
+  border-radius: 3px;
 }
 
 .privacy-label:hover input ~ .checkmark {
