@@ -15,7 +15,7 @@ header {
   color: var(--font-color);
   gap: 70px;
   height: 128px;
-  
+
   align-items: center;
 
 
@@ -64,6 +64,7 @@ header img {
   background-color: var(--primary-yellow);
   height: 533px;
 
+
   display: flex;
   justify-content: center;
   align-content: center;
@@ -72,108 +73,114 @@ header img {
 
 
 .hero-web-textblock {
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-    width: 345px;
-    
-    height: 227px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 345px;
 
-    position: relative;
+  height: 227px;
 
-    animation: shiftLeft 1s ease-in-out 2.5s forwards;
-    position: relative;
-    z-index: 10
+  position: relative;
 
+  animation: shiftLeft 1s ease-in-out 2.5s forwards;
+  position: relative;
+  z-index: 10
 }
 
 
 .hero-web-textblock h3 {
-    font-family: 'Arima';
-    font-weight: 700;
-    font-size: 60px;
-    color: var(--secondary-brown);
+  font-family: 'Arima';
+  font-weight: 700;
+  font-size: 60px;
+  color: var(--secondary-brown);
 
-    animation: slideUp 1s ease-out forwards;
+  animation: slideUp 1s ease-out forwards;
 }
 
 @keyframes slideUp {
-        0% {
-          
-            opacity: 0;
-            transform: translateY(40px);
-            /* Startet 40 Pixel tiefer */
-        }
+  0% {
 
-        100% {
-            opacity: 1;
-            transform: translateY(0);
-            /* Endet auf Normalposition */
-        }
-    }
+    opacity: 0;
+    transform: translateY(40px);
+    /* Startet 40 Pixel tiefer */
+  }
 
-.hero-web-textblock p {
-    font-family: 'Palanquin';
-    font-weight: 500;
-    font-size: 28px;
-    color: var(--secondary-brown);
-    line-height: 1.2;
-
-    opacity: 0; 
-    animation: fadeIn 1s ease-in 1s forwards;
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    /* Endet auf Normalposition */
+  }
 }
 
- @keyframes fadeIn {
-        0% {
-         
-            opacity: 0;
-        }
+.hero-web-textblock p {
+  font-family: 'Palanquin';
+  font-weight: 500;
+  font-size: 28px;
+  color: var(--secondary-brown);
+  line-height: 1.2;
 
-        100% {
-            opacity: 1;
-        }
-    }
+  opacity: 0;
+  animation: fadeIn 1s ease-in 1s forwards;
+}
 
+@keyframes fadeIn {
+  0% {
 
-    @keyframes shiftLeft {
-        0% {
-            transform: translateX(0);
-        }
+    opacity: 0;
+  }
 
-        100% {
-            /* Verschiebt den Block nach links. */
-            /* Wert anpassen, je nachdem wie weit links er stehen soll */
-            transform: translateX(-400px);
-        }
-    }
-
-    .hero_images {
-      display: flex;
-      position: absolute;
+  100% {
+    opacity: 1;
+  }
+}
 
 
-    }
+@keyframes shiftLeft {
+  0% {
+    transform: translateX(0);
+  }
 
-    .hero_images .landschaft{
-      height: 533px;
-      width: 100%;
-      position: absolute;
-      z-index: 6;
-      object-fit: cover;
+  100% {
+    /* Verschiebt den Block nach links. */
+    /* Wert anpassen, je nachdem wie weit links er stehen soll */
+    transform: translateX(-400px);
+  }
+}
 
-    
-    }
 
-    .hero_images .gelb{
-      height: 533px;
-      width: 100%;
-      position: relative;
-      z-index: 7;
-     
 
-    }
-    
+.hero_images {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: #4c2c2c;
+  overflow: hidden;
 
+
+}
+
+.hero_images .landschaft {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: auto;
+  z-index: 1;
+
+
+}
+
+.hero_images .gelb {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 50%;
+  z-index: 2;
+
+}
+
+*/
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* ######################### article01 style ######################### */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -186,7 +193,7 @@ header img {
   width: 100%;
 }
 
-.article01-top h1{
+.article01-top h1 {
   line-height: 1.2;
 }
 
@@ -664,7 +671,7 @@ content {
   border-radius: 5px;
   /* Wie im Figma-Layout (Radius 5px) */
   font-size: 16px;
-  
+
 }
 
 
@@ -677,7 +684,7 @@ content {
 .accordeon-item[open] .accordeon-content {
   opacity: 1;
   border-radius: 0 0 12px 12px;
- 
+
 
 
 
@@ -772,10 +779,10 @@ footer {
   display: flex;
   color: var(--font-color);
   gap: 70px;
-  
+
   /* ÄNDERUNG: min-height statt height nutzen & border-box hinzufügen */
   min-height: 152px;
-  box-sizing: border-box; 
+  box-sizing: border-box;
 
   align-items: center;
   justify-content: space-between;
@@ -795,7 +802,7 @@ footer {
 
   gap: 8px;
   align-items: center;
-  white-space: nowrap; 
+  white-space: nowrap;
 }
 
 .navbar-footer {
