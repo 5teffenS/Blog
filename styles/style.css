@@ -157,15 +157,19 @@ header img {
     .hero_images .landschaft{
       height: 533px;
       width: 100%;
-      position: relative;
-      z-index: 7;
+      position: absolute;
+      z-index: 6;
+      object-fit: cover;
 
     
     }
 
     .hero_images .gelb{
+      height: 533px;
+      width: 100%;
       position: relative;
-      z-index: 6;
+      z-index: 7;
+     
 
     }
     
