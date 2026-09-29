@@ -82,6 +82,8 @@ header img {
     position: relative;
 
     animation: shiftLeft 1s ease-in-out 2.5s forwards;
+    position: relative;
+    z-index: 10
 
 }
 
@@ -141,9 +143,32 @@ header img {
         100% {
             /* Verschiebt den Block nach links. */
             /* Wert anpassen, je nachdem wie weit links er stehen soll */
-            transform: translateX(-350px);
+            transform: translateX(-400px);
         }
     }
+
+    .hero_images {
+      display: flex;
+      position: absolute;
+
+
+    }
+
+    .hero_images .landschaft{
+      height: 533px;
+      width: 100%;
+      position: relative;
+      z-index: 7;
+
+    
+    }
+
+    .hero_images .gelb{
+      position: relative;
+      z-index: 6;
+
+    }
+    
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* ######################### article01 style ######################### */
