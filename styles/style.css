@@ -159,18 +159,16 @@ header img {
 
 }
 
-.hero_images .landschaft {
+.hero_images .img_right {
   position: absolute;
   top: 0;
   right: 0;
   height: 100%;
   width: auto;
   z-index: 1;
-
-
 }
 
-.hero_images .gelb {
+.hero_images .img_left {
   position: absolute;
   top: 0;
   left: 0;
