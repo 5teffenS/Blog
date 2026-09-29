@@ -710,12 +710,23 @@ textarea {
 }
 
 .privacy-policy {
+  font-size: 16px;
+  font-weight: 400;
   display: flex;
   align-items: center;
 }
 
-.privacy-policy > a {
+.privacy-policy a {
+  font-weight: 500;
   text-decoration: none;
+  color: var(--primary-green);
+}
+
+.privacy-policy a:hover {
+  font-family: 'Palanquin Dark';
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
 }
 
 .send-btn {
