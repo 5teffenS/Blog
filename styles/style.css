@@ -710,6 +710,10 @@ textarea {
     /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ########################### checkbox ############################## */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
 .privacy-policy {
   display: flex;
   flex-direction: column;
