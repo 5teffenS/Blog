@@ -239,17 +239,34 @@
 
                         <div class="privacy-div">
 
-                            <label class="privacy-label"">
+                            <div class="privacy-label">
 
-                                <input type="checkbox" id="send-toggle">
+                                <!-- <input type="checkbox" id="send-toggle"> 
                                 I've read the <a href="../pages/privacy-policy.html" target="_blank">privacy policy</a> and agree to the processing of my data as outlined.
                                 <span class="checkmark"></span>
 
-                                <label for="send-toggle" class="send-btn">
+                                <button for="send-toggle" class="send-btn">
                                 Send
-                                </label>
+                                </button>
+                                -->
 
-                            </label>
+                                <div class="form-container">
+
+                                    <div class="checkbox-wrapper">
+                                        <input type="checkbox" id="agb" class="toggle-check">
+
+                                        <label for="agb">
+                                            I've read the 
+                                            <a href="../pages/privacy-policy.html" target="_blank">privacy policy</a> 
+                                            and agree to the processing of my data as outlined.
+                                        </label>
+                                    </div>
+                                    
+                                    <button type="submit" class="submit-btn">Absenden</button>
+
+                                </div>
+                                
+                            </div>
                         </div>
                     </div>
 
