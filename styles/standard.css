@@ -1,3 +1,127 @@
+/*--------HEADER--------*/
+
+/* ######################### HEADER ######################### */
+header {
+    background-color: var(--primary-green);
+    display: flex;
+
+    color: var(--font-color);
+    gap: 70px;
+    height: 128px;
+
+    align-items: center;
+
+
+    padding: 60px 120px;
+}
+
+.navbar-header {
+    display: flex;
+    gap: 72px;
+}
+
+.navbar-header a {
+    color: var(--font-color);
+    text-decoration: none;
+    font-size: 1.5em;
+    font-family: 'Arima';
+    font-style: normal;
+    font-weight: 700;
+
+    transition: 0.3s color ease-in-out;
+
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: contain;
+
+}
+
+.navbar-header a:active {
+    color: var(--primary-yellow);
+    transition: color 0s;
+
+}
+
+.navbar-header a:hover {
+    background-image: url('../assets/img/highlights.svg');
+}
+
+header img {
+    height: 72px;
+    width: 72px;
+
+}
+
+/*--------HEADER--------*/
+
+
+/*--------FOOTER--------*/
+
+
+/* ######################### FOOTER ######################### */
+
+
+footer {
+
+    background-color: var(--primary-green);
+    display: flex;
+    color: var(--font-color);
+    gap: 70px;
+
+    /* ÄNDERUNG: min-height statt height nutzen & border-box hinzufügen */
+    min-height: 152px;
+    box-sizing: border-box;
+
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 120px;
+}
+
+
+
+.navbar-footer a {
+    color: var(--font-color);
+    text-decoration: none;
+    font-size: 1em;
+    font-family: 'Arima';
+
+    display: flex;
+    flex-direction: row;
+
+    gap: 8px;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.navbar-footer {
+    display: flex;
+    gap: 72px;
+    align-items: center;
+}
+
+footer img {
+    height: 32px;
+    width: 32px;
+}
+
+.navbar-footer>img {
+    width: 24px;
+    height: 24px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 16px;
+}
+
+.youtube {
+    width: 44px;
+    height: 32px;
+}
+
+
+/*--------FOOTER--------*/
+
 h3 {
     color: var(--secondary-brown);
     font-size: 32px;
@@ -9,7 +133,7 @@ h3 {
     justify-content: center;
 }
 
-p {
+p, ul li, ol li {
     font-size: 24px;
     font-family: 'Palanquin';
     font-weight: 400;

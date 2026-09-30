@@ -7,57 +7,7 @@
   scroll-behavior: smooth;
 }
 
-/* ######################### HEADER ######################### */
-header {
-  background-color: var(--primary-green);
-  display: flex;
 
-  color: var(--font-color);
-  gap: 70px;
-  height: 128px;
-
-  align-items: center;
-
-
-  padding: 60px 120px;
-}
-
-.navbar-header {
-  display: flex;
-  gap: 72px;
-}
-
-.navbar-header a {
-  color: var(--font-color);
-  text-decoration: none;
-  font-size: 1.5em;
-  font-family: 'Arima';
-  font-style: normal;
-  font-weight: 700;
-
-  transition: 0.3s color ease-in-out;
-
-  background-repeat: no-repeat;
-  background-position: bottom center;
-  background-size: contain;
-
-}
-
-.navbar-header a:active {
-  color: var(--primary-yellow);
-  transition: color 0s;
-
-}
-
-.navbar-header a:hover {
-  background-image: url('../assets/img/highlights.svg');
-}
-
-header img {
-  height: 72px;
-  width: 72px;
-
-}
 
 /*-----------------Sub-Header-----------------------*/
 
@@ -174,7 +124,7 @@ header img {
 
 }
 
-.article03_p_underprofile{
+.article03_p_underprofile {
   font-size: 24px;
   font-family: 'Palanquin';
   font-weight: 400;
@@ -251,7 +201,7 @@ header img {
   font-family: 'Palanquin';
   font-weight: 400;
 
- 
+
 }
 
 .profile img {
@@ -335,6 +285,13 @@ header img {
 
 .carousel-slider-element:hover~.carousel-slider-element img {
   width: 300px;
+}
+
+
+.p_under_carousel{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -851,66 +808,6 @@ textarea {
 }
 
 
-/* ######################### FOOTER ######################### */
-
-
-footer {
-
-  background-color: var(--primary-green);
-  display: flex;
-  color: var(--font-color);
-  gap: 70px;
-
-  /* ÄNDERUNG: min-height statt height nutzen & border-box hinzufügen */
-  min-height: 152px;
-  box-sizing: border-box;
-
-  align-items: center;
-  justify-content: space-between;
-  padding: 60px 120px;
-}
-
-
-
-.navbar-footer a {
-  color: var(--font-color);
-  text-decoration: none;
-  font-size: 1em;
-  font-family: 'Arima';
-
-  display: flex;
-  flex-direction: row;
-
-  gap: 8px;
-  align-items: center;
-  white-space: nowrap;
-}
-
-.navbar-footer {
-  display: flex;
-  gap: 72px;
-  align-items: center;
-}
-
-footer img {
-  height: 32px;
-  width: 32px;
-}
-
-.navbar-footer>img {
-  width: 24px;
-  height: 24px;
-}
-
-.social-icons {
-  display: flex;
-  gap: 16px;
-}
-
-.youtube {
-  width: 44px;
-  height: 32px;
-}
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* ######################### article02 style ######################### */
@@ -930,6 +827,11 @@ footer img {
   width: 931px;
   height: 520px;
 
+}
+
+ol li, ul li {
+  margin: 20px 0 20px 40px;
+  
 }
 
 /* ######################### SHARE SECCTION ######################### */
@@ -1175,22 +1077,23 @@ footer img {
   font-family: 'Arima';
   font-weight: 600;
 
-  
+
   display: flex;
   justify-content: center;
 
   margin-top: 88px;
-  
+
 }
 
-.article03_img{
+.article03_img {
   display: flex;
   justify-content: center;
   margin-bottom: 88px;
 }
 
 
-.article03_img>img ,.two_sections img {
+.article03_img>img,
+.two_sections img {
   width: 640px;
   height: 436px;
   margin-top: 24px;
@@ -1199,12 +1102,11 @@ footer img {
   border-radius: 53px;
 
   box-shadow: -2px 4px 11.6px 0px rgba(0, 0, 0, 0.25);
-  
+
 
 }
 
-
-.two_sections{
+.two_sections {
   display: flex;
   gap: 80px;
 }
