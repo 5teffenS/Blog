@@ -783,25 +783,37 @@ textarea {
   justify-content: center;
 }
 
-.privacy-policy a {
-  font-weight: 500;
-  text-decoration: none;
-  color: var(--primary-green);
 
-  padding: 0 5px;
-}
 
-.privacy-policy a:hover {
-  font-family: 'Palanquin Dark';
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 16px;
-}
+ */
 
-.privacy-div {
+/* Der gemeinsame Container richtet alles mittig aus */
+/* Container zentriert alle Elemente untereinander */
+.form-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 15px;
+}
+
+/* Wenn der Container eine aktivierte Checkbox ENTHÄLT, schalte den Button darin frei */
+.form-container:has(.toggle-check:checked) .send-btn {
+  background-color: var(--primary-green);
+  color: var(--primary-yellow);
+  
+  border: none;
+
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+/* Das Layout für die Checkbox-Zeile */
+.checkbox-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  color: var(--secondary-brown);
 }
 
 .send-btn {
@@ -825,69 +837,36 @@ textarea {
   border-radius: 40px;
 
   pointer-events: none;
-}
-
-#send-toggle:checked~.send-btn {
-  background-color: var(--primary-green);
-  color: var(--primary-yellow);
-  
-  border: none;
-
-  pointer-events: auto;
-  cursor: pointer;
+  cursor: not-allowed;
 }
 
 .send-btn:hover {
-  background-color: var(--primary-green);
-  color: var(--primary-yellow);
-  font-weight: 700;
+background-color: var(--primary-green);
+color: var(--primary-yellow);
+font-weight: 700;
   
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
-  border: none;
-  box-shadow:
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+border: none;
+box-shadow:
     1px 1px 3px rgba(78, 164, 135, 0.09),
     5px 5px 13px rgba(78, 164, 135, 0.15),
     12px 12px 30px rgba(78, 164, 135, 0.24);
-}*/
+}
 
-/* Der gemeinsame Container richtet alles mittig aus */
-/* Container zentriert alle Elemente untereinander */
-    .form-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 15px;
-      font-family: sans-serif;
-    }
+.checkbox-wrapper a {
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--primary-green);
 
-    /* Wenn der Container eine aktivierte Checkbox ENTHÄLT, schalte den Button darin frei */
-    .form-container:has(.toggle-check:checked) .submit-btn {
-      opacity: 1;
-      pointer-events: auto;
-      cursor: pointer;
-    }
+  padding: 0 5px;
+}
 
-    /* Das Layout für die Checkbox-Zeile */
-    .checkbox-wrapper {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-
-    /* Standard-Stil für den inaktiven Button */
-    .submit-btn {
-      padding: 10px 20px;
-      font-size: 16px;
-      background-color: #ff0048;
-      color: white;
-      border: none;
-      border-radius: 4px;
-      
-      /* Blockiert Klicks und macht den Button blass */
-      opacity: 0.5;
-      pointer-events: none; 
-      cursor: not-allowed;
-    }
+.checkbox-wrapper a:hover {
+  font-family: 'Palanquin Dark';
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+}
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* ############################# imprint ############################# */
