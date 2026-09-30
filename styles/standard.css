@@ -1,0 +1,10 @@
+h3 {
+    color: var(--secondary-brown);
+    font-size: 32px;
+    font-family: 'Arima';
+    font-weight: 600;
+
+
+    display: flex;
+    justify-content: center;
+}

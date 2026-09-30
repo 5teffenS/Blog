@@ -1170,14 +1170,16 @@ footer img {
 }
 
 .article03_rain h2 {
-  columns: var(--secondary-brown);
+  color: var(--secondary-brown);
   font-size: 32px;
   font-family: 'Arima';
   font-weight: 600;
 
-  margin-top: 88px;
+  
   display: flex;
   justify-content: center;
+
+  margin-top: 88px;
   
 }
 
