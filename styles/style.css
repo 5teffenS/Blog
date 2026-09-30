@@ -831,6 +831,8 @@ textarea {
 
 ol li, ul li {
   margin: 20px 0 20px 40px;
+  width: 100%;
+  
   
 }
 
