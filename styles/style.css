@@ -59,22 +59,27 @@ header img {
 
 }
 
-/*-----------------Sub Header-----------------------*/
+/*-----------------Sub-Header-----------------------*/
 
 
-
+.hero-left-right{
+ position: relative;
+}
 
 
 .img-left {
   position: absolute;
   top: 128px;
+
   z-index: 2;
   height: 533px;
   width: 50%;
 }
 
 .img-right {
+  
   width: 100%;
+  left: 0;
   height: 533px;
   object-fit: cover;
 }
@@ -1134,4 +1139,44 @@ footer img {
   to {
     transform: rotate(360deg);
   }
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ####################### article 03 style ########################## */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.article03_text{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+
+}
+
+.article03_text p{
+  font-size: 24px;
+  font-family: 'Palanquin';
+  font-weight: 400;
+  color: var(--gr);
+}
+
+
+.article03_text h2 {
+  columns: var(--secondary-brown);
+  font-size: 32px;
+  font-family: 'Arima';
+  font-weight: 600;
+
+  
+  display: flex;
+  justify-content: center;
+
+}
+
+.article03_text img{
+  border-radius: 53px;
+  width: 640px;
+  height: 436px;
+  box-shadow: rgba(0, 0, 0, 0.25);
 }
