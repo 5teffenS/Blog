@@ -782,13 +782,8 @@ textarea {
   display: flex;
   justify-content: center;
 }
-
-
-
  */
 
-/* Der gemeinsame Container richtet alles mittig aus */
-/* Container zentriert alle Elemente untereinander */
 .form-container {
   display: flex;
   flex-direction: column;
@@ -796,7 +791,6 @@ textarea {
   gap: 15px;
 }
 
-/* Wenn der Container eine aktivierte Checkbox ENTHÄLT, schalte den Button darin frei */
 .form-container:has(.toggle-check:checked) .send-btn {
   background-color: var(--primary-green);
   color: var(--primary-yellow);
@@ -807,7 +801,6 @@ textarea {
   cursor: pointer;
 }
 
-/* Das Layout für die Checkbox-Zeile */
 .checkbox-wrapper {
   display: flex;
   align-items: center;
