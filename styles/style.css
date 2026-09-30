@@ -743,9 +743,6 @@ textarea {
   -ms-user-select: none;
   user-select: none;
 
-  /* display: flex;
-  align-items: center; */
-  /* gap: 4px; */
   font-size: 16px;
   color: var(--secondary-brown);
 }
@@ -756,10 +753,6 @@ textarea {
   height: 0;
   width: 0;
 }
-
-/* .checkbox-none {
-  pointer-events: none;
-} */
 
 .checkmark {
   position: absolute;
@@ -772,7 +765,7 @@ textarea {
   border-radius: 3px;
 }
 
-.checkbox-wrapper:hover input ~ .checkmark {
+.checkbox-label:hover input ~ .checkmark {
   background-color: var(--primary-yellow);
 }
 
