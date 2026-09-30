@@ -255,25 +255,34 @@
                         <label for="lname">What's your email?</label>
                         <input type="text" id="lname" name="lastname" placeholder="Your last name..">
 
-                        <label for="subject">How can I help?</label>
-                        <textarea id="subject" name="subject" placeholder="Write something.."
-                            style="height:200px"></textarea>
+                    <label for="subject">How can I help?</label>
+                    <textarea id="subject" name="subject" placeholder="Write something.."
+                        style="height:200px"></textarea>
+                    
+                    <section class="privacy-policy">
 
-                        <input type="submit" value="Submit">
+                            <div class="checkbox-wrapper">
+                                <label for="privacy" class="checkbox-label">
+                                    <input type="checkbox" id="privacy" class="toggle-check">
+                                    <span class="checkmark"></span>
+                                </label>
 
-                    </form>
+                                <p>
+                                    I've read the 
+                                    <a href="../pages/privacy-policy.html" target="_blank">privacy policy</a> 
+                                    and agree to the processing of my data as outlined.
+                                </p>
+                            </div>
+                                    
+                            <button type="submit" class="send-btn">Send</button>                      
+                                 
+                    </section>
 
-                    <input type="checkbox" id="send-toggle">
+                </form>              
 
-                    <label for="send-toggle" class="icon-btn">
-                        Send
-                    </label>
+            </div>
 
-                    <div class="send-expanded">
-                        test
-                    </div>
-                </div>
-            </section>
+        </section>
 
         </section>
 
