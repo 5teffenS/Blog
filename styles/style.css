@@ -781,6 +781,21 @@ textarea {
   color: var(--secondary-brown);
 }
 
+.checkbox-wrapper a {
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--primary-green);
+
+  padding: 0 5px;
+}
+
+.checkbox-wrapper a:hover {
+  font-family: 'Palanquin Dark';
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+}
+
 .checkbox-wrapper input {
   position: absolute;
   opacity: 0;
@@ -865,21 +880,6 @@ box-shadow:
     1px 1px 3px rgba(78, 164, 135, 0.09),
     5px 5px 13px rgba(78, 164, 135, 0.15),
     12px 12px 30px rgba(78, 164, 135, 0.24);
-}
-
-.checkbox-wrapper a {
-  font-weight: 500;
-  text-decoration: none;
-  color: var(--primary-green);
-
-  padding: 0 5px;
-}
-
-.checkbox-wrapper a:hover {
-  font-family: 'Palanquin Dark';
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 16px;
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
