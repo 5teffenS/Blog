@@ -622,12 +622,18 @@ content {
 
   text-align: center;
 
-  color: #54370D;
+  color: var(--secondary-brown);
 }
 
 .contact-form {
   padding-top: 32px;
 }
+
+.contact-form label {
+  display: flex;
+  justify-content: flex-start;
+}
+
 
 .contact-elements {
   display: flex;
@@ -635,9 +641,12 @@ content {
   flex-direction: row;
 
   border-radius: 5px;
-  background-color: #f2f2f2;
+
   padding: 20px;
 }
+
+
+
 
 input[type=text],
 select,
@@ -656,9 +665,26 @@ textarea {
   /* Add a top margin */
   margin-bottom: 16px;
   /* Bottom margin */
-  resize: vertical
+  resize: vertical;
     /* Allow the user to vertically resize the textarea (not horizontally) */
+
+  border: none;
+  border-bottom: 1px solid black;
+  background: transparent;
+  border-radius: 0px;
 }
+
+.name_mail {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.name_mail_ {
+  display: flex;
+  flex-direction: column;
+}
+
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* ########################### checkbox ############################## */
@@ -1079,6 +1105,7 @@ ul li {
 
 }
 
+
 .article03_rain h2 {
   color: var(--secondary-brown);
   font-size: 32px;
@@ -1092,6 +1119,7 @@ ul li {
   margin-top: 88px;
 
 }
+
 
 .article03_img {
   display: flex;
@@ -1108,14 +1136,29 @@ ul li {
 
   border: 3px;
   border-radius: 53px;
+  object-fit: contain;
 
   box-shadow: -2px 4px 11.6px 0px rgba(0, 0, 0, 0.25);
+
+
 
 
 }
 
 .two_sections {
   display: flex;
+
   width: 100%;
   gap: 80px;
+}
+
+.one_section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.one_section h3 {
+  margin-bottom: 24px;
 }

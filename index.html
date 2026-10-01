@@ -34,19 +34,19 @@
 
 
 
-        <div class="hero-left-right">
-
-           
-                <div class="img-right">
-                    <img src="./assets/img/hero_photo.jpg" alt="" >
-                </div>
-           
+    <div class="hero-left-right">
 
 
-            <div class="img-left">
+        <div class="img-right">
+            <img src="./assets/img/hero_photo.jpg" alt="">
+        </div>
 
-                <img src="./assets/img/hero_photo_2.jpg" alt="" >
-<!--
+
+
+        <div class="img-left">
+
+            <img src="./assets/img/hero_photo_2.jpg" alt="">
+            <!--
                 <div class="hero-textblock">
                     <h3>Cappadocia</h3>
                     <p>From sunrise balloons to hidden cave dwellings, every
@@ -54,12 +54,12 @@
                 </div>
 -->
 
-            </div>
+        </div>
 
 
 
 
- 
+
 
 
 
@@ -227,7 +227,7 @@
                     </details>
                 </div>
             </div>
-        </div>
+       
 
 
         <!---------------------CONTACT-------------------------------------------------------------------------->
@@ -249,17 +249,22 @@
 
                     <form action="action_page.php">
 
-                        <label for="fname">What's your name?</label>
-                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                        <div class="name_mail">
+                            <div class="name_mail_">
+                                <label for="fname">What's your name?</label>
+                                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                            </div>
+                            <div class="name_mail_">
+                                <label for="lname">What's your email?</label>
+                                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                            </div>
+                        </div>
 
-                        <label for="lname">What's your email?</label>
-                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                        <label for="subject">How can I help?</label>
+                        <textarea id="subject" name="subject" placeholder="Write something.."
+                            style="height:200px"></textarea>
 
-                    <label for="subject">How can I help?</label>
-                    <textarea id="subject" name="subject" placeholder="Write something.."
-                        style="height:200px"></textarea>
-                    
-                    <section class="privacy-policy">
+                        <section class="privacy-policy">
 
                             <div class="checkbox-wrapper">
                                 <label for="privacy" class="checkbox-label">
@@ -268,26 +273,26 @@
                                 </label>
 
                                 <p>
-                                    I've read the 
-                                    <a href="../pages/privacy-policy.html" target="_blank">privacy policy</a> 
+                                    I've read the
+                                    <a href="../pages/privacy-policy.html" target="_blank">privacy policy</a>
                                     and agree to the processing of my data as outlined.
                                 </p>
                             </div>
-                                    
-                            <button type="submit" class="send-btn">Send</button>                      
-                                 
-                    </section>
 
-                </form>              
+                            <button type="submit" class="send-btn">Send</button>
 
-            </div>
+                        </section>
+
+                    </form>
+
+                </div>
+
+            </section>
 
         </section>
 
-        </section>
 
-
-
+ </div>
 
 
 
