@@ -728,13 +728,13 @@ input[type="name"],
 input[type="email"],
 input[type="subject"],
 textarea {
+  height: 40px;
   width: 100%;
   padding: 10px;
-  
+
   font-size: 24px;
   box-sizing: border-box;
 
-  caret-color: transparent;
   color: var(--secondary-green);
 }
 
@@ -783,10 +783,22 @@ textarea:focus {
   color: var(--secondary-green);
   animation: blink 1s step-start infinite;
   pointer-events: none;
+  caret-color: transparent;
+}
+
+.custom-caret:focus {
+  animation: blink-caret 1s step-end infinite;
 }
 
 @keyframes blink {
-  50% { opacity: 0; }
+  from, to {
+    /* Nutzt einen Textschatten weit rechts, um das Zeichen anzudeuten */
+    text-shadow: 0 0 0 inherit; 
+  }
+  50% {
+    /* Hier wird das Zeichen als Box-Schatten oder via Hintergrund simuliert */
+    background: #4ea487 ;
+  }
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
