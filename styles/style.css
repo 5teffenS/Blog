@@ -629,10 +629,12 @@ content {
 }
 
 .contact-form {
-  padding-top: 56px;
+  padding: 60px;
   display: flex;
   flex-direction: column;
   gap: 16px;
+
+ 
   
 }
 
