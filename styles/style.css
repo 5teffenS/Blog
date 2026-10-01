@@ -615,7 +615,7 @@ content {
 
 
 .contact-section {
-  width: 100%;
+  width: 1100px;
   font-family: 'Palanquin';
   font-size: 24px;
   font-weight: 500;
@@ -624,8 +624,6 @@ content {
   text-align: center;
 
   color: var(--secondary-brown);
-
-  
 }
 
 .contact-form {
@@ -633,7 +631,6 @@ content {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  
 }
 
 .contact-form label {
@@ -645,6 +642,7 @@ content {
     display: flex;
     flex-direction: column;
     gap: 64px;
+    /* max-width: calc(50% - 720px); */
     width: 100%;
 
     margin: 0 auto;
@@ -670,9 +668,10 @@ content {
 }
 
 .input-group label {
+    font-weight: 500;
     font-size: 24px;
     color: var(--secondary-brown);
-    margin-bottom: 8px;
+    /* margin-bottom: 8px; */
 }
 
 
