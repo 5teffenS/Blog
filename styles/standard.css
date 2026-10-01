@@ -11,6 +11,7 @@ header {
     display: flex;
 
     color: var(--font-color);
+    width: 100%;
     gap: 70px;
     height: 128px;
 
@@ -67,7 +68,7 @@ header img {
 
 
 footer {
-
+    width: 100%;
     background-color: var(--primary-green);
     display: flex;
     color: var(--font-color);
@@ -138,10 +139,53 @@ h3 {
     justify-content: center;
 }
 
-p, ul li, ol li {
+p,
+ul li,
+ol li {
     font-size: 24px;
     font-family: 'Palanquin';
     font-weight: 400;
     line-height: 1.4;
-    
+
+}
+
+@media screen and (min-width: 1440px) {
+
+    header {
+        padding: 60px max(120px, calc(50% - 720px));
+    }
+
+    footer {
+        padding: 60px max(120px, calc(50% - 720px));
+    }
+
+}
+
+@media screen and (min-width:768px) and (max-width: 960px) {
+
+    .navbar-footer {
+        flex-direction: column;
+        gap: 8px;
+        align-items: start;
+    }
+
+}
+
+@media screen and (min-width:480px) and (max-width: 767px) {
+
+    .header{
+        align-items: center;
+    }
+
+    .navbar-header > a{
+        display: none;
+    }
+
+
+    .navbar-footer {
+        flex-direction: column;
+        gap: 8px;
+        align-items: start;
+    }
+
 }
