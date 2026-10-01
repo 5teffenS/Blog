@@ -672,11 +672,12 @@ content {
 
   text-align: center;
 
-  color: #54370D;
+  color: var(--secondary-brown);
 }
 
 .contact-form {
   padding-top: 32px;
+
 }
 
 .contact-elements {
@@ -684,30 +685,108 @@ content {
   justify-content: center;
   flex-direction: row;
 
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
+  background-color: #ffffff00;
+  /* background-color: rgba(252, 0, 0, 0.97); */
 }
 
-input[type=text],
+/* input[type=text],
 select,
 textarea {
+
   width: 100%;
-  /* Full width */
   padding: 12px;
-  /* Some padding */
-  border: 1px solid #ccc;
-  /* Gray border */
-  border-radius: 4px;
-  /* Rounded borders */
+  
+  border-bottom: 2px solid var(--secondary-brown);
   box-sizing: border-box;
-  /* Make sure that padding and width stays in place */
+  
   margin-top: 6px;
-  /* Add a top margin */
   margin-bottom: 16px;
-  /* Bottom margin */
   resize: vertical
-    /* Allow the user to vertically resize the textarea (not horizontally) */
+} */
+
+/* ####################### formstyling ############################ */
+
+form {
+  background:  #ffffff00;
+  padding: 20px;
+  max-width: 33%;
+  box-shadow: 10px var(--secondary-brown);
+}
+
+/* Label anpassen */
+label {
+  font-family: 'Palanquin';
+  font-weight: 500;
+  display: block;
+  margin-bottom: 5px;
+  font-size: 24px;
+  color: var(--secondary-brown);
+}
+
+/* Eingabefelder gestalten */
+input[type="name"],
+input[type="email"],
+input[type="subject"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  
+  font-size: 24px;
+  box-sizing: border-box;
+
+  caret-color: transparent;
+  color: var(--secondary-green);
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  color: var(--secondary-green);
+}
+
+.input-container-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 48px;
+}
+
+.input-container,
+.input-container-wide {
+  display: inline-flex;
+  align-items: center;
+
+  flex-direction: column;
+  align-items: flex-start;
+
+  position: relative;
+  border-bottom: 1px solid var(--secondary-brown);
+  padding: 5px;
+  font-family: monospace;
+
+  font-size: 24px;
+}
+
+.input-container input,
+.input-container-wide input {
+  border: none;
+  outline: none;
+  background: transparent;
+  caret-color: transparent;
+  padding: 0;
+  margin: 0;
+
+  color: var(--secondary-green);
+}
+
+.custom-caret {
+  font-weight: bold;
+  color: var(--secondary-green);
+  animation: blink 1s step-start infinite;
+  pointer-events: none;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
