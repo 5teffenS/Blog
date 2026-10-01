@@ -697,12 +697,17 @@ textarea {
   color: var(--secondary-brown);
 }
 
+.checkbox-wrapper p {
+  font-size: 16px;
+}
+
 .checkbox-wrapper a {
   font-weight: 500;
   text-decoration: none;
   color: var(--primary-green);
 
   padding: 0 5px;
+  font-size: 16px;
 }
 
 .checkbox-wrapper a:hover {
@@ -721,7 +726,7 @@ textarea {
 
 .checkmark {
   position: absolute;
-  top: 5px;
+  top: 3px;
   left: 5px;
   height: 18px;
   width: 18px;
