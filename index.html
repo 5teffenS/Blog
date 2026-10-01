@@ -232,7 +232,7 @@
 
             <!---------------------CONTACT-------------------------------------------------------------------------->
 
-            <section class="contact-section">
+            <div class="contact-section">
 
                 <div class="icon-header" id="contact">
                     <img src="./assets/icons/person_pin.svg" alt="Raketen Icon">
@@ -242,98 +242,98 @@
                 <p>Have a question or an idea to collaborate?<br>in touch-I’d love to hear from you and explore how we
                     can
                     work
-                    together.
-                </p>
+                    together.</p>
 
                 <section class="contact-form">
 
-                    <div class="contact-elements">
+                    <form class="contact-elements">
 
-                        <form action="action_page.php">
-
-                            <div class="name_mail">
-                                <div class="name_mail_">
-                                    <label for="fname">What's your name?</label>
-                                    <input type="text" id="fname" name="firstname">
-                                </div>
-                                <div class="name_mail_">
-                                    <label for="lname">What's your email?</label>
-                                    <input type="text" id="lname" name="lastname">
-                                </div>
+                        <div class="form-row">
+                            <div class="input-group">
+                                <label for="name">What's your name?</label>
+                                <input type="text" id="name" name="name" required>
                             </div>
+                            <div class="input-group">
+                                <label for="email">What's your email?</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
 
-                            <label for="subject">How can I help?</label>
-                            <textarea id="subject" name="subject">
-                            </textarea>
 
-                            <section class="privacy-policy">
+                        <div class="input-group full-width">
+                            <label for="message">How can I help?</label>
+                            <input type="text" id="message" name="message" required>
+                        </div>
 
-                                <div class="checkbox-wrapper">
-                                    <label for="privacy" class="checkbox-label">
-                                        <input type="checkbox" id="privacy" class="toggle-check">
-                                        <span class="checkmark"></span>
-                                    </label>
 
-                                    <p>
-                                        I've read the
-                                        <a href="../pages/privacy-policy.html" target="_blank">privacy policy</a>
-                                        and agree to the processing of my data as outlined.
-                                    </p>
-                                    
-                                </div>
+                    </form>
 
-                                <button type="submit" class="send-btn">Send</button>
+                    <section class="privacy-policy">
 
-                            </section>
+                        <div class="checkbox-wrapper">
+                            <label for="privacy" class="checkbox-label">
+                                <input type="checkbox" id="privacy" class="toggle-check">
+                                <span class="checkmark"></span>
+                            </label>
 
-                        </form>
+                            <p>
+                                I've read the
+                                <a href="../pages/privacy-policy.html" target="_blank">privacy policy</a>
+                                and agree to the processing of my data as outlined.
+                            </p>
+                        </div>
 
-                    </div>
+                        <button type="submit" class="send-btn">Send</button>
 
-                </section>
+                    </section>
+
+                    </form>
+
+            </div>
 
             </section>
-
 
         </div>
 
 
+    </div>
 
 
 
-        <!---------------------FOOTER-------------------------------------------------------------------------->
-
-        <footer>
-
-            <div>
-
-                <nav class="navbar-footer">
 
 
-                    <a href="#"> <img src="./assets/icons/copyright.svg" alt="copyright">
-                        Travel Blog 2026
-                    </a>
+    <!---------------------FOOTER-------------------------------------------------------------------------->
+
+    <footer>
+
+        <div>
+
+            <nav class="navbar-footer">
+
+
+                <a href="#"> <img src="./assets/icons/copyright.svg" alt="copyright">
+                    Travel Blog 2026
+                </a>
 
 
 
-                    <a href="./pages/imprint.html" class="slide-link">Imprint</a>
-                    <a href="#">Cookie Preferences</a>
-                </nav>
+                <a href="./pages/imprint.html" class="slide-link">Imprint</a>
+                <a href="#">Cookie Preferences</a>
+            </nav>
 
-            </div>
+        </div>
 
-            <div class="social-icons">
-                <a href="https://www.tiktok.com" target="_blank"><img src="./assets/icons/Tiktok_icon.svg"
-                        alt="Tiktok"></a>
-                <a href="https://youtube.com" target="_blank"><img src="./assets/icons/youtube.svg" class="youtube"
-                        alt="youtube"></a>
-                <a href="https://www.facebook.com" target="_blank"><img src="./assets/icons/facebook.svg"
-                        alt="facebook"></a>
-                <a href="https://www.instagram.com/" target="_blank"><img src="./assets/icons/Instagram_logo_2016.svg"
-                        alt="instagram"></a>
-            </div>
+        <div class="social-icons">
+            <a href="https://www.tiktok.com" target="_blank"><img src="./assets/icons/Tiktok_icon.svg" alt="Tiktok"></a>
+            <a href="https://youtube.com" target="_blank"><img src="./assets/icons/youtube.svg" class="youtube"
+                    alt="youtube"></a>
+            <a href="https://www.facebook.com" target="_blank"><img src="./assets/icons/facebook.svg"
+                    alt="facebook"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="./assets/icons/Instagram_logo_2016.svg"
+                    alt="instagram"></a>
+        </div>
 
-        </footer>
+    </footer>
 
 
 
