@@ -288,7 +288,7 @@
 }
 
 
-.p_under_carousel{
+.p_under_carousel {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -829,12 +829,13 @@ textarea {
 
 }
 
-ol li, ul li {
+ol li,
+ul li {
   margin: 20px 0 20px 40px;
   width: 100%;
-  
-  
+
 }
+
 
 /* ######################### SHARE SECCTION ######################### */
 
