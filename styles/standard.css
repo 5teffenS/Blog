@@ -3,12 +3,12 @@ responsiv design auch gleich die contentbegrenzug
 weil die ist ja auch überall gleich*/
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 /*--------HEADER--------*/
@@ -133,6 +133,29 @@ footer img {
     height: 32px;
 }
 
+.both-navbars {
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar-mobile {
+
+    display: flex;
+    background-color: var(--primary-yellow);
+    width: 100%;
+    padding: 24px 25px;
+    gap: 48px;
+
+    justify-content: center;
+
+}
+
+.navbar-mobile img {
+    width: 40px;
+    height: 40px;
+
+}
+
 
 /*--------FOOTER--------*/
 
@@ -169,9 +192,17 @@ ol li {
 
 }
 
+
+@media screen and (min-width:768px)  {
+    .navbar-mobile {
+        display: none;
+    }
+
+}
+
 @media screen and (min-width:768px) and (max-width: 960px) {
 
-    footer{
+    footer {
         align-items: end;
     }
 
@@ -181,11 +212,12 @@ ol li {
         align-items: start;
     }
 
+
 }
 
 @media screen and (min-width:480px) and (max-width: 767px) {
 
-    .navbar-header{
+    .navbar-header {
         display: none;
     }
 
@@ -195,8 +227,8 @@ ol li {
         padding: 0 24px;
     }
 
-   /*  zentriert das Logo horizontal  */
-    .logo{
+    /*  zentriert das Logo horizontal  */
+    .logo {
         display: flex;
         align-items: center;
     }
@@ -214,15 +246,43 @@ ol li {
         align-items: start;
     }
 
-    footer{
+    footer {
         align-items: end;
         padding: 60px;
     }
 
 
+    footer img {
+        height: 24px;
+        width: 24px;
+    }
+
+    .youtube {
+        width: 37px;
+        height: 24px;
+    }
+
+
+
+
 }
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
+
+
+    footer img {
+        height: 24px;
+        width: 24px;
+    }
+
+    .youtube {
+        width: 37px;
+        height: 24px;
+    }
+
+    .mobile-navbar {
+        display: block;
+    }
 
 
 }
