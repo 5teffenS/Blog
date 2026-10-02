@@ -1278,6 +1278,16 @@ ul li {
     width: 100%;
   }
 
+  .video-container video {
+
+    width: 345px;
+    height: 193px;
+
+    object-fit: cover;
+    border-radius: 50px;
+
+  }
+
 
 
 
@@ -1297,6 +1307,17 @@ ul li {
 
   .form-row {
     flex-direction: column;
+  }
+
+
+  .video-container video {
+
+    width: 345px;
+    height: 193px;
+
+    object-fit: cover;
+    border-radius: 50px;
+
   }
 
 
