@@ -690,7 +690,7 @@
   font-family: 'Palanquin';
   font-weight: 500;
 
-  caret-shape: block;
+  caret-shape: auto;
 
 }
 
@@ -724,6 +724,8 @@
   position: relative;
   padding-left: 35px;
   margin-bottom: 12px;
+
+  flex-direction: column;
 
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -761,9 +763,19 @@
   width: 0;
 }
 
+.checkbox-string {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.checkbox-link {
+  width: 120px;
+}
+
 .checkmark {
   position: absolute;
-  top: 3px;
+  top: 5px;
   left: 5px;
   height: 18px;
   width: 18px;
