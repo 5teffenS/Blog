@@ -24,7 +24,7 @@
   object-fit: cover;
 }
 
-/*
+
 .hero-textblock {
 
   display: flex;
@@ -53,7 +53,7 @@
   line-height: 1.2;
 }
 
-*/
+
 
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -297,15 +297,6 @@
 
 }
 
-.content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 88px;
-  margin: 80px 120px;
-
-}
-
 .highlights {
   width: 100%;
   display: flex;
@@ -317,15 +308,12 @@
 
 .header {
   display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.header {
-  width: 100%;
-  display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+
+  gap: 8px;
+  width: 100%;
 }
 
 .header>p {
@@ -605,6 +593,11 @@
 
 
 .contact-section {
+  display: flex;
+  flex-direction: column;
+  
+  
+
   width: 1100px;
   font-family: 'Palanquin';
   font-size: 24px;
@@ -1134,6 +1127,11 @@ ul li {
 /* ####################### article 03 style ########################## */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
+#article03 article { /* ############ 'article' element for longer text content ########### */
+  padding: 48px 0;
+  color: #3D3D3D;
+}
+
 .article03_rain {
   display: flex;
   flex-direction: column;
@@ -1183,10 +1181,6 @@ ul li {
   object-fit: contain;
 
   box-shadow: -2px 4px 11.6px 0px rgba(0, 0, 0, 0.25);
-
-
-
-
 }
 
 .two_sections {
@@ -1211,6 +1205,10 @@ ul li {
 
 .one_section h3 {
   margin-bottom: 24px;
+}
+
+.text-box {
+  height: 14em;
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */

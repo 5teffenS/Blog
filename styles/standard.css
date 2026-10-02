@@ -9,6 +9,9 @@ weil die ist ja auch überall gleich*/
   padding: 0;
 
   scroll-behavior: smooth;
+
+  /* ################### Debug marking ############################# */
+  outline: 1px solid red !important;
 }
 
 /*--------HEADER--------*/
