@@ -293,7 +293,7 @@
   flex-direction: column;
   align-items: center;
   /* gap: 120px; */
-  margin: 120px;
+  margin: 80px 120px;
 
 }
 
@@ -302,7 +302,7 @@
   flex-direction: column;
   align-items: center;
   gap: 88px;
-  margin: 120px;
+  margin: 80px 120px;
 
 }
 
@@ -1219,7 +1219,7 @@ ul li {
 
 @media screen and (min-width: 1440px) {
   .content {
-    margin: 120px max(120px, calc(50% - 720px));
+    margin: 80px max(120px, calc(50% - 720px));
   }
 
   header {
@@ -1264,6 +1264,10 @@ ul li {
     width: 100%;
   }
 
+  .content{
+    margin: 60px;
+  }
+
   .two_sections {
     flex-direction: column;
   }
@@ -1271,5 +1275,10 @@ ul li {
   .article03_img > img{
     width: 100%;
   }
+
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+
 
 }
