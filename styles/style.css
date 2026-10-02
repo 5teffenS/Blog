@@ -669,7 +669,7 @@
 }
 
 .input-group label {
-  font-weight: 500;
+  font-weight: 400;
   font-size: 24px;
   color: var(--secondary-brown);
   /* margin-bottom: 8px; */
@@ -690,7 +690,7 @@
   font-family: 'Palanquin';
   font-weight: 500;
 
-
+  caret-shape: block;
 
 }
 
