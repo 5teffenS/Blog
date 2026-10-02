@@ -1194,6 +1194,7 @@ ul li {
 
   width: 100%;
   gap: 80px;
+  align-items: start;
 }
 
 .one_section {

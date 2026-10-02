@@ -60,10 +60,10 @@ header {
     background-image: url('../assets/img/highlights.svg');
 }
 
-header img {
-    height: 72px;
-    width: 72px;
 
+.logo img {
+    width: 72px;
+    height: 72px;
 }
 
 /*--------HEADER--------*/
@@ -181,12 +181,26 @@ ol li {
 
 @media screen and (min-width:480px) and (max-width: 767px) {
 
-    .header{
+    .navbar-header{
+        display: none;
+    }
+
+    header {
+        justify-content: center;
+        height: 70px;
+        padding: 0 24px;
+    }
+
+   /*  zentriert das Logo horizontal  */
+    .logo{
+        display: flex;
         align-items: center;
     }
 
-    .navbar-header > a{
-        display: none;
+
+    .logo img {
+        width: 56px;
+        height: 56px;
     }
 
 
