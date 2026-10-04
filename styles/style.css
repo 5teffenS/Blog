@@ -3,59 +3,41 @@
 
 
 .hero-left-right {
-  
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
 
-  width: 100%;
-  top: 128px;
-  height: 515px;
+  width: 100vw;
+  height: 100vh;
+  max-height: 515px;
 
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-}
-
-.hero-initial {
-  width: 100%;
-  position: absolute;
-  top: 128px;
-  z-index: 1;
-
-  background-color: var(--primary-yellow);
+  /* box-shadow: 0 4px 6px rgba(0,0,0,0.1); */
 }
 
 .hero-first {
-  position: absolute;
+  position: relative;
+  overflow: hidden;
   top: 128px;
+  height: 515px;
+}
+
+.img-background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: auto;
   z-index: 2;
 }
 
-.hero-mid {
+.img-cover {
   position: absolute;
-  top: 128px;
-  z-index: 2;
-}
-
-.hero-final {
-  position: absolute;
-  top: 128px;
-  z-index: 3;
-}
-
-.img-left {
-  z-index: 2;
-  height: 533px;
-  width: 50%;
-}
-
-.img-right {
-  z-index: 1; 
-  width: 100%;
+  top: 0;
   left: 0;
-  height: 533px;
-  object-fit: cover;
+  height: 100%;
+  width: 50%;
+  z-index: 1;
 }
-
 
 .hero-textblock {
 
