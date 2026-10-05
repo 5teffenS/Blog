@@ -14,7 +14,7 @@
 
 .hero-first {
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
   top: 0;
   left: 0;
   width: 100%;
@@ -41,7 +41,7 @@
   width: auto;
   z-index: 3;
 
-  animation : banner-initial 2s ease-in-out forwards;
+  animation : banner-initial 3s ease-in-out forwards;
 }
 
 .img-cover-mid {
@@ -54,7 +54,26 @@
   z-index: 2;
 
   animation : banner-mid 1s ease-in-out forwards;
-  animation-delay: 1s;
+  animation-delay: 2s;
+}
+
+.img-cover-end {
+  position: absolute;
+  top: 0;
+  
+  left: 0;
+  height: 600px;
+  width: auto;
+  z-index: 4;
+  opacity: 0;
+  
+  animation-name: banner-end;
+  animation-duration: 0.8s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 2.4s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
 }
 
 .hero-textblock {
@@ -68,6 +87,7 @@
   left: 0;
 
   position: absolute;
+  z-index: 5;
 }
 
 .hero-textblock h3 {
@@ -96,12 +116,26 @@
 }
 
 @keyframes banner-mid {
-  from {
+  0% {
     transform: translateX(440px);
   }
 
-  to {
+  60% {
     transform: translateX(calc(1024px - calc(50% - 720px)));
+  }
+
+  100% {
+    transform: translateX(calc(720px - calc(50% - 720px)));
+  }
+}
+
+@keyframes banner-end {
+  0% { 
+    opacity: 0;
+  }
+
+  100% { 
+    opacity: 1;
   }
 }
 
