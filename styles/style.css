@@ -90,13 +90,9 @@
   z-index: 5;
   opacity: 0;
 
-  animation-name: textblock-fade-in;
-  animation-duration: 1s;
-  animation-timing-function: fade-in;
-  animation-delay: 0.5s;
-  animation-iteration-count: 1;
-  animation-direction: normal;
-  animation-fill-mode: forwards;
+  animation: 
+    textblock-fade-in 1.5s ease-in-out 0.5s forwards,
+    textblock-shift 3s linear 2s forwards;
 }
 
 .hero-textblock h3 {
@@ -106,12 +102,12 @@
   color: var(--secondary-brown);
 
   animation-name: textblock-h3;
-  animation-duration: 1s;
-  animation-timing-function: fade-in;
-  animation-delay: 0.5s;
-  animation-iteration-count: 1;
-  animation-direction: normal;
-  animation-fill-mode: forwards;
+    animation-duration: 1s;
+    animation-timing-function: fade-in;
+    animation-delay: 0.5s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
 }
 
 .hero-textblock p {
@@ -122,13 +118,11 @@
   line-height: 1.2;
 
   opacity: 0;
-}
 
-.hero-textblock h3 {
-  animation-name: textblock-shift;
-  animation-duration: 1s;
+  animation-name: textblock-p;
+  animation-duration: 2s;
   animation-timing-function: fade-in;
-  animation-delay: 3.5s;
+  animation-delay: 1s;
   animation-iteration-count: 1;
   animation-direction: normal;
   animation-fill-mode: forwards;
@@ -168,9 +162,28 @@
   }
 }
 
+@keyframes textblock-fade-in {
+  0% { 
+    opacity: 0;
+  }
+
+  100% { 
+    opacity: 1;
+    /* transform: translateX(-35dvw); */
+  }
+}
+
+@keyframes textblock-shift {
+  to { 
+    opacity: 1;
+    transform: translateX(-35dvw);
+  }
+}
+
 @keyframes textblock-h3 {
   0% { 
     transform: translateY(75%);
+    opacity: 1;
   }
 
   100% { 
@@ -178,7 +191,7 @@
   }
 }
 
-@keyframes textblock-fade-in {
+@keyframes textblock-p {
   0% { 
     opacity: 0;
   }
@@ -188,15 +201,7 @@
   }
 }
 
-@keyframes textblock-shift {
-  0% { 
-    transform: translateX(40%);
-  }
 
-  100% { 
-    transform: translateX(-5%);
-  }
-}
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* ######################### article01 style ######################### */
