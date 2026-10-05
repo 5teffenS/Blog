@@ -93,7 +93,7 @@
 
   animation: 
     textblock-fade-in 1.5s ease-in-out 0.5s forwards,
-    textblock-shift 3s linear 2s forwards;
+    textblock-shift 1s linear 2s forwards;
 }
 
 .hero-textblock h3 {
