@@ -210,6 +210,9 @@
   width: 160px;
   height: 160px;
 
+  top: 32dvh;
+  left: 31dvw;
+
   position: relative;
 
   display: flex;
@@ -230,7 +233,7 @@
   z-index: 6;
 
   animation-name: moving-element-initial;
-  /* animation-duration: 2s; */
+  animation-duration: 2s;
   animation-timing-function: fade-in;
   animation-delay: 3s;
   animation-iteration-count: 1;
@@ -277,8 +280,6 @@
 
 @keyframes moving-element-initial {
   to {
-    top: 32dvh;
-    left: 31dvw;
     opacity: 1;
   }
 }
