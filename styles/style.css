@@ -820,8 +820,8 @@
   font-weight: 700;
   letter-spacing: 5%;
 
-  color: var(--primary-yellow);
-  background-color: var(--primary-green);
+  color: var(--inactive-color);
+  
 
   width: 128px;
   height: 48px;
@@ -832,7 +832,7 @@
 
   padding: 0px 24px;
 
-  border: 1px  var(--inactive-color);
+  border: 1px solid var(--inactive-color);
   border-radius: 40px;
 
   pointer-events: none;
