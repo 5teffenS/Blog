@@ -36,7 +36,7 @@
   position: absolute;
   top: 0;
   
-  right: -440px;
+  right: 0;
   height: 100%;
   width: auto;
   z-index: 3;
@@ -63,7 +63,7 @@
   
   left: 0;
   height: 600px;
-  width: auto;
+  width: 100vw;
   z-index: 4;
   opacity: 0;
   
