@@ -37,11 +37,13 @@
 .img-cover {
   position: absolute;
   top: 0;
-  /* left: 0; */
-  right: calc((50% - 720px) + 440px);
+  /* right: calc((50% - 720px) + 440px); */
+  right: 0;
   height: 100%;
   width: auto;
   z-index: 2;
+
+  animation : banner-initial 2s ease-in-out forwards;
 }
 
 .hero-textblock {
@@ -70,6 +72,16 @@
   font-size: 28px;
   color: var(--secondary-brown);
   line-height: 1.2;
+}
+
+@keyframes banner-initial {
+  from {
+    transform: translateX(440px);
+  }
+
+  to {
+    transform: translateX(calc(1024px - calc(50% - 720px)));
+  }
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
