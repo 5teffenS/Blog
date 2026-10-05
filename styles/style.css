@@ -28,16 +28,17 @@
 .img-background {
   position: absolute;
   top: 0;
-  left: 0;
+  left: calc(50% - 720px);
   height: 100%;
   width: auto;
-  z-index: 3;
+  z-index: 1;
 }
 
 .img-cover {
   position: absolute;
   top: 0;
-  left: 0;
+  /* left: 0; */
+  right: calc((50% - 720px) + 440px);
   height: 100%;
   width: auto;
   z-index: 2;
