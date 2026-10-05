@@ -83,11 +83,20 @@
   gap: 32px;
   width: 345px;
   height: 227px;
-  top: 0;
-  left: 0;
+  top: 25%;
+  left: 40%;
 
   position: absolute;
   z-index: 5;
+  opacity: 0;
+
+  animation-name: textblock-fade-in;
+  animation-duration: 1s;
+  animation-timing-function: fade-in;
+  animation-delay: 0.5s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
 }
 
 .hero-textblock h3 {
@@ -95,6 +104,14 @@
   font-weight: 700;
   font-size: 60px;
   color: var(--secondary-brown);
+
+  animation-name: textblock-h3;
+  animation-duration: 1s;
+  animation-timing-function: fade-in;
+  animation-delay: 0.5s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
 }
 
 .hero-textblock p {
@@ -103,6 +120,18 @@
   font-size: 28px;
   color: var(--secondary-brown);
   line-height: 1.2;
+
+  opacity: 0;
+}
+
+.hero-textblock h3 {
+  animation-name: textblock-shift;
+  animation-duration: 1s;
+  animation-timing-function: fade-in;
+  animation-delay: 3.5s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
 }
 
 @keyframes banner-initial {
@@ -136,6 +165,36 @@
 
   100% { 
     opacity: 1;
+  }
+}
+
+@keyframes textblock-h3 {
+  0% { 
+    transform: translateY(75%);
+  }
+
+  100% { 
+    transform: translateY(-25%);
+  }
+}
+
+@keyframes textblock-fade-in {
+  0% { 
+    opacity: 0;
+  }
+
+  100% { 
+    opacity: 1;
+  }
+}
+
+@keyframes textblock-shift {
+  0% { 
+    transform: translateX(40%);
+  }
+
+  100% { 
+    transform: translateX(-5%);
   }
 }
 
