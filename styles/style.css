@@ -2,20 +2,27 @@
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* ##################### landing banner animation #################### */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 120px;
+  margin: 0 120px 80px 120px;
+}
 
 .hero-left-right {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
 
-  width: 100vw;
-  height: 100vh;
-  max-height: 515px;
+  width: 100dvw;
+  max-width: 1440px;
+  min-height: 515px;
 }
 
 .hero-first {
   position: relative;
-  /* overflow: hidden; */
+  overflow: hidden;
   top: 0;
   left: 0;
   width: 100%;
@@ -63,8 +70,8 @@
   top: 0;
   
   left: 0;
-  height: 600px;
-  /* width: 100vw; */
+  height: auto;
+  
   z-index: 4;
   opacity: 0;
   
@@ -82,8 +89,9 @@
   display: flex;
   flex-direction: column;
   gap: 32px;
-  width: 345px;
-  height: 227px;
+  width: 25%;
+  max-width: 350px;
+  
   top: 25%;
   left: 40%;
 
@@ -145,11 +153,11 @@
   }
 
   60% {
-    transform: translateX(calc(1024px - calc(50% - 720px)));
+    transform: translateX(calc(40dvw - calc(50% - 720px)));
   }
 
   100% {
-    transform: translateX(calc(720px - calc(50% - 720px)));
+    transform: translateX(calc(10dvw - calc(50% - 720px)));
   }
 }
 
@@ -174,13 +182,6 @@
   }
 }
 
-@keyframes textblock-shift {
-  to { 
-    opacity: 1;
-    transform: translateX(-35dvw);
-  }
-}
-
 @keyframes textblock-h3 {
   0% { 
     transform: translateY(75%);
@@ -202,6 +203,13 @@
   }
 }
 
+@keyframes textblock-shift {
+  to { 
+    opacity: 1;
+    transform: translateX(-145%);
+  }
+}
+
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* ###################### landing rotating text ###################### */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -210,8 +218,8 @@
   width: 160px;
   height: 160px;
 
-  top: 32dvh;
-  left: 31dvw;
+  top: 270px;
+  left: 440px;
 
   position: relative;
 
@@ -235,7 +243,7 @@
   animation-name: moving-element-initial;
   animation-duration: 2s;
   animation-timing-function: fade-in;
-  animation-delay: 3s;
+  animation-delay: 2.7s;
   animation-iteration-count: 1;
   animation-direction: normal;
   animation-fill-mode: forwards;
@@ -511,14 +519,6 @@
 /* ####################### landing page slider ####################### */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
-.content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 120px;
-  margin: 0 120px 80px 120px;
-}
-
 .highlights {
   width: 100%;
   display: flex;
@@ -613,7 +613,7 @@
 }
 
 .slider-a-element {
-  width: calc(100% / 3);
+  width: calc(100% / 4);
   height: 100%;
   position: relative;
 
@@ -633,19 +633,26 @@
   background-image: url(../assets/img/pattaya.jpg);
 }
 
+.element-four {
+  background-image: url(../assets/img/mountain_fuji.jpg);
+}
 
 .slider-a input[value="one"]:checked~.slider-a-wrapper {
-  transform: translate(calc(100% / 3));
+  transform: translate(25%);
 }
 
 
 .slider-a input[value="two"]:checked~.slider-a-wrapper {
-  transform: translate(0);
+  transform: translate(50% );
 }
 
 
 .slider-a input[value="three"]:checked~.slider-a-wrapper {
-  transform: translate(calc(-100% / 3));
+  transform: translate(75% );
+}
+
+.slider-a input[value="four"]:checked~.slider-a-wrapper {
+  transform: translate(calc(-100% ));
 }
 
 .slider-a input {
@@ -1416,13 +1423,18 @@ ul li {
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-/* ####################### Responsiv ########################## */
+/* ############################ Responsiv ############################ */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1441px) {
   .content {
-    margin-left: 80px max(120px, calc(50% - 720px));
-    margin-right: 80px max(120px, calc(50% - 720px));
+    margin: 0 max(calc(50% - 720px), 120px);
+    margin-bottom: 80px;
+  }
+
+  .hero-left-right {
+    max-width: 1440px;
+    min-height: 515px;
   }
 
   header {
@@ -1432,8 +1444,6 @@ ul li {
   footer {
     padding: 120px max(120px, calc(50% - 720px));
   }
-
-
 }
 
 @media screen and (min-width:768px) and (max-width: 960px) {
@@ -1507,7 +1517,9 @@ ul li {
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
 
-
+/* .img-background img {
+  transform: scale(1.5, 1.5);
+} */
 
   /*-----------------CONTACT-FORM-------------------*/
 

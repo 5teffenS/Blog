@@ -11,7 +11,7 @@ weil die ist ja auch überall gleich*/
   scroll-behavior: smooth;
 
   /* ################### Debug marking ############################# */
-  /* outline: 1px solid red !important; */
+  outline: 1px solid red !important;
 }
 
 /*--------HEADER--------*/
