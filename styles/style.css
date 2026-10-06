@@ -84,18 +84,6 @@
   animation-fill-mode: forwards;
 }
 
-/* .moving-container {
-  position: relative;
-
-  max-width: 1440px;
-  height: auto;
-
-  top: 50%;
-  left: 50%;
-
-  background-color: red;
-} */
-
 .hero-textblock {
 
   display: flex;
