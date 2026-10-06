@@ -1548,3 +1548,43 @@ ul li {
 
 
 }
+
+
+/* Für mobile Geräte (z. B. Smartphones) */
+@media (max-width: 768px) {
+  
+  /* 1. Der übergeordnete Kasten, der das Scrollen erlaubt */
+  .carousel-slider {
+    display: flex;
+    flex-direction: row;        /* Legt die Karten nebeneinander */
+    overflow-x: auto;           /* Aktiviert das seitliche Wischen */
+    scroll-snap-type: x mandatory; /* Lässt die Karten sauber einrasten */
+    gap: 10px;                  /* Abstand zwischen den Bildern laut Figma */
+    padding: 0 72px;            /* Freiraum links und rechts für den Fokus-Effekt */
+    
+    /* Blendigt die Scrollbar aus */
+    scrollbar-width: none; 
+  }
+  .carousel-slider::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* 2. Die einzelnen Karten (die Bilder-Container) */
+  .carousel-slider-element {
+    flex: 0 0 200px;            /* Verhindert, dass die Karten schrumpfen (fest auf 200px) */
+    height: 293px;              /* Höhe aus Figma */
+    scroll-snap-align: center;   /* Zentriert die Karte beim Wischen */
+    
+    /* 💡 Deaktiviert den 3D-Effekt vom Desktop komplett für Mobile */
+    transform: none !important; 
+  }
+
+  /* Falls du das 'transform' direkt auf dem Bild (.carousel-slider-element img) hast: */
+  .carousel-slider-element img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;          /* Verhindert, dass das Bild verzerrt wird */
+    border-radius: 20px;        /* Abgerundete Ecken aus deinem Design */
+    transform: none !important; /* Sicherheitshalber auch hier zurücksetzen */
+  }
+}
