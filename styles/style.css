@@ -545,7 +545,7 @@
   line-height: 110%;
   text-align: center;
 
-  color: #54370D;
+  color: var(--secondary-brown);
 }
 
 
