@@ -1,29 +1,82 @@
-/*-----------------Sub-Header-----------------------*/
 
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ##################### landing banner animation #################### */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 .hero-left-right {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  width: 100vw;
+  height: 100vh;
+  max-height: 515px;
+}
+
+.hero-first {
   position: relative;
-}
-
-
-.img-left {
-  position: absolute;
-  top: 128px;
-
-  z-index: 2;
-  height: 533px;
-  width: 50%;
-}
-
-.img-right {
-
-  width: 100%;
+  /* overflow: hidden; */
+  top: 0;
   left: 0;
-  height: 533px;
-  object-fit: cover;
+  width: 100%;
+  height: 515px;
+
+  background-color: black;
 }
 
-/*
+.img-background {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 720px);
+  height: 100%;
+  width: auto;
+  z-index: 1;
+}
+
+.img-cover-start {
+  position: absolute;
+  top: 0;
+  
+  right: 0;
+  height: 100%;
+  width: auto;
+  z-index: 3;
+
+  animation : banner-initial 3s ease-in-out forwards;
+}
+
+.img-cover-mid {
+  position: absolute;
+  top: 0;
+  
+  right: 0;
+  height: 100%;
+  width: auto;
+  z-index: 2;
+
+  animation : banner-mid 1s ease-in-out forwards;
+  animation-delay: 2s;
+}
+
+.img-cover-end {
+  position: absolute;
+  top: 0;
+  
+  left: 0;
+  height: 600px;
+  /* width: 100vw; */
+  z-index: 4;
+  opacity: 0;
+  
+  animation-name: banner-end;
+  animation-duration: 0.8s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 2.4s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
+
 .hero-textblock {
 
   display: flex;
@@ -31,10 +84,16 @@
   gap: 32px;
   width: 345px;
   height: 227px;
-  top: 0;
-  left: 0;
+  top: 25%;
+  left: 40%;
 
   position: absolute;
+  z-index: 5;
+  opacity: 0;
+
+  animation: 
+    textblock-fade-in 1.5s ease-in-out 0.5s forwards,
+    textblock-shift 1s linear 2s forwards;
 }
 
 .hero-textblock h3 {
@@ -42,6 +101,14 @@
   font-weight: 700;
   font-size: 60px;
   color: var(--secondary-brown);
+
+  animation-name: textblock-h3;
+    animation-duration: 1s;
+    animation-timing-function: fade-in;
+    animation-delay: 0.5s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
 }
 
 .hero-textblock p {
@@ -50,10 +117,172 @@
   font-size: 28px;
   color: var(--secondary-brown);
   line-height: 1.2;
+
+  opacity: 0;
+
+  animation-name: textblock-p;
+  animation-duration: 2s;
+  animation-timing-function: fade-in;
+  animation-delay: 1s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
 }
 
-*/
+@keyframes banner-initial {
+  0% { 
+    z-index: 3;
+  }
 
+  100% { 
+    z-index: 0;
+  }
+}
+
+@keyframes banner-mid {
+  0% {
+    transform: translateX(440px);
+  }
+
+  60% {
+    transform: translateX(calc(1024px - calc(50% - 720px)));
+  }
+
+  100% {
+    transform: translateX(calc(720px - calc(50% - 720px)));
+  }
+}
+
+@keyframes banner-end {
+  0% { 
+    opacity: 0;
+  }
+
+  100% { 
+    opacity: 1;
+  }
+}
+
+@keyframes textblock-fade-in {
+  0% { 
+    opacity: 0;
+  }
+
+  100% { 
+    opacity: 1;
+    /* transform: translateX(-35dvw); */
+  }
+}
+
+@keyframes textblock-shift {
+  to { 
+    opacity: 1;
+    transform: translateX(-35dvw);
+  }
+}
+
+@keyframes textblock-h3 {
+  0% { 
+    transform: translateY(75%);
+    opacity: 1;
+  }
+
+  100% { 
+    transform: translateY(-25%);
+  }
+}
+
+@keyframes textblock-p {
+  0% { 
+    opacity: 0;
+  }
+
+  100% { 
+    opacity: 1;
+  }
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ###################### landing rotating text ###################### */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.moving-element {
+  width: 160px;
+  height: 160px;
+
+  top: 32dvh;
+  left: 31dvw;
+
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-green);
+  border-radius: 50%;
+
+  /* https://smoothshadows.com/#djEsMSw1LDAuMTUsMjQsMjAsNSwjMDMwNzEyLCNmM2Y0ZjYsI2ZmZmZmZiwz */
+  box-shadow: 0px 1px 1px rgba(3, 7, 18, 0.03),
+    1px 3px 4px rgba(3, 7, 18, 0.06),
+    2px 7px 9px rgba(3, 7, 18, 0.09),
+    3px 13px 15px rgba(3, 7, 18, 0.12),
+    5px 20px 24px rgba(3, 7, 18, 0.15);
+
+  opacity: 0;
+
+  z-index: 6;
+
+  animation-name: moving-element-initial;
+  animation-duration: 2s;
+  animation-timing-function: fade-in;
+  animation-delay: 3s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
+
+.rotating-text {
+  width: 132px;
+  height: 132px;
+
+  animation: rotateText 12s linear infinite;
+}
+
+.rotating-text svg {
+  width: 132px;
+  height: 132px;
+  overflow: visible;
+}
+
+.rotating-text text {
+  font-family: 'Arima';
+  font-size: 32px;
+  font-weight: 400;
+  fill: var(--primary-yellow);
+}
+
+.destination-flag {
+  position: absolute;
+
+  width: 50px;
+  height: 50px;
+}
+
+@keyframes rotateText {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes moving-element-initial {
+  to {
+    opacity: 1;
+  }
+}
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* ######################### article01 style ######################### */
@@ -202,14 +431,7 @@
 
   object-fit: cover;
   margin: 0 auto;
-
-
-
-
 }
-
-
-
 
 .carousel-slider {
   /* background-color: black; */
@@ -293,18 +515,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* gap: 120px; */
-  margin: 80px 120px;
-
-}
-
-.content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 88px;
-  margin: 80px 120px;
-
+  gap: 120px;
+  /* margin: 0 120px 80px 120px; */
 }
 
 .highlights {
@@ -318,15 +530,12 @@
 
 .header {
   display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.header {
-  width: 100%;
-  display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+
+  gap: 8px;
+  width: 100%;
 }
 
 .header>p {
@@ -509,10 +718,10 @@
 .slide-link {
   display: block;
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 
-/* ######################### accordeon ######################### */
+/* ######################### faq ######################### */
 
 .faq {
   width: 100%;
@@ -524,7 +733,7 @@
   font-family: 'Palanquin';
   font-weight: 700;
   font-size: 24px;
-  color: #54370D;
+  color: var(--secondary-brown);
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -606,7 +815,12 @@
 
 
 .contact-section {
+  display: flex;
+  flex-direction: column;
+  
+  padding-top: 88px;
 
+  width: 1100px;
   font-family: 'Palanquin';
   font-size: 24px;
   font-weight: 500;
@@ -618,7 +832,7 @@
 }
 
 .contact-form {
-  padding: 60px;
+  padding-top: 60px;
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -1111,61 +1325,16 @@ ul li {
 
 
 
-.moving-element {
-  width: 160px;
-  height: 160px;
-
-  background-color: var(--primary-green);
-  border-radius: 50%;
-
-  position: relative;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.rotating-text {
-  width: 132px;
-  height: 132px;
-
-  animation: rotateText 12s linear infinite;
-}
-
-.rotating-text svg {
-  width: 132px;
-  height: 132px;
-  overflow: visible;
-}
-
-.rotating-text text {
-  font-family: 'Arima';
-  font-size: 32px;
-  font-weight: 400;
-  fill: var(--primary-yellow);
-}
-
-.destination-flag {
-  position: absolute;
-
-  width: 50px;
-  height: 50px;
-}
-
-@keyframes rotateText {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
-}
 
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* ####################### article 03 style ########################## */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+#article03 article { /* ############ 'article' element for longer text content ########### */
+  padding: 48px 0;
+  color: #3D3D3D;
+}
 
 .article03_rain {
   display: flex;
@@ -1216,10 +1385,6 @@ ul li {
   object-fit: contain;
 
   box-shadow: -2px 4px 11.6px 0px rgba(0, 0, 0, 0.25);
-
-
-
-
 }
 
 .two_sections {
@@ -1246,13 +1411,18 @@ ul li {
   margin-bottom: 24px;
 }
 
+.text-box {
+  height: 14em;
+}
+
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* ####################### Responsiv ########################## */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 @media screen and (min-width: 1440px) {
   .content {
-    margin: 80px max(120px, calc(50% - 720px));
+    margin-left: 80px max(120px, calc(50% - 720px));
+    margin-right: 80px max(120px, calc(50% - 720px));
   }
 
   header {
@@ -1301,8 +1471,9 @@ ul li {
     width: 100%;
   }
 
-  .content {
-    margin: 60px;
+  .content{
+    margin-left: 60px;
+    margin-right: 60px;
   }
 
   .two_sections {
