@@ -613,7 +613,7 @@
 }
 
 .slider-a-element {
-  width: calc(100% / 3);
+  width: calc(100% / 4);
   height: 100%;
   position: relative;
 
@@ -633,19 +633,26 @@
   background-image: url(../assets/img/pattaya.jpg);
 }
 
+.element-four {
+  background-image: url(../assets/img/mountain_fuji.jpg);
+}
 
 .slider-a input[value="one"]:checked~.slider-a-wrapper {
-  transform: translate(calc(100% / 3));
+  transform: translate(25%);
 }
 
 
 .slider-a input[value="two"]:checked~.slider-a-wrapper {
-  transform: translate(0);
+  transform: translate(50% );
 }
 
 
 .slider-a input[value="three"]:checked~.slider-a-wrapper {
-  transform: translate(calc(-100% / 3));
+  transform: translate(75% );
+}
+
+.slider-a input[value="four"]:checked~.slider-a-wrapper {
+  transform: translate(calc(-100% ));
 }
 
 .slider-a input {
