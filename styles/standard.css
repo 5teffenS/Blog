@@ -142,6 +142,9 @@ footer img {
 }
 
 .navbar-mobile {
+    position: fixed;
+    bottom: 0;
+    left: 0;
 
     display: flex;
     background-color: var(--primary-yellow);
@@ -150,7 +153,7 @@ footer img {
     gap: 48px;
 
     justify-content: center;
-
+    z-index: 10;
 }
 
 .navbar-mobile img {
