@@ -691,6 +691,8 @@
 
   padding: 16px 24px;
 
+  text-align: left;
+
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(5px);
 
@@ -709,6 +711,7 @@
   line-height: 100%;
 
   color: #ffffff;
+  
 }
 
 

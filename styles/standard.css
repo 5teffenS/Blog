@@ -173,7 +173,7 @@ h3 {
 
 
     display: flex;
-    justify-content: center;
+    /* justify-content: center; ################ Entfernt, da slider-a textblock nicht korrekt ausgerichtet wird (wie in Figma) ############# */
 }
 
 p,
