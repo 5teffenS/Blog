@@ -1,5 +1,5 @@
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-/* ############################ Responsiv ############################ */
+/* ############################ > 1440px ############################# */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 @media screen and (min-width: 1441px) {
@@ -22,6 +22,22 @@
   }
 }
 
+@media screen and (min-width: 1440px) {
+
+    header {
+        padding: 60px max(120px, calc(50% - 720px));
+    }
+
+    footer {
+        padding: 60px max(120px, calc(50% - 720px));
+    }
+
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ############################ <= 1440px ############################ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
 @media screen and (min-width:961px) and (max-width: 1440px) {
   .carousel-slider {
     overflow: hidden;
@@ -29,6 +45,10 @@
     width: 100%; 
   }
 }
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ######################### 768px to 960px ########################## */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 @media screen and (min-width:768px) and (max-width: 960px) {
   .article01-top {
@@ -55,85 +75,28 @@
     width: 100%; 
   }
 
+  footer {
+        align-items: end;
+    }
 
+    .navbar-footer {
+        flex-direction: column;
+        gap: 8px;
+        align-items: start;
+    }
+}
+
+@media screen and (min-width:768px)  {
+    .navbar-mobile {
+        display: none;
+    }
 
 }
 
-@media screen and (min-width:480px) and (max-width: 767px) {
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ############################ <= 768px ############################# */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
-  .article01-top {
-    flex-direction: column;
-
-  }
-
-  .profile {
-    width: 100%;
-  }
-
-  .two_sections {
-    flex-direction: column;
-  }
-
-  .article03_img>img {
-    width: 100%;
-  }
-
-  .video-container video {
-
-    width: 345px;
-    height: 193px;
-
-    object-fit: cover;
-    border-radius: 50px;
-
-  }
-
-
-
-
-  /*-----------------CONTACT-FORM-------------------*/
-
-  .form-row {
-    flex-direction: column;
-  }
-
-}
-
-@media screen and (min-width: 320px) and (max-width: 480px) {
-
-/* .img-background img {
-  transform: scale(1.5, 1.5);
-} */
-
-  /*-----------------CONTACT-FORM-------------------*/
-
-  .form-row {
-    flex-direction: column;
-  }
-
-
-  .video-container video {
-
-    width: 345px;
-    height: 193px;
-
-    object-fit: cover;
-    border-radius: 50px;
-
-  }
-
-  .article01-top h2 {
-    font-size: 20px;
-  }
-
-
-
-
-
-}
-
-
-/* Für mobile Geräte (z. B. Smartphones) */
 @media (max-width: 768px) {
 
   .content{
@@ -180,36 +143,6 @@
     /* display: none; */
   }
 
-  /* Falls du das 'transform' direkt auf dem Bild (.carousel-slider-element img) hast: */
-  .carousel-slider-element img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;          /* Verhindert, dass das Bild verzerrt wird */
-    border-radius: 20px;        /* Abgerundete Ecken aus deinem Design */
-    transform: none !important; /* Sicherheitshalber auch hier zurücksetzen */
-  }
-}
-
-@media screen and (min-width: 1440px) {
-
-    header {
-        padding: 60px max(120px, calc(50% - 720px));
-    }
-
-    footer {
-        padding: 60px max(120px, calc(50% - 720px));
-    }
-
-}
-
-
-@media screen and (min-width:768px)  {
-    .navbar-mobile {
-        display: none;
-    }
-
-}
-
 @media screen and (max-width:767px)  {
     .content {
         margin-bottom: 160px;
@@ -220,29 +153,45 @@
     position: relative;
     bottom: 88px;
     }
-
-    /* .navbar-mobile {
-        width: 100%;
-    } */
 }
 
 
-@media screen and (min-width:768px) and (max-width: 960px) {
-
-    footer {
-        align-items: end;
-    }
-
-    .navbar-footer {
-        flex-direction: column;
-        gap: 8px;
-        align-items: start;
-    }
-
-
-}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ######################### 480px to 767px ########################## */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 @media screen and (min-width:480px) and (max-width: 767px) {
+
+    .article01-top {
+        flex-direction: column;
+
+    }
+
+    .profile {
+        width: 100%;
+    }
+
+    .two_sections {
+        flex-direction: column;
+    }
+
+    .article03_img>img {
+        width: 100%;
+    }
+
+    .video-container video {
+
+        width: 345px;
+        height: 193px;
+
+        object-fit: cover;
+        border-radius: 50px;
+
+    }
+
+    .form-row {
+        flex-direction: column;
+    }
 
     .navbar-header {
         display: none;
@@ -288,16 +237,46 @@
         width: 37px;
         height: 24px;
     }
-
-
-
-
 }
+
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ######################### 320px to 480px ########################## */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
 
+  .form-row {
+    flex-direction: column;
+  }
 
-    footer img {
+
+  .video-container video {
+
+    width: 345px;
+    height: 193px;
+
+    object-fit: cover;
+    border-radius: 50px;
+
+  }
+
+  .article01-top h2 {
+    font-size: 20px;
+  }
+}
+
+  /* Falls du das 'transform' direkt auf dem Bild (.carousel-slider-element img) hast: */
+  .carousel-slider-element img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;          /* Verhindert, dass das Bild verzerrt wird */
+    border-radius: 20px;        /* Abgerundete Ecken aus deinem Design */
+    transform: none !important; /* Sicherheitshalber auch hier zurücksetzen */
+  }
+
+  footer img {
         height: 24px;
         width: 24px;
     }
@@ -310,6 +289,4 @@
     .mobile-navbar {
         /* display: block; */
     }
-
-
 }
