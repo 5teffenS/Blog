@@ -111,8 +111,8 @@
   .input-group {
     display: flex;
     /* justify-content: center; */
-    align-items: center;
-    gap: 40px;
+    align-items: flex-start;
+    gap: 5%;
     width: 100%;
   }
 }
@@ -170,6 +170,11 @@
 @media screen and (max-width:767px)  {
     .content {
         margin-bottom: 160px;
+    }
+
+    .navbar-footer {
+      display: flex;
+      flex-direction: column-reverse;
     }
 
     footer {
