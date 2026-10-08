@@ -1,0 +1,315 @@
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ############################ Responsiv ############################ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+@media screen and (min-width: 1441px) {
+  .content {
+    margin: 0 max(calc(50% - 720px), 120px);
+    margin-bottom: 80px;
+  }
+
+  .hero-left-right {
+    max-width: 1440px;
+    min-height: 515px;
+  }
+
+  header {
+    padding: 120px max(120px, calc(50% - 720px));
+  }
+
+  footer {
+    padding: 120px max(120px, calc(50% - 720px));
+  }
+}
+
+@media screen and (min-width:961px) and (max-width: 1440px) {
+  .carousel-slider {
+    overflow: hidden;
+    
+    width: 100%; 
+  }
+}
+
+@media screen and (min-width:768px) and (max-width: 960px) {
+  .article01-top {
+    flex-direction: column;
+
+  }
+
+  .profile {
+    width: 100%;
+  }
+
+  .two_sections {
+    flex-direction: column;
+  }
+
+
+  .article03_img>img {
+    width: 100%;
+  }
+
+  .carousel-slider {
+    overflow: hidden;
+    
+    width: 100%; 
+  }
+
+
+
+}
+
+@media screen and (min-width:480px) and (max-width: 767px) {
+
+  .article01-top {
+    flex-direction: column;
+
+  }
+
+  .profile {
+    width: 100%;
+  }
+
+  .two_sections {
+    flex-direction: column;
+  }
+
+  .article03_img>img {
+    width: 100%;
+  }
+
+  .video-container video {
+
+    width: 345px;
+    height: 193px;
+
+    object-fit: cover;
+    border-radius: 50px;
+
+  }
+
+
+
+
+  /*-----------------CONTACT-FORM-------------------*/
+
+  .form-row {
+    flex-direction: column;
+  }
+
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+
+/* .img-background img {
+  transform: scale(1.5, 1.5);
+} */
+
+  /*-----------------CONTACT-FORM-------------------*/
+
+  .form-row {
+    flex-direction: column;
+  }
+
+
+  .video-container video {
+
+    width: 345px;
+    height: 193px;
+
+    object-fit: cover;
+    border-radius: 50px;
+
+  }
+
+  .article01-top h2 {
+    font-size: 20px;
+  }
+
+
+
+
+
+}
+
+
+/* Für mobile Geräte (z. B. Smartphones) */
+@media (max-width: 768px) {
+
+  .content{
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+/* .carousel-inputs input[value"one"]:checked ~ .carousel-wrapper {
+  background-color: red;
+} */
+
+  .carousel-inputs {
+    padding-top: 24px;
+    display: flex;
+    gap: 8px;
+  }
+  
+  /* 1. Der übergeordnete Kasten, der das Scrollen erlaubt */
+  .carousel-slider {
+    display: flex;
+    flex-direction: column-reverse;        /* Legt die Karten nebeneinander */
+    overflow-x: auto;           /* Aktiviert das seitliche Wischen */
+    scroll-snap-type: x mandatory; /* Lässt die Karten sauber einrasten */
+    gap: 10px;                  /* Abstand zwischen den Bildern laut Figma */
+    padding: 0 72px;            /* Freiraum links und rechts für den Fokus-Effekt */
+    
+    /* Blendigt die Scrollbar aus */
+    scrollbar-width: none;
+    width: 100%; 
+  }
+  .carousel-slider::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* 2. Die einzelnen Karten (die Bilder-Container) */
+  .carousel-slider-element {
+    flex: 0 0 200px;            /* Verhindert, dass die Karten schrumpfen (fest auf 200px) */
+    height: 293px;              /* Höhe aus Figma */
+    scroll-snap-align: center;   /* Zentriert die Karte beim Wischen */
+    
+    /* 💡 Deaktiviert den 3D-Effekt vom Desktop komplett für Mobile */
+    transform: none !important;
+    
+    /* display: none; */
+  }
+
+  /* Falls du das 'transform' direkt auf dem Bild (.carousel-slider-element img) hast: */
+  .carousel-slider-element img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;          /* Verhindert, dass das Bild verzerrt wird */
+    border-radius: 20px;        /* Abgerundete Ecken aus deinem Design */
+    transform: none !important; /* Sicherheitshalber auch hier zurücksetzen */
+  }
+}
+
+@media screen and (min-width: 1440px) {
+
+    header {
+        padding: 60px max(120px, calc(50% - 720px));
+    }
+
+    footer {
+        padding: 60px max(120px, calc(50% - 720px));
+    }
+
+}
+
+
+@media screen and (min-width:768px)  {
+    .navbar-mobile {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width:767px)  {
+    .content {
+        margin-bottom: 160px;
+    }
+
+    footer {
+    
+    position: relative;
+    bottom: 88px;
+    }
+
+    /* .navbar-mobile {
+        width: 100%;
+    } */
+}
+
+
+@media screen and (min-width:768px) and (max-width: 960px) {
+
+    footer {
+        align-items: end;
+    }
+
+    .navbar-footer {
+        flex-direction: column;
+        gap: 8px;
+        align-items: start;
+    }
+
+
+}
+
+@media screen and (min-width:480px) and (max-width: 767px) {
+
+    .navbar-header {
+        display: none;
+    }
+
+    header {
+        justify-content: center;
+        height: 70px;
+        padding: 0 24px;
+    }
+
+    /*  zentriert das Logo horizontal  */
+    .logo {
+        display: flex;
+        align-items: center;
+    }
+
+
+    .logo img {
+        width: 56px;
+        height: 56px;
+    }
+
+
+    .navbar-footer {
+        flex-direction: column;
+        gap: 8px;
+        align-items: start;
+    }
+
+    footer {
+        align-items: end;
+        padding: 60px;
+    }
+
+
+    footer img {
+        height: 24px;
+        width: 24px;
+    }
+
+    .youtube {
+        width: 37px;
+        height: 24px;
+    }
+
+
+
+
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+
+
+    footer img {
+        height: 24px;
+        width: 24px;
+    }
+
+    .youtube {
+        width: 37px;
+        height: 24px;
+    }
+
+    .mobile-navbar {
+        /* display: block; */
+    }
+
+
+}
