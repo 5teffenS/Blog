@@ -2,13 +2,6 @@
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* ##################### landing banner animation #################### */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-.content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 120px;
-  margin: 0 120px 80px 120px;
-}
 
 .hero-left-right {
   display: flex;
@@ -441,16 +434,58 @@
   margin: 0 auto;
 }
 
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ######################### carousel slider ######################### */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.carousel-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  height: 90%;
+}
+
+.carousel-inputs {
+  padding-top: 48px;
+  display: none;
+}
+
 .carousel-slider {
-  /* background-color: black; */
-  height: 60dvh;
-  /* 500px; */
+  background-color: black;
+  height: 70dvh;
+  
   width: 1300px;
   /* min-width: calc(50% - 720px); */
 
   display: flex;
+  flex-direction: column-reverse;
   justify-content: center;
   align-items: center;
+}
+
+.carousel-slider input {
+  appearance: none;
+  -webkit-appearance: none;
+  border: none;
+  outline: none;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: #4ea48732;
+  margin: 0 5px 14px 5px;
+  cursor: pointer;
+  transition: width 0.3s ease, background-color 0.3s ease;
+
+  z-index: 2;
+}
+
+.carousel-slider input:checked {
+  width: 36px;
+  height: 22px;
+  border-radius: 20px;
+  background-color: var(--primary-green);
 }
 
 .carousel-slider-element {
@@ -508,6 +543,7 @@
   width: 300px;
 }
 
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 .p_under_carousel {
   display: flex;
@@ -516,7 +552,7 @@
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-/* ####################### landing page slider ####################### */
+/* ######################### main page content ####################### */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 .highlights {
@@ -596,13 +632,9 @@
   overflow: hidden;
 }
 
-.slider-a input {
-  z-index: 2;
-}
-
 .slider-a-wrapper {
   z-index: 1;
-  width: 300%;
+  width: 400%;
   height: 100%;
 
   position: absolute;
@@ -638,21 +670,21 @@
 }
 
 .slider-a input[value="one"]:checked~.slider-a-wrapper {
-  transform: translate(25%);
+  transform: translateX(calc(150% / 4));
 }
 
 
 .slider-a input[value="two"]:checked~.slider-a-wrapper {
-  transform: translate(50% );
+  transform: translateX(calc(50% / 4));
 }
 
 
 .slider-a input[value="three"]:checked~.slider-a-wrapper {
-  transform: translate(75% );
+  transform: translateX(calc(-50% / 4));
 }
 
 .slider-a input[value="four"]:checked~.slider-a-wrapper {
-  transform: translate(calc(-100% ));
+  transform: translateX(calc(-150% / 4));
 }
 
 .slider-a input {
@@ -667,6 +699,8 @@
   margin: 0 11px 44px 11px;
   cursor: pointer;
   transition: width 0.3s ease, background-color 0.3s ease;
+
+  z-index: 2;
 }
 
 .slider-a input:checked {
@@ -691,6 +725,8 @@
 
   padding: 16px 24px;
 
+  text-align: left;
+
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(5px);
 
@@ -709,6 +745,7 @@
   line-height: 100%;
 
   color: #ffffff;
+  
 }
 
 
@@ -1422,168 +1459,4 @@ ul li {
   height: 14em;
 }
 
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-/* ############################ Responsiv ############################ */
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
-@media screen and (min-width: 1441px) {
-  .content {
-    margin: 0 max(calc(50% - 720px), 120px);
-    margin-bottom: 80px;
-  }
-
-  .hero-left-right {
-    max-width: 1440px;
-    min-height: 515px;
-  }
-
-  header {
-    padding: 120px max(120px, calc(50% - 720px));
-  }
-
-  footer {
-    padding: 120px max(120px, calc(50% - 720px));
-  }
-}
-
-@media screen and (min-width:768px) and (max-width: 960px) {
-  .article01-top {
-    flex-direction: column;
-
-  }
-
-  .profile {
-    width: 100%;
-  }
-
-  .two_sections {
-    flex-direction: column;
-  }
-
-
-  .article03_img>img {
-    width: 100%;
-  }
-
-
-
-
-}
-
-@media screen and (min-width:480px) and (max-width: 767px) {
-
-  .article01-top {
-    flex-direction: column;
-
-  }
-
-  .profile {
-    width: 100%;
-  }
-
-  .content{
-    margin-left: 60px;
-    margin-right: 60px;
-  }
-
-  .two_sections {
-    flex-direction: column;
-  }
-
-  .article03_img>img {
-    width: 100%;
-  }
-
-  .video-container video {
-
-    width: 345px;
-    height: 193px;
-
-    object-fit: cover;
-    border-radius: 50px;
-
-  }
-
-
-
-
-  /*-----------------CONTACT-FORM-------------------*/
-
-  .form-row {
-    flex-direction: column;
-  }
-
-}
-
-@media screen and (min-width: 320px) and (max-width: 480px) {
-
-/* .img-background img {
-  transform: scale(1.5, 1.5);
-} */
-
-  /*-----------------CONTACT-FORM-------------------*/
-
-  .form-row {
-    flex-direction: column;
-  }
-
-
-  .video-container video {
-
-    width: 345px;
-    height: 193px;
-
-    object-fit: cover;
-    border-radius: 50px;
-
-  }
-
-  .article01-top h2 {
-    font-size: 20px;
-  }
-
-
-
-
-
-}
-
-
-/* Für mobile Geräte (z. B. Smartphones) */
-@media (max-width: 768px) {
-  
-  /* 1. Der übergeordnete Kasten, der das Scrollen erlaubt */
-  .carousel-slider {
-    display: flex;
-    flex-direction: row;        /* Legt die Karten nebeneinander */
-    overflow-x: auto;           /* Aktiviert das seitliche Wischen */
-    scroll-snap-type: x mandatory; /* Lässt die Karten sauber einrasten */
-    gap: 10px;                  /* Abstand zwischen den Bildern laut Figma */
-    padding: 0 72px;            /* Freiraum links und rechts für den Fokus-Effekt */
-    
-    /* Blendigt die Scrollbar aus */
-    scrollbar-width: none; 
-  }
-  .carousel-slider::-webkit-scrollbar {
-    display: none;
-  }
-
-  /* 2. Die einzelnen Karten (die Bilder-Container) */
-  .carousel-slider-element {
-    flex: 0 0 200px;            /* Verhindert, dass die Karten schrumpfen (fest auf 200px) */
-    height: 293px;              /* Höhe aus Figma */
-    scroll-snap-align: center;   /* Zentriert die Karte beim Wischen */
-    
-    /* 💡 Deaktiviert den 3D-Effekt vom Desktop komplett für Mobile */
-    transform: none !important; 
-  }
-
-  /* Falls du das 'transform' direkt auf dem Bild (.carousel-slider-element img) hast: */
-  .carousel-slider-element img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;          /* Verhindert, dass das Bild verzerrt wird */
-    border-radius: 20px;        /* Abgerundete Ecken aus deinem Design */
-    transform: none !important; /* Sicherheitshalber auch hier zurücksetzen */
-  }
-}

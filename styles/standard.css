@@ -69,10 +69,13 @@ header {
     height: 72px;
 }
 
-/*--------HEADER--------*/
-
-
-/*--------FOOTER--------*/
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 120px;
+  margin: 0 120px 80px 120px;
+}
 
 
 /* ######################### FOOTER ######################### */
@@ -177,7 +180,7 @@ h3 {
 
 
     display: flex;
-    justify-content: center;
+    /* justify-content: center; ################ Entfernt, da slider-a textblock nicht korrekt ausgerichtet wird (wie in Figma) ############# */
 }
 
 p,
