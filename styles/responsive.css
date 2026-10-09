@@ -24,13 +24,13 @@
 
 @media screen and (min-width: 1440px) {
 
-    header {
-        padding: 60px max(120px, calc(50% - 720px));
-    }
+  header {
+    padding: 60px max(120px, calc(50% - 720px));
+  }
 
-    footer {
-        padding: 60px max(120px, calc(50% - 720px));
-    }
+  footer {
+    padding: 60px max(120px, calc(50% - 720px));
+  }
 
 }
 
@@ -41,14 +41,23 @@
 @media screen and (min-width:961px) and (max-width: 1440px) {
   .carousel-slider {
     overflow: hidden;
-    
-    width: 100%; 
+
+    width: 100%;
   }
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* ######################### 768px to 960px ########################## */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+@media screen and (min-width:768px) {
+  .navbar-mobile {
+    display: none;
+  }
+
+
+}
+
 
 @media screen and (min-width:768px) and (max-width: 960px) {
   .article01-top {
@@ -71,29 +80,29 @@
 
   .carousel-slider {
     overflow: hidden;
-    
-    width: 100%; 
+
+    width: 100%;
   }
 
   footer {
-        align-items: end;
-    }
+    align-items: end;
+  }
 
-    .navbar-footer {
-        flex-direction: column;
-        gap: 8px;
-        align-items: start;
-    }
+  .navbar-footer {
+    flex-direction: column-reverse;
+    gap: 8px;
+    align-items: start;
+  }
 }
 
-@media screen and (min-width:768px)  {
-    .navbar-mobile {
-        display: none;
-    }
+@media screen and (min-width:768px) {
+  .navbar-mobile {
+    display: none;
+  }
 
 }
 
-@media screen and (max-width:960px)  {
+@media screen and (max-width:960px) {
 
   .contact-section {
     width: 100%;
@@ -103,7 +112,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
+
     gap: 40px;
     width: 100%;
   }
@@ -123,12 +132,12 @@
 
 @media (max-width: 768px) {
 
-  .content{
+  .content {
     margin-left: 5%;
     margin-right: 5%;
   }
 
-/* .carousel-inputs input[value"one"]:checked ~ .carousel-wrapper {
+  /* .carousel-inputs input[value"one"]:checked ~ .carousel-wrapper {
   background-color: red;
 } */
 
@@ -137,39 +146,64 @@
     display: flex;
     gap: 8px;
   }
-  
+
   /* 1. Der übergeordnete Kasten, der das Scrollen erlaubt */
   .carousel-slider {
     display: flex;
-    flex-direction: column-reverse;        /* Legt die Karten nebeneinander */
-    overflow-x: auto;           /* Aktiviert das seitliche Wischen */
-    scroll-snap-type: x mandatory; /* Lässt die Karten sauber einrasten */
-    gap: 10px;                  /* Abstand zwischen den Bildern laut Figma */
-    padding: 0 72px;            /* Freiraum links und rechts für den Fokus-Effekt */
-    
+    flex-direction: column-reverse;
+    /* Legt die Karten nebeneinander */
+    overflow-x: auto;
+    /* Aktiviert das seitliche Wischen */
+    scroll-snap-type: x mandatory;
+    /* Lässt die Karten sauber einrasten */
+    gap: 10px;
+    /* Abstand zwischen den Bildern laut Figma */
+    padding: 0 72px;
+    /* Freiraum links und rechts für den Fokus-Effekt */
+
     /* Blendigt die Scrollbar aus */
     scrollbar-width: none;
-    width: 100%; 
+    width: 100%;
   }
+
   .carousel-slider::-webkit-scrollbar {
     display: none;
   }
 
   /* 2. Die einzelnen Karten (die Bilder-Container) */
   .carousel-slider-element {
-    flex: 0 0 200px;            /* Verhindert, dass die Karten schrumpfen (fest auf 200px) */
-    height: 293px;              /* Höhe aus Figma */
-    scroll-snap-align: center;   /* Zentriert die Karte beim Wischen */
-    
+    flex: 0 0 200px;
+    /* Verhindert, dass die Karten schrumpfen (fest auf 200px) */
+    height: 293px;
+    /* Höhe aus Figma */
+    scroll-snap-align: center;
+    /* Zentriert die Karte beim Wischen */
+
     /* 💡 Deaktiviert den 3D-Effekt vom Desktop komplett für Mobile */
     transform: none !important;
-    
+
     /* display: none; */
   }
 
-@media screen and (max-width:767px)  {
+  @media screen and (max-width:767px) {
+
+    .hero-textblock h3 {
+      display: none;
+    }
+
+
+
+    .header p {
+      display: none;
+    }
+
+
+    .icon-header-first-p p {
+      display: none;
+    }
+
     .content {
-        margin-bottom: 160px;
+      margin-bottom: 160px;
     }
 
     .navbar-footer {
@@ -178,144 +212,253 @@
     }
 
     footer {
-    
-    position: relative;
-    bottom: 88px;
-    padding: 10% 5% 5% 5%;
+
+      position: relative;
+
+      padding: 10% 5% 5% 5%;
     }
-}
+  }
 
 
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-/* ######################### 480px to 767px ########################## */
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+  /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+  /* ######################### 480px to 767px ########################## */
+  /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
-@media screen and (min-width:480px) and (max-width: 767px) {
+  @media screen and (min-width:480px) and (max-width: 767px) {
+
+
+    .contact-form-p {
+      display: none;
+    }
+
+
+    .hero-textblock p {
+      display: none;
+    }
+
+    .test {
+      flex-direction: column;
+    }
+
+    .textblock>p {
+      font-size: 20px;
+    }
+
+    .textblock>h3 {
+      font-size: 28px;
+    }
+
+
 
     .article01-top {
-        flex-direction: column;
+      flex-direction: column;
 
     }
 
     .profile {
-        width: 100%;
+      width: 100%;
     }
 
     .two_sections {
-        flex-direction: column;
+      flex-direction: column;
     }
 
     .article03_img>img {
-        width: 100%;
+      width: 100%;
     }
 
     .video-container video {
 
-        width: 345px;
-        height: 193px;
+      width: 345px;
+      height: 193px;
 
-        object-fit: cover;
-        border-radius: 50px;
+      object-fit: cover;
+      border-radius: 50px;
 
     }
 
     .form-row {
-        flex-direction: column;
+      flex-direction: column;
     }
 
     .navbar-header {
-        display: none;
+      display: none;
     }
 
     header {
-        justify-content: center;
-        height: 70px;
-        padding: 0 24px;
+      justify-content: center;
+      height: 70px;
+      padding: 0 24px;
     }
 
     /*  zentriert das Logo horizontal  */
     .logo {
-        display: flex;
-        align-items: center;
+      display: flex;
+      align-items: center;
     }
 
 
     .logo img {
-        width: 56px;
-        height: 56px;
+      width: 56px;
+      height: 56px;
     }
 
 
     .navbar-footer {
-        flex-direction: column;
-        gap: 8px;
-        align-items: start;
+      flex-direction: column-reverse;
+      gap: 8px;
+      align-items: start;
     }
 
     footer {
-        align-items: end;
+      align-items: end;
     }
 
 
     footer img {
-        height: 24px;
-        width: 24px;
+      height: 24px;
+      width: 24px;
     }
 
     .youtube {
-        width: 37px;
-        height: 24px;
+      width: 37px;
+      height: 24px;
     }
-}
-
-
-
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-/* ######################### 320px to 480px ########################## */
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-
-@media screen and (min-width: 320px) and (max-width: 480px) {
-
-  .form-row {
-    flex-direction: column;
   }
 
 
-  .video-container video {
 
-    width: 345px;
-    height: 193px;
+  /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+  /* ######################### 320px to 480px ########################## */
+  /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
-    object-fit: cover;
-    border-radius: 50px;
+  @media screen and (min-width: 320px) and (max-width: 480px) {
 
+    .contact-form-p {
+      display: none;
+    }
+
+
+    .hero-textblock p {
+      display: none;
+    }
+
+    .content {
+      gap: 80px;
+    }
+
+    .navbar-header {
+      display: none;
+    }
+
+    .header p {
+      display: none;
+    }
+
+
+    .icon-header-first-p p {
+      display: none;
+    }
+
+
+    .icon-header>h2 {
+      font-size: 35px;
+    }
+
+
+
+
+    .textblock>h3 {
+      font-size: 28px;
+    }
+
+    .textblock>p {
+      font-size: 20px;
+    }
+
+
+    .checkbox-wrapper p {
+      text-align: left;
+    }
+
+    .accordeon-item summary {
+      font-size: 16px;
+    }
+
+    .form-row {
+      flex-direction: column;
+    }
+
+
+    .video-container video {
+
+      width: 345px;
+      height: 193px;
+
+      object-fit: cover;
+      border-radius: 50px;
+
+    }
+
+    .article01-top h2 {
+      font-size: 20px;
+    }
   }
-
-  .article01-top h2 {
-    font-size: 20px;
-  }
-}
 
   /* Falls du das 'transform' direkt auf dem Bild (.carousel-slider-element img) hast: */
   .carousel-slider-element img {
     width: 100%;
     height: 100%;
-    object-fit: cover;          /* Verhindert, dass das Bild verzerrt wird */
-    border-radius: 20px;        /* Abgerundete Ecken aus deinem Design */
-    transform: none !important; /* Sicherheitshalber auch hier zurücksetzen */
+    object-fit: cover;
+    /* Verhindert, dass das Bild verzerrt wird */
+    border-radius: 20px;
+    /* Abgerundete Ecken aus deinem Design */
+    transform: none !important;
+    /* Sicherheitshalber auch hier zurücksetzen */
   }
 
   footer img {
-        height: 24px;
-        width: 24px;
-    }
+    height: 24px;
+    width: 24px;
+  }
 
-    .youtube {
-        width: 37px;
-        height: 24px;
-    }
+  .youtube {
+    width: 37px;
+    height: 24px;
+  }
 
-    /* .mobile-navbar {
+  /* .mobile-navbar {
         
     } */
+
+
+  footer {
+
+
+    gap: 8px;
+
+
+    /* Schiebt alle Blöcke (Texte & Icons) ganz nach links */
+    text-align: left;
+
+  }
+
+  .navbar-footer {
+    gap: 8px;
+
+
+  }
+
+
+
+  .mobile-navbar {
+    /* display: block; */
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .social-icons {
+    flex-direction: column;
+    text-align: center;
+  }
 }
