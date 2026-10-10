@@ -78,6 +78,8 @@
   animation-direction: normal;
   animation-fill-mode: forwards;
 
+  background-color: red;
+
 }
 
 .hero-textblock {
