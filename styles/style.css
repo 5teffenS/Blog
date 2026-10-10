@@ -78,7 +78,7 @@
   animation-direction: normal;
   animation-fill-mode: forwards;
 
-  background-color: red;
+
 
 }
 
@@ -168,6 +168,7 @@
 
   100% { 
     opacity: 1;
+    
   }
 }
 
@@ -649,7 +650,10 @@
   display: flex;
 
   transition: all 1s ease-in-out;
+  
 }
+
+
 
 .slider-a-element {
   width: calc(100% / 4);
@@ -768,6 +772,9 @@
 
 .slide-link {
   display: block;
+  position: absolute;
+  inset: 0;
+  z-index: 10;
   width: 100%;
   height: auto;
 }

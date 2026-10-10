@@ -3,6 +3,11 @@
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 @media screen and (min-width: 1441px) {
+
+  .small_arrow {
+    display: none;
+  }
+
   .content {
     margin: 0 max(calc(50% - 720px), 120px);
     margin-bottom: 80px;
@@ -24,6 +29,11 @@
 
 @media screen and (min-width: 1440px) {
 
+  .small_arrow {
+    display: none;
+  }
+
+
   header {
     padding: 60px max(120px, calc(50% - 720px));
   }
@@ -39,6 +49,12 @@
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 @media screen and (min-width:961px) and (max-width: 1440px) {
+
+  .small_arrow {
+    display: none;
+  }
+
+
   .carousel-slider {
     overflow: hidden;
 
@@ -51,6 +67,12 @@
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 @media screen and (min-width:768px) {
+
+  .small_arrow {
+    display: none;
+  }
+
+
   .navbar-mobile {
     display: none;
   }
@@ -60,6 +82,11 @@
 
 
 @media screen and (min-width:768px) and (max-width: 960px) {
+
+  .small_arrow {
+    display: none;
+  }
+
   .article01-top {
     flex-direction: column;
 
@@ -96,6 +123,12 @@
 }
 
 @media screen and (min-width:768px) {
+
+  .small_arrow {
+    display: none;
+  }
+
+
   .navbar-mobile {
     display: none;
   }
@@ -103,6 +136,12 @@
 }
 
 @media screen and (max-width:960px) {
+
+  .small_arrow {
+    display: none;
+  }
+
+
 
   .contact-section {
     width: 100%;
@@ -131,6 +170,11 @@
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 @media (max-width: 768px) {
+
+  .small_arrow {
+    display: none;
+  }
+
 
   .content {
     margin-left: 5%;
@@ -187,6 +231,11 @@
 
   @media screen and (max-width:767px) {
 
+    .small_arrow {
+      display: none;
+    }
+
+
     .hero-textblock h3 {
       display: none;
     }
@@ -225,6 +274,10 @@
   /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
   @media screen and (min-width:480px) and (max-width: 767px) {
+
+    .small_arrow {
+      display: none;
+    }
 
 
     .contact-form-p {
@@ -334,6 +387,53 @@
 
   @media screen and (min-width: 320px) and (max-width: 480px) {
 
+    .big_arrow {
+      display: none;
+    }
+
+    .small_arrow {
+      display: block;
+    }
+
+
+    .content {
+
+      width: 100%;
+      padding: 0 16px;
+      background-color: blanchedalmond;
+
+    
+
+    }
+
+
+    .article01-top {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .article01-top h1 {
+      font-size: 40px;
+    }
+
+    .article01-top p {
+      font-size: 18px;
+    }
+
+    .page-information p {
+      font-size: 16px;
+    }
+
+    .profile {
+
+      width: 100%;
+    }
+
+    .profile p {
+      text-align: center;
+      font-size: 16px;
+    }
+
     .contact-form-p {
       display: none;
     }
@@ -403,6 +503,70 @@
     .article01-top h2 {
       font-size: 20px;
     }
+
+    p,
+    ul li,
+    ol li {
+      font-size: 16px;
+
+
+      width: 100%;
+      word-break: break-word;
+    }
+
+    ol, ul {
+        padding-left: 20px; /* Genug Platz für die Nummern, aber bricht nicht aus */
+        margin-left: 0;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+
+    .p_under_carousel, 
+    .p_under_carousel ol {
+        width: 100%;
+        box-sizing: border-box;
+        margin-left: 0;
+        padding-left: 24px; /* Gibt den Nummern (1., 2...) links genug Platz */
+        padding-right: 16px; /* Verhindert, dass Text rechts an den Rand klatscht */
+    }
+
+    /* Die Text- und Listenelemente anpassen */
+    .p_under_carousel p,
+    .p_under_carousel ul li,
+    .p_under_carousel ol li {
+        font-size: 16px;
+        word-break: break-word;
+        
+        /* WICHTIG: width: 100% ENTFERNEN! */
+        width: auto; 
+    }
+
+
+
+    .share-section>p {
+      font-size: 18px;
+    }
+
+    .share-section {
+      width: 100%;
+      gap: 48px;
+    }
+
+    .icon-btn {
+      margin-top: 60px;
+    }
+
+    .share-section>img {
+      width: 60px;
+      height: auto;
+    }
+
+    .protipp-section li {
+      font-size: 16px;
+    }
+
+
   }
 
   /* Falls du das 'transform' direkt auf dem Bild (.carousel-slider-element img) hast: */
@@ -449,14 +613,20 @@
 
   }
 
-
-
-  .mobile-navbar {
-    /* display: block; */
+  .navbar-footer a {
+    white-space: nowrap;
   }
+
+
+  .mobile-navbar {}
 }
 
 @media screen and (max-width: 380px) {
+
+  .big_arrow {
+    display: none;
+  }
+
   .social-icons {
     flex-direction: column;
     text-align: center;
