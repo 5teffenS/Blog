@@ -414,7 +414,7 @@
 }
 
 .profile h5 {
-  font-size: 18px;
+  font-size: 16px;
   font-family: 'Arima';
   font-weight: 400;
   text-align: center;
@@ -1218,12 +1218,37 @@ ul li {
   position: relative;
   display: flex;
   flex-direction: column;
-  
 
+  align-items: center;
 
   width: 463px;
-  gap: 48px;
+  margin: 0 auto;     
+  gap: 24px; 
+
 }
+
+.big-arrow2 {
+  position: absolute;   /* Löst den Pfeil aus dem Textfluss */
+  left: -40px;          /* Schiebt den Pfeil nach links außerhalb der Box (Wert anpassen!) */
+  bottom: 15px;         /* Positioniert den Pfeil auf Höhe des Buttons */
+}
+
+.big_arrow {
+  display: block;
+}
+
+.small-arrow2 {
+  position: absolute;   
+  left: -20px;          
+  bottom: 45px;         
+}
+
+.small_arrow {
+  display: block;
+  
+}
+
+
 
 .share-section>p {
   font-family: 'Arima';

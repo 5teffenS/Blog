@@ -228,420 +228,440 @@
 
     /* display: none; */
   }
+}
 
-  @media screen and (max-width:767px) {
+@media screen and (max-width:767px) {
 
-    .small_arrow {
-      display: none;
-    }
-
-
-    .hero-textblock h3 {
-      display: none;
-    }
-
-
-
-    .header p {
-      display: none;
-    }
-
-
-    .icon-header-first-p p {
-      display: none;
-    }
-
-    .content {
-      margin-bottom: 160px;
-    }
-
-    .navbar-footer {
-      display: flex;
-      flex-direction: column-reverse;
-    }
-
-    footer {
-
-      position: relative;
-
-      padding: 10% 5% 5% 5%;
-    }
+  .small_arrow {
+    display: none;
   }
 
 
-  /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-  /* ######################### 480px to 767px ########################## */
-  /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-
-  @media screen and (min-width:480px) and (max-width: 767px) {
-
-    .small_arrow {
-      display: none;
-    }
-
-
-    .contact-form-p {
-      display: none;
-    }
-
-
-    .hero-textblock p {
-      display: none;
-    }
-
-    .test {
-      flex-direction: column;
-    }
-
-    .textblock>p {
-      font-size: 20px;
-    }
-
-    .textblock>h3 {
-      font-size: 28px;
-    }
-
-
-
-    .article01-top {
-      flex-direction: column;
-
-    }
-
-    .profile {
-      width: 100%;
-    }
-
-    .two_sections {
-      flex-direction: column;
-    }
-
-    .article03_img>img {
-      width: 100%;
-    }
-
-    .video-container video {
-
-      width: 345px;
-      height: 193px;
-
-      object-fit: cover;
-      border-radius: 50px;
-
-    }
-
-    .form-row {
-      flex-direction: column;
-    }
-
-    .navbar-header {
-      display: none;
-    }
-
-    header {
-      justify-content: center;
-      height: 70px;
-      padding: 0 24px;
-    }
-
-    header {
-      padding: 20px 15px;
-      justify-content: center;
-    }
-
-    /*  zentriert das Logo horizontal  */
-    .logo {
-      display: flex;
-      align-items: center;
-    }
-
-
-    .logo img {
-      width: 56px;
-      height: 56px;
-    }
-
-
-    .navbar-footer {
-      flex-direction: column-reverse;
-      gap: 8px;
-      align-items: start;
-    }
-
-    footer {
-      align-items: end;
-    }
-
-
-    footer img {
-      height: 24px;
-      width: 24px;
-    }
-
-    .youtube {
-      width: 37px;
-      height: 24px;
-    }
-
-    ol li {
-      padding-left: 0px;
-      margin-left: 0px;
-    }
-
-
+  .hero-textblock h3 {
+    display: none;
   }
 
 
 
-  /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-  /* ######################### 320px to 480px ########################## */
-  /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+  .header p {
+    display: none;
+  }
 
-  @media screen and (min-width: 320px) and (max-width: 480px) {
 
-    .article01-top{
-      margin-top: 20px;
-    }
-    header {
+  .icon-header-first-p p {
+    display: none;
+  }
 
-      display: flex;
-      justify-content: center;
-      align-items: center;
+  .content {
+    margin-bottom: 160px;
+  }
 
-      height: 70px;
-      padding: 10px 10px;
-      /* Überschreibt jetzt sauber das 60px 120px Padding */
-      gap: 0;
+  .navbar-footer {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 
-      
-    }
+  footer {
 
+    position: relative;
 
-    .logo {
-      display: flex;
-      align-items: center;
-    }
+    padding: 10% 5% 5% 5%;
+  }
+}
 
 
-    .logo img {
-      width: 56px;
-      height: 56px;
-    }
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ######################### 480px to 767px ########################## */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
-    .protipp-section {
-      margin-top: 32px;
-    }
+@media screen and (min-width:480px) and (max-width: 767px) {
 
+  .small_arrow {
+    display: none;
+  }
 
 
-    .big_arrow {
-      display: none;
-    }
+  .contact-form-p {
+    display: none;
+  }
 
-    .small_arrow {
-      display: block;
-    }
 
+  .hero-textblock p {
+    display: none;
+  }
 
-    .content {
+  .test {
+    flex-direction: column;
+  }
 
-      width: 100%;
+  .textblock>p {
+    font-size: 20px;
+  }
 
-      background-color: blanchedalmond;
+  .textblock>h3 {
+    font-size: 28px;
+  }
 
 
 
-    }
+  .article01-top {
+    flex-direction: column;
 
+  }
 
-    .article01-top {
-      display: flex;
-      flex-direction: column;
-    }
+  .profile {
+    width: 100%;
+  }
 
-    .article01-top h1 {
-      font-size: 40px;
-    }
+  .two_sections {
+    flex-direction: column;
+  }
 
-    .article01-top p {
-      font-size: 18px;
-    }
+  .article03_img>img {
+    width: 100%;
+  }
 
-    .page-information p {
-      font-size: 16px;
-    }
+  .video-container video {
 
-    .profile {
+    width: 345px;
+    height: 193px;
 
-      width: 100%;
-    }
+    object-fit: cover;
+    border-radius: 50px;
 
-    .profile p {
-      text-align: center;
-      font-size: 16px;
-    }
+  }
 
-    .contact-form-p {
-      display: none;
-    }
+  .form-row {
+    flex-direction: column;
+  }
 
+  .navbar-header {
+    display: none;
+  }
 
-    .hero-textblock p {
-      display: none;
-    }
+  header {
+    justify-content: center;
+    height: 70px;
+    padding: 20px 15px;
+  }
 
-    .content {
-      gap: 80px;
-    }
 
-    .navbar-header {
-      display: none;
-    }
+  /*  zentriert das Logo horizontal  */
+  .logo {
+    display: flex;
+    align-items: center;
+  }
 
-    .header p {
-      display: none;
-    }
 
+  .logo img {
+    width: 56px;
+    height: 56px;
+  }
 
-    .icon-header-first-p p {
-      display: none;
-    }
 
+  .navbar-footer {
+    flex-direction: column-reverse;
+    gap: 8px;
+    align-items: start;
+  }
 
-    .icon-header>h2 {
-      font-size: 35px;
-    }
+  footer {
+    align-items: end;
+  }
 
 
+  footer img {
+    height: 24px;
+    width: 24px;
+  }
 
+  .youtube {
+    width: 37px;
+    height: 24px;
+  }
 
-    .textblock>h3 {
-      font-size: 28px;
-    }
+  ol li {
+    padding-left: 0px;
+    margin-left: 0px;
+  }
 
-    .textblock>p {
-      font-size: 20px;
-    }
 
+}
 
-    .checkbox-wrapper p {
-      text-align: left;
-    }
 
-    .accordeon-item summary {
-      font-size: 16px;
-    }
 
-    .form-row {
-      flex-direction: column;
-    }
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ######################### 320px to 480px ########################## */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
+@media screen and (min-width: 320px) and (max-width: 480px) {
 
-    .video-container video {
+  .page-information {
+    gap: 16px;
+  }
 
-      width: 345px;
-      height: 193px;
+  .article01-top {
+    margin-top: 20px;
+  }
 
-      object-fit: cover;
-      border-radius: 50px;
+  header {
 
-    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    .article01-top h2 {
-      font-size: 20px;
-    }
-
-    p,
-    ul li,
-    ol li {
-      font-size: 16px;
-
-
-      width: 100%;
-      word-break: break-word;
-    }
-
-    ol,
-    ul {
-      padding-left: 20px;
-      /* Genug Platz für die Nummern, aber bricht nicht aus */
-      margin-left: 0;
-      width: 100%;
-      box-sizing: border-box;
-    }
-
-    h3 {
-      font-size: 20px;
-      text-align: center;
-    }
-
-
-
-    .p_under_carousel,
-    .p_under_carousel ol {
-      width: 100%;
-
-      margin-left: 0;
-
-      /* Gibt den Nummern (1., 2...) links genug Platz */
-      padding-right: 16px;
-      /* Verhindert, dass Text rechts an den Rand klatscht */
-    }
-
-    /* Die Text- und Listenelemente anpassen */
-    .p_under_carousel p,
-    .p_under_carousel ul li,
-    .p_under_carousel ol li {
-      font-size: 16px;
-      word-break: break-word;
-      margin-left: 0px;
-      padding-left: 0px;
-      /* WICHTIG: width: 100% ENTFERNEN! */
-      width: auto;
-    }
-
-    .small-arrow2>img {
-      width: 70px;
-      height: 50px;
-    }
-
-    .share-section>p {
-      font-size: 18px;
-    }
-
-    .share-section {
-      width: 100%;
-      gap: 20px;
-    }
-
-    .icon-btn {
-      /*margin-top: 60px;*/
-    }
-
-    .share-section>img {
-      width: 60px;
-      height: auto;
-    }
-
-    .protipp-section li {
-      font-size: 16px;
-
-
-    }
-
-    .badge {
-      left: -10px;
-    }
-
-    .content {
-      margin: 0 20px 40px 20px;
-      gap: 32px;
-      width: calc(100% - 40px);
-
-    }
+    height: 70px;
+    padding: 10px 10px;
+    /* Überschreibt jetzt sauber das 60px 120px Padding */
+    gap: 0;
 
 
   }
+
+
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+
+
+  .logo img {
+    width: 56px;
+    height: 56px;
+  }
+
+  .protipp-section {
+    margin-top: 32px;
+  }
+
+
+
+  .big_arrow {
+    display: none;
+  }
+
+  .small_arrow {
+    display: block;
+  }
+
+
+  .content {
+
+    width: 100%;
+
+    background-color: blanchedalmond;
+  }
+
+
+  .article01-top {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .article01-top h1 {
+    font-size: 40px;
+  }
+
+  .article01-top p {
+    font-size: 18px;
+  }
+
+  .page-information p {
+    font-size: 16px;
+  }
+
+  .profile {
+
+    width: 100%;
+  }
+
+  .profile p {
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .contact-form-p {
+    display: none;
+  }
+
+
+  .hero-textblock p {
+    display: none;
+  }
+
+  .content {
+    gap: 80px;
+  }
+
+  .navbar-header {
+    display: none;
+  }
+
+  .header p {
+    display: none;
+  }
+
+
+  .icon-header-first-p p {
+    display: none;
+  }
+
+
+  .icon-header>h2 {
+    font-size: 35px;
+  }
+
+
+  .textblock>h3 {
+    font-size: 28px;
+  }
+
+  .textblock>p {
+    font-size: 20px;
+  }
+
+
+  .checkbox-wrapper p {
+    text-align: left;
+  }
+
+  .accordeon-item summary {
+    font-size: 16px;
+  }
+
+  .form-row {
+    flex-direction: column;
+  }
+
+
+  .video-container video {
+
+    width: 300px;
+    height: auto;
+
+    object-fit: cover;
+    border-radius: 50px;
+
+  }
+
+  .article01-top h2 {
+    font-size: 20px;
+  }
+
+  p,
+  ul li,
+  ol li {
+    font-size: 16px;
+
+
+
+    word-break: break-word;
+    max-width: 100%;
+
+
+  }
+
+  ol,
+  ul {
+    /*padding-left: 20px;*/
+    /* Genug Platz für die Nummern, aber bricht nicht aus */
+    margin-left: 0;
+    width: 100%;
+
+    word-break: break-word;
+    padding-left: 20px;
+
+
+  }
+
+  ul li {
+    width: 100%;
+    font-size: 16px;
+    word-break: break-word;
+    max-width: 100%;
+
+    /* Das entfernt jetzt das schiebende 40px Margin links */
+    margin-left: 0;
+    margin-right: 0;
+
+    box-sizing: border-box;
+    
+
+
+  }
+
+  h3 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+
+
+  .p_under_carousel,
+  .p_under_carousel ol {
+    width: 100%;
+
+    margin-left: 0;
+
+    /* Gibt den Nummern (1., 2...) links genug Platz */
+    padding-right: 16px;
+    /* Verhindert, dass Text rechts an den Rand klatscht */
+  }
+
+  /* Die Text- und Listenelemente anpassen */
+  .p_under_carousel p,
+  .p_under_carousel ul li,
+  .p_under_carousel ol li {
+    font-size: 16px;
+    word-break: break-word;
+    margin-left: 0px;
+    padding-left: 0px;
+    /* WICHTIG: width: 100% ENTFERNEN! */
+    width: auto;
+  }
+
+  .small-arrow2>img {
+    width: 70px;
+    height: 50px;
+  }
+
+  .share-section>p {
+    font-size: 18px;
+  }
+
+  .share-section {
+    width: 100%;
+    gap: 48px;
+  }
+
+  .icon-btn {
+    /*margin-top: 60px;*/
+  }
+
+  .share-section>img {
+    width: 60px;
+    height: auto;
+  }
+
+  .protipp-section li {
+    font-size: 16px;
+
+
+  }
+
+  .badge {
+    left: -10px;
+  }
+
+  .content {
+    margin: 0 20px 40px 20px;
+    gap: 32px;
+    width: calc(100% - 40px);
+
+  }
+
+
+
 
   /* Falls du das 'transform' direkt auf dem Bild (.carousel-slider-element img) hast: */
   .carousel-slider-element img {
