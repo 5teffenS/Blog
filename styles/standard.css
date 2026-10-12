@@ -204,6 +204,7 @@ ol li {
 
     footer {
         padding: 60px max(120px, calc(50% - 720px));
+        margin-bottom: 0px;
 
     }
 
@@ -230,7 +231,7 @@ ol li {
     }
 
     footer {
-        margin-bottom: 90px;
+        /*margin-bottom: 90px;*/
     }
 
 
@@ -271,7 +272,7 @@ ol li {
         align-items: end;
         padding: 60px;
 
-        margin-bottom: 90px;
+        margin-bottom: 85px;
 
     }
 
@@ -328,7 +329,7 @@ ol li {
     }
 
     footer {
-        margin-bottom: 90px;
+        margin-bottom: 85px;
 
         align-items: end;
         padding: 60px;

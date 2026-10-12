@@ -344,6 +344,11 @@
       padding: 0 24px;
     }
 
+    header {
+      padding: 20px 15px;
+      justify-content: center;
+    }
+
     /*  zentriert das Logo horizontal  */
     .logo {
       display: flex;
@@ -377,6 +382,13 @@
       width: 37px;
       height: 24px;
     }
+
+    ol li {
+      padding-left: 0px;
+      margin-left: 0px;
+    }
+
+
   }
 
 
@@ -386,6 +398,41 @@
   /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
   @media screen and (min-width: 320px) and (max-width: 480px) {
+
+    .article01-top{
+      margin-top: 20px;
+    }
+    header {
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      height: 70px;
+      padding: 10px 10px;
+      /* Überschreibt jetzt sauber das 60px 120px Padding */
+      gap: 0;
+
+      
+    }
+
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+
+    .logo img {
+      width: 56px;
+      height: 56px;
+    }
+
+    .protipp-section {
+      margin-top: 32px;
+    }
+
+
 
     .big_arrow {
       display: none;
@@ -399,10 +446,10 @@
     .content {
 
       width: 100%;
-      padding: 0 16px;
+
       background-color: blanchedalmond;
 
-    
+
 
     }
 
@@ -514,35 +561,49 @@
       word-break: break-word;
     }
 
-    ol, ul {
-        padding-left: 20px; /* Genug Platz für die Nummern, aber bricht nicht aus */
-        margin-left: 0;
-        width: 100%;
-        box-sizing: border-box;
+    ol,
+    ul {
+      padding-left: 20px;
+      /* Genug Platz für die Nummern, aber bricht nicht aus */
+      margin-left: 0;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    h3 {
+      font-size: 20px;
+      text-align: center;
     }
 
 
-    .p_under_carousel, 
+
+    .p_under_carousel,
     .p_under_carousel ol {
-        width: 100%;
-        box-sizing: border-box;
-        margin-left: 0;
-        padding-left: 24px; /* Gibt den Nummern (1., 2...) links genug Platz */
-        padding-right: 16px; /* Verhindert, dass Text rechts an den Rand klatscht */
+      width: 100%;
+
+      margin-left: 0;
+
+      /* Gibt den Nummern (1., 2...) links genug Platz */
+      padding-right: 16px;
+      /* Verhindert, dass Text rechts an den Rand klatscht */
     }
 
     /* Die Text- und Listenelemente anpassen */
     .p_under_carousel p,
     .p_under_carousel ul li,
     .p_under_carousel ol li {
-        font-size: 16px;
-        word-break: break-word;
-        
-        /* WICHTIG: width: 100% ENTFERNEN! */
-        width: auto; 
+      font-size: 16px;
+      word-break: break-word;
+      margin-left: 0px;
+      padding-left: 0px;
+      /* WICHTIG: width: 100% ENTFERNEN! */
+      width: auto;
     }
 
-
+    .small-arrow2>img {
+      width: 70px;
+      height: 50px;
+    }
 
     .share-section>p {
       font-size: 18px;
@@ -550,11 +611,11 @@
 
     .share-section {
       width: 100%;
-      gap: 48px;
+      gap: 20px;
     }
 
     .icon-btn {
-      margin-top: 60px;
+      /*margin-top: 60px;*/
     }
 
     .share-section>img {
@@ -564,6 +625,19 @@
 
     .protipp-section li {
       font-size: 16px;
+
+
+    }
+
+    .badge {
+      left: -10px;
+    }
+
+    .content {
+      margin: 0 20px 40px 20px;
+      gap: 32px;
+      width: calc(100% - 40px);
+
     }
 
 
@@ -617,8 +691,13 @@
     white-space: nowrap;
   }
 
+  ol li {
+    padding-left: 0px;
+    margin-left: 0px;
+  }
 
-  .mobile-navbar {}
+
+
 }
 
 @media screen and (max-width: 380px) {

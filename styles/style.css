@@ -1,4 +1,3 @@
-
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* ##################### landing banner animation #################### */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -36,40 +35,40 @@
 .img-cover-start {
   position: absolute;
   top: 0;
-  
+
   right: 0;
   height: 100%;
   width: auto;
   z-index: 3;
 
-  animation : banner-initial 3s ease-in-out forwards;
+  animation: banner-initial 3s ease-in-out forwards;
 }
 
 .img-cover-mid {
   position: absolute;
   top: 0;
-  
+
   right: 0;
   height: 100%;
   width: auto;
   z-index: 2;
 
-  animation : banner-mid 1s ease-in-out forwards; 
+  animation: banner-mid 1s ease-in-out forwards;
   animation-delay: 2s;
 }
 
 .img-cover-end {
   position: absolute;
   top: 0;
-  
-  
+
+
   left: 0;
-  height: auto; 
-  
+  height: auto;
+
   z-index: 4;
- 
+
   opacity: 0;
-  
+
   animation-name: banner-end;
   animation-duration: 0.8s;
   animation-timing-function: ease-in-out;
@@ -89,7 +88,7 @@
   gap: 32px;
   width: 25%;
   max-width: 350px;
-  
+
   top: 25%;
   left: 40%;
 
@@ -97,7 +96,7 @@
   z-index: 5;
   opacity: 0;
 
-  animation: 
+  animation:
     textblock-fade-in 1.5s ease-in-out 0.5s forwards,
     textblock-shift 1s linear 2s forwards;
 }
@@ -109,12 +108,12 @@
   color: var(--secondary-brown);
 
   animation-name: textblock-h3;
-    animation-duration: 1s;
-    animation-timing-function: fade-in;
-    animation-delay: 0.5s;
-    animation-iteration-count: 1;
-    animation-direction: normal;
-    animation-fill-mode: forwards;
+  animation-duration: 1s;
+  animation-timing-function: fade-in;
+  animation-delay: 0.5s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
 }
 
 .hero-textblock p {
@@ -136,13 +135,13 @@
 }
 
 @keyframes banner-initial {
-  0% { 
+  0% {
     z-index: 3;
   }
 
-  100% { 
+  100% {
     z-index: 0;
-    
+
   }
 }
 
@@ -157,55 +156,55 @@
 
   100% {
     transform: translateX(calc(10dvw - calc(50% - 720px)));
-    
+
   }
 }
 
 @keyframes banner-end {
-  0% { 
+  0% {
     opacity: 0;
   }
 
-  100% { 
+  100% {
     opacity: 1;
-    
+
   }
 }
 
 @keyframes textblock-fade-in {
-  0% { 
+  0% {
     opacity: 0;
   }
 
-  100% { 
+  100% {
     opacity: 1;
     /* transform: translateX(-35dvw); */
   }
 }
 
 @keyframes textblock-h3 {
-  0% { 
+  0% {
     transform: translateY(75%);
     opacity: 1;
   }
 
-  100% { 
+  100% {
     transform: translateY(-25%);
   }
 }
 
 @keyframes textblock-p {
-  0% { 
+  0% {
     opacity: 0;
   }
 
-  100% { 
+  100% {
     opacity: 1;
   }
 }
 
 @keyframes textblock-shift {
-  to { 
+  to {
     opacity: 1;
     transform: translateX(-145%);
   }
@@ -308,6 +307,8 @@
   width: 100%;
   gap: 24px;
 
+  margin-top: 80px;
+
 }
 
 .article01-top>div:first-child {
@@ -360,8 +361,7 @@
 .page-information {
 
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  
   gap: 20px;
 
   margin-top: 32px;
@@ -463,7 +463,7 @@
 .carousel-slider {
   background-color: black;
   height: 70dvh;
-  
+
   width: 1300px;
   /* min-width: calc(50% - 720px); */
 
@@ -650,7 +650,7 @@
   display: flex;
 
   transition: all 1s ease-in-out;
-  
+
 }
 
 
@@ -744,7 +744,7 @@
 
   border-left: 1px solid rgba(255, 255, 255, 0.2);
   border-right: 1px solid rgba(255, 255, 255, 0.2);
-  
+
 }
 
 
@@ -756,7 +756,7 @@
   line-height: 100%;
 
   color: #ffffff;
-  
+
 }
 
 
@@ -771,12 +771,14 @@
 }
 
 .slide-link {
-  display: block;
+  display: inline-block;
+
+  /* display: block;
   position: absolute;
   inset: 0;
   z-index: 10;
   width: 100%;
-  height: auto;
+  height: auto;*/
 }
 
 /* ######################### faq ######################### */
@@ -875,7 +877,7 @@
 .contact-section {
   display: flex;
   flex-direction: column;
-  
+
   padding-top: 88px;
 
   width: 1100px;
@@ -1088,12 +1090,12 @@
 .send-btn {
   font-family: 'Arima';
   font-size: 24px;
- 
+
   font-weight: 700;
   letter-spacing: 5%;
 
   color: var(--inactive-color);
-  
+
 
   width: 128px;
   height: 48px;
@@ -1114,11 +1116,11 @@
   padding: 10px;
 }
 
-.button{
+.button {
   display: flex;
 }
 
-.button img{
+.button img {
   height: 32px;
   width: 32px;
 
@@ -1128,7 +1130,7 @@
 
 
 .send-btn:hover {
-  background-color: var(--primary-green);                       
+  background-color: var(--primary-green);
   color: var(--primary-yellow);
   font-weight: 700;
 
@@ -1216,7 +1218,7 @@ ul li {
   position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  
 
 
   width: 463px;
@@ -1235,9 +1237,9 @@ ul li {
 }
 
 .share-section>img {
-  position: absolute;
+  
   bottom: 0;
-  left: 0;
+  left: -20px;
 }
 
 
@@ -1263,6 +1265,7 @@ ul li {
   font-weight: 700;
   line-height: 120%;
   letter-spacing: 5%;
+  margin: 0 auto;
 
   color: var(--primary-yellow);
 
@@ -1324,8 +1327,7 @@ ul li {
   position: relative;
   display: flex;
   background-color: rgba(78, 164, 135, 0.2);
-  margin-left: 35.5px;
-  margin-right: 35.5px;
+ 
 
   padding: 26px 16px 24px 16px;
   border-radius: 30px;
@@ -1347,8 +1349,11 @@ ul li {
   color: rgba(61, 61, 61, 1);
 
   width: 100%;
-  display: block;
+  
   margin: 0;
+
+  padding-left: 0px;
+  margin-left: 0px;
 }
 
 .badge {
@@ -1389,7 +1394,8 @@ ul li {
 /* ####################### article 03 style ########################## */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
-#article03 article { /* ############ 'article' element for longer text content ########### */
+#article03 article {
+  /* ############ 'article' element for longer text content ########### */
   padding: 48px 0;
   color: #3D3D3D;
 }
@@ -1472,5 +1478,3 @@ ul li {
 .text-box {
   height: 14em;
 }
-
-
