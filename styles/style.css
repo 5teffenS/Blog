@@ -1196,16 +1196,17 @@
 .video-container {
   display: flex;
   justify-content: center;
-  margin-top: 88px;
-  margin-bottom: 88px;
+
 
 }
 
 
 .video-container video {
   border-radius: 53px;
-  width: 931px;
-  height: 520px;
+  width: calc(100% - 30px); 
+
+  /*width: 931px;
+  height: 520px;*/
 
 }
 
@@ -1391,7 +1392,7 @@ ul li {
 
 .badge {
   position: absolute;
-  left: -47px;
+  left: -5px;
   top: -47px;
   display: flex;
   flex-direction: row;

@@ -236,6 +236,11 @@
     display: none;
   }
 
+  ul li {
+    word-break: break-word;
+    max-width: 100%;
+
+  }
 
   .hero-textblock h3 {
     display: none;
@@ -267,6 +272,8 @@
 
     padding: 10% 5% 5% 5%;
   }
+
+
 }
 
 
@@ -275,6 +282,25 @@
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 @media screen and (min-width:480px) and (max-width: 767px) {
+
+  .content {
+    gap: 80px;
+    background-color: rgb(215, 255, 205);
+  }
+
+  ul {
+    padding-left: 25px;
+  }
+  ul li {
+    margin-left: 0;
+    margin-right: 0;
+    word-break: break-word;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+
+
 
   .small_arrow {
     display: none;
@@ -302,8 +328,6 @@
     font-size: 28px;
   }
 
-
-
   .article01-top {
     flex-direction: column;
 
@@ -323,8 +347,8 @@
 
   .video-container video {
 
-    width: 345px;
-    height: 193px;
+    /*width: 345px;
+    height: 193px;*/
 
     object-fit: cover;
     border-radius: 50px;
@@ -446,9 +470,7 @@
 
 
   .content {
-
     width: 100%;
-
     background-color: blanchedalmond;
   }
 
@@ -536,9 +558,6 @@
 
   .video-container video {
 
-    width: 300px;
-    height: auto;
-
     object-fit: cover;
     border-radius: 50px;
 
@@ -552,13 +571,8 @@
   ul li,
   ol li {
     font-size: 16px;
-
-
-
     word-break: break-word;
     max-width: 100%;
-
-
   }
 
   ol,
@@ -585,7 +599,7 @@
     margin-right: 0;
 
     box-sizing: border-box;
-    
+
 
 
   }
@@ -655,7 +669,7 @@
 
   .content {
     margin: 0 20px 40px 20px;
-    gap: 32px;
+    gap: 80px;
     width: calc(100% - 40px);
 
   }
@@ -692,9 +706,7 @@
 
   footer {
 
-
     gap: 8px;
-
 
     /* Schiebt alle Blöcke (Texte & Icons) ganz nach links */
     text-align: left;
@@ -703,8 +715,6 @@
 
   .navbar-footer {
     gap: 8px;
-
-
   }
 
   .navbar-footer a {
