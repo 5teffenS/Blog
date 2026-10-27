@@ -150,6 +150,8 @@
     display: none;
   }
 
+
+
   .small_arrow {
     display: none;
   }
@@ -203,6 +205,11 @@
   .big_animation1,
   .big_animation2 {
     display: none;
+  }
+
+  .moving-element{
+    top: 170px;
+    left: 100px;
   }
 
   .small_arrow {
