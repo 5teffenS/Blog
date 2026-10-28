@@ -61,7 +61,7 @@
 @media screen and (min-width:961px) and (max-width: 1440px) {
 
   .contact-form {
-    margin: 0 max(calc(50% - 720px), 120px );
+    margin: 0 max(calc(50% - 720px), 120px);
   }
 
   .small_animation1,
@@ -86,12 +86,12 @@
 
 @media screen and (max-width: 1100px) {
 
-.contact-section {
-  width: 100%;
+  .contact-section {
+    width: 100%;
   }
 
   .contact-form {
-    margin: 0 ;
+    margin: 0;
   }
 
   .form-row {
@@ -376,6 +376,7 @@
 
 @media screen and (min-width:480px) and (max-width: 767px) {
 
+
   .hero-textblock {
     gap: 0px;
     width: 50%;
@@ -383,7 +384,8 @@
     top: 25%;
     left: 80%;
 
-    animation: textblock-fade-in 1.5s ease-in-out 0.5s forwards;
+    animation: textblock-fade-in 3s ease-in-out 0.5s forwards;
+
 
     /* 2. Setzt das transform: translateX(-145%) vom Desktop wieder auf den Standard zurück */
     transform: none;
@@ -393,7 +395,25 @@
     top: 25%;
 
     max-width: none;
+
+
   }
+
+  @keyframes textblock-fade-in {
+    0% {
+      opacity: 0;
+    }
+
+    50% {
+      opacity: 1;
+    }
+
+    100%{
+      opacity: 0;
+    }
+  }
+
+
 
 
 
