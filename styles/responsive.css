@@ -98,9 +98,6 @@
     display: none;
   }
 
-  .hero-textblock p {
-    display: none;
-  }
 
   .small_arrow {
     display: none;
@@ -202,12 +199,13 @@
 
 @media (max-width: 768px) {
 
+
   .big_animation1,
   .big_animation2 {
     display: none;
   }
 
-  .moving-element{
+  .moving-element {
     top: 170px;
     left: 100px;
   }
@@ -282,10 +280,36 @@
 
   }
 
-  .hero-textblock h3 {
-    display: none;
+  .hero-textblock {
+    gap: 0px;
+    width: 50%;
+    max-width: 500px;
+    top: 25%;
+    left: 80%;
   }
 
+
+  .hero-textblock h3 {
+    font-size: 50px;
+
+    opacity: 0;
+
+    animation-name: textblock-p;
+    animation-duration: 2s;
+    animation-timing-function: fade-in;
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+
+    transform: none;
+  }
+
+  .hero-textblock p {
+    font-size: 20px;
+
+    max-width: 500px;
+  }
 
 
   .header p {
@@ -323,10 +347,52 @@
 
 @media screen and (min-width:480px) and (max-width: 767px) {
 
+  .hero-textblock {
+    gap: 0px;
+    width: 50%;
+    max-width: 500px;
+    top: 25%;
+    left: 80%;
+
+    animation: textblock-fade-in 1.5s ease-in-out 0.5s forwards;
+
+    /* 2. Setzt das transform: translateX(-145%) vom Desktop wieder auf den Standard zurück */
+    transform: none;
+
+    /* 3. Neue feste Koordinaten für die linke Seite auf dem Handy */
+    left: 10%;
+    top: 25%;
+
+    max-width: none;
+  }
+
+
+
+  .hero-textblock h3 {
+    font-size: 50px;
+
+    animation-name: textblock-p;
+    animation-duration: 2s;
+    animation-timing-function: fade-in;
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+
+    transform: none;
+
+
+  }
+
+  .hero-textblock p {
+    font-size: 20px;
+  }
+
   .big_animation1,
   .big_animation2 {
     display: none;
   }
+
 
   .content {
     gap: 80px;
@@ -358,9 +424,7 @@
   }
 
 
-  .hero-textblock p {
-    display: none;
-  }
+
 
   .test {
     flex-direction: column;
@@ -558,9 +622,6 @@
   }
 
 
-  .hero-textblock p {
-    display: none;
-  }
 
   .content {
     gap: 80px;
