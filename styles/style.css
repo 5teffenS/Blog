@@ -1430,7 +1430,6 @@ ul li {
 
 #article03 article {
   /* ############ 'article' element for longer text content ########### */
-  padding: 48px 0;
   color: #3D3D3D;
 }
 
@@ -1510,5 +1509,5 @@ ul li {
 }
 
 .text-box {
-  height: 14em;
+  min-height: 14em;
 }
