@@ -207,6 +207,12 @@
     gap: 5%;
     width: 100%;
   }
+
+  .carousel-inputs {
+    padding-top: 24px;
+    display: flex;
+    gap: 8px;
+  }
 }
 
 @media screen and (min-width:768px) {
@@ -221,7 +227,6 @@
   .navbar-mobile {
     display: none;
   }
-
 
 }
 
@@ -255,11 +260,11 @@
   background-color: red;
 } */
 
-  .carousel-inputs {
+  /* .carousel-inputs {
     padding-top: 24px;
     display: flex;
     gap: 8px;
-  }
+  } */
 
   /* 1. Der übergeordnete Kasten, der das Scrollen erlaubt */
   .carousel-slider {
