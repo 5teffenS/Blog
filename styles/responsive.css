@@ -653,6 +653,7 @@
   .content {
     width: 100%;
     background-color: blanchedalmond;
+    margin-bottom: 160px;
   }
 
 
@@ -835,6 +836,10 @@
     height: auto;
   }
 
+  .protipp-section{
+    margin-top: 80px;
+  }
+
   .protipp-section li {
     font-size: 16px;
 
@@ -847,8 +852,9 @@
 
   .content {
     margin: 0 20px 40px 20px;
-    gap: 80px;
+    gap: 32px;
     width: calc(100% - 40px);
+    margin-bottom: 120px;
 
   }
 

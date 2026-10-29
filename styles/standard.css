@@ -14,6 +14,8 @@ weil die ist ja auch überall gleich*/
     /*outline: 1px solid red !important;*/
 }
 
+
+
 /*--------HEADER--------*/
 
 /* ######################### HEADER ######################### */
@@ -73,7 +75,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 120px;
+  gap: 88px;
   margin: 0 120px 80px 120px;
 }
 
@@ -287,7 +289,9 @@ ol li {
         height: 24px;
     }
 
-
+    .article01-top{
+        margin-top: 40px;
+    }
 
 
 }
@@ -333,6 +337,10 @@ ol li {
 
         align-items: end;
         padding: 60px;
+    }
+
+    .article01-top{
+        margin-top: 24px;
     }
 
     
