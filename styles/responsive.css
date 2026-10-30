@@ -328,11 +328,29 @@
       opacity: 1;
     }
 
-    100%{
+    100% {
       opacity: 0;
     }
   }
 
+  .small_animation1 {
+    animation: small_animation1 3s ease-in-out 1s forwards;
+    z-index: 10;
+  }
+
+  @keyframes small_animation1 {
+    0% {
+      opacity: 0;
+    }
+
+    50% {
+      opacity: 1;
+    }
+
+    100% {
+      opacity: 0;
+    }
+  }
 
 
   .hero-textblock h3 {
@@ -425,9 +443,37 @@
       opacity: 1;
     }
 
-    100%{
+    100% {
       opacity: 0;
     }
+  }
+
+   /* 1. Container sichtbar im Viewport halten */
+  .img-cover-mid {
+    display: block;
+    visibility: visible !important;
+    left: 0;
+    right: auto;
+    width: 100%;
+    height: auto;
+    animation: none; /* Deaktiviert die Desktop-Verschiebung, falls nötig */
+  }
+
+  /* 2. Animation anpassen, damit sie am Ende sichtbar bleibt (opacity: 1) */
+  .small_animation1 {
+    position: absolute;
+    top: 30%; /* Beispielhafte Positionierung auf dem Handy */
+    left: 10px;
+    width: 150px; /* Begrenze die Größe für Smartphones */
+    z-index: 10;
+    animation: small_animation1_mobile 3s ease-in-out 1s forwards;
+  }
+
+  /* Neues Keyframe fürs Handy: Bleibt bei 100% sichtbar! */
+  @keyframes small_animation1_mobile { 
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; } /* Geändert von 0 auf 1 */
   }
 
 
