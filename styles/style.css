@@ -1463,6 +1463,13 @@ ul li {
 
 }
 
+.article03_rain h3 {
+  /* text-align: center; */
+
+  display: flex;
+  justify-content: center;
+}
+
 
 .article03_img {
   display: flex;
