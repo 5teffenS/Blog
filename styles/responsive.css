@@ -249,6 +249,108 @@
     margin-right: 5%;
   }
 
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+/* .carousel-inputs {
+  width: 100%;
+  height: 533px;
+  border-top-right-radius: 100px;
+
+  display: flex;
+  justify-content: center;
+  position: relative;
+
+  align-items: flex-end;
+  overflow: hidden;
+} */
+/* 
+.carousel-wrapper {
+  z-index: 1;
+  width: 400%;
+  height: 100%;
+
+  position: absolute;
+
+  display: flex;
+
+  transition: all 1s ease-in-out;
+} */
+
+/* .carousel-slider-element {
+  width: calc(100% / 4);
+  height: 100%;
+  position: relative;
+
+  background-size: cover;
+  background-position: center;
+} */
+
+.element-carousel-one {
+  /* background-image: url(../assets/img/woman-walking-on-beach.jpg); */
+  background-color: red;
+}
+
+.element-carousel-two {
+  /* background-image: url(../assets/img/scandinavia.jpg); */
+  background-color: blue;
+}
+
+.element-carousel-three {
+  /* background-image: url(../assets/img/pattaya.jpg); */
+  background-color: green;
+}
+
+.element-carousel-four {
+  /* background-image: url(../assets/img/mountain_fuji.jpg); */
+  background-color: yellow;
+}
+
+.element-carousel-five {
+  /* background-image: url(../assets/img/mountain_fuji.jpg); */
+  background-color: purple;
+}
+
+/* .slider-a input[value="one"]:checked~.slider-a-wrapper {
+  transform: translateX(calc(150% / 4));
+} */
+
+
+/* .slider-a input[value="two"]:checked~.slider-a-wrapper {
+  transform: translateX(calc(50% / 4));
+} */
+
+
+/* .slider-a input[value="three"]:checked~.slider-a-wrapper {
+  transform: translateX(calc(-50% / 4));
+} */
+
+/* .slider-a input[value="four"]:checked~.slider-a-wrapper {
+  transform: translateX(calc(-150% / 4));
+} */
+
+/* .slider-a input {
+  appearance: none;
+  -webkit-appearance: none;
+  border: none;
+  outline: none;
+  width: 28px;
+  height: 28px;
+  border-radius: 14px;
+  background-color: #ffffff;
+  margin: 0 11px 44px 11px;
+  cursor: pointer;
+  transition: width 0.3s ease, background-color 0.3s ease;
+
+  z-index: 2;
+} */
+
+/* .slider-a input:checked {
+  width: 40px;
+  height: 28px;
+  border-radius: 20px;
+  background-color: var(--primary-yellow);
+} */
+
   /* .carousel-inputs input[value"one"]:checked ~ .carousel-wrapper {
   background-color: red;
 } */
@@ -259,45 +361,15 @@
     gap: 8px;
   }
 
-  /* 1. Der übergeordnete Kasten, der das Scrollen erlaubt */
   .carousel-slider {
-    display: flex;
-    flex-direction: column-reverse;
-    /* Legt die Karten nebeneinander */
-    overflow-x: auto;
-    /* Aktiviert das seitliche Wischen */
-    scroll-snap-type: x mandatory;
-    /* Lässt die Karten sauber einrasten */
-    gap: 10px;
-    /* Abstand zwischen den Bildern laut Figma */
-    padding: 0 72px;
-    /* Freiraum links und rechts für den Fokus-Effekt */
-
-    /* Blendigt die Scrollbar aus */
-    scrollbar-width: none;
-    width: 100%;
+  
   }
 
-  .carousel-slider::-webkit-scrollbar {
-    display: none;
-  }
-
-  /* 2. Die einzelnen Karten (die Bilder-Container) */
   .carousel-slider-element {
-    flex: 0 0 200px;
-    /* Verhindert, dass die Karten schrumpfen (fest auf 200px) */
-    height: 293px;
-    /* Höhe aus Figma */
-    scroll-snap-align: center;
-    /* Zentriert die Karte beim Wischen */
-
-    /* 💡 Deaktiviert den 3D-Effekt vom Desktop komplett für Mobile */
-    transform: none !important;
-
-    /* display: none; */
+    
   }
 
-
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
 
   .small_arrow {
     display: none;
