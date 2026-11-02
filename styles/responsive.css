@@ -381,7 +381,7 @@
 }
 
 .carousel-slider input[value="two"]:checked ~ .carousel-wrapper {
-  transform: translateX(calc(25% - 72px));
+  transform: translateX(calc(25% - 42px));
 }
 
 .carousel-slider input[value="three"]:checked ~ .carousel-wrapper .element-carousel-three {
@@ -409,7 +409,7 @@
 }
 
 .carousel-slider input[value="four"]:checked ~ .carousel-wrapper {
-  transform: translateX(calc(-25% + 72px));
+  transform: translateX(calc(-25% + 42px));
 }
 
 .carousel-slider input[value="five"]:checked ~ .carousel-wrapper .element-carousel-five {
