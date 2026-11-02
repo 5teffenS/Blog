@@ -263,6 +263,8 @@
   width: 100%;
   
   background-color: red;
+  /* border-left: 100px solid white;
+  border-right: 100px solid white; */
 
   position: relative;
 
