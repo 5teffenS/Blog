@@ -600,7 +600,7 @@
 
   .content {
     gap: 80px;
-    background-color: rgb(215, 255, 205);
+    /* background-color: rgb(215, 255, 205); */
   }
 
   ul {
@@ -790,7 +790,7 @@
 
   .content {
     width: 100%;
-    background-color: blanchedalmond;
+    /* background-color: blanchedalmond; */
   }
 
 
