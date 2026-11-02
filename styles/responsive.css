@@ -376,6 +376,10 @@
   background-color: rgba(255, 255, 255, 0.001);
 }
 
+.carousel-slider input[value="two"]:checked ~ .carousel-wrapper {
+  transform: translateX(calc(25% - 72px));
+}
+
 .carousel-slider input[value="three"]:checked ~ .carousel-wrapper .element-carousel-three {
   opacity: 0.5;
 
@@ -384,6 +388,10 @@
 
   z-index: 5;
   background-color: rgba(255, 255, 255, 0.001);
+}
+
+.carousel-slider input[value="three"]:checked ~ .carousel-wrapper {
+  transform: translateX(0);
 }
 
 .carousel-slider input[value="four"]:checked ~ .carousel-wrapper .element-carousel-four {
@@ -396,6 +404,10 @@
   background-color: rgba(255, 255, 255, 0.001);
 }
 
+.carousel-slider input[value="four"]:checked ~ .carousel-wrapper {
+  transform: translateX(calc(-25% + 72px));
+}
+
 .carousel-slider input[value="five"]:checked ~ .carousel-wrapper .element-carousel-five {
   opacity: 0.5;
 
@@ -404,6 +416,10 @@
 
   z-index: 5;
   background-color: rgba(255, 255, 255, 0.001);
+}
+
+.carousel-slider input[value="five"]:checked ~ .carousel-wrapper {
+  transform: translateX(calc(-50% + 72px));
 }
 
 /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
