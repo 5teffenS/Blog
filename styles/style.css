@@ -455,10 +455,10 @@
   height: 90%;
 }
 
-.carousel-inputs {
+/* .carousel-inputs {
   padding-top: 1dvh;
   display: none;
-}
+} */
 
 .carousel-slider {
   /* background-color: black; */
@@ -487,6 +487,7 @@
   transition: width 0.3s ease, background-color 0.3s ease;
 
   z-index: 2;
+  display: none;
 }
 
 .carousel-slider input:checked {
