@@ -285,7 +285,6 @@
   border-radius: 10px;
 
   width: 100px;
-
 }
 
 .carousel-slider-element:hover {
@@ -310,27 +309,22 @@
 }
 
 .element-carousel-one {
-  /* background-image: url(../assets/img/woman-walking-on-beach.jpg); */
   background-color: red;
 }
 
 .element-carousel-two {
-  /* background-image: url(../assets/img/scandinavia.jpg); */
   background-color: blue;
 }
 
 .element-carousel-three {
-  /* background-image: url(../assets/img/pattaya.jpg); */
   background-color: green;
 }
 
 .element-carousel-four {
-  /* background-image: url(../assets/img/mountain_fuji.jpg); */
   background-color: yellow;
 }
 
 .element-carousel-five {
-  /* background-image: url(../assets/img/mountain_fuji.jpg); */
   background-color: purple;
 }
 
