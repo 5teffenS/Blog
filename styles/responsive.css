@@ -305,6 +305,7 @@
   border-radius: 10px;
 
   width: 100px;
+  height: 240px;
 }
 
 .carousel-slider-element:hover {
@@ -325,6 +326,7 @@
 
 .carousel-slider-element:hover~.carousel-slider-element img {
   width: 100px;
+  height: 240px;
 }
 
 .element-carousel-one {
