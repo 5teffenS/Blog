@@ -247,10 +247,10 @@
   align-items: flex-start;
   transition: all 1s ease-in-out;
 
-  margin-bottom: 32px;
+  margin-bottom: 48px;
   background-color: black;
 
-  /* overflow: clip; */
+  gap: 5%;
 }
 
 .carousel-slider {
@@ -259,7 +259,7 @@
   justify-content: center;
   align-items: flex-end;
 
-  height: 350px;
+  height: 400px;
   width: 100%;
   
   background-color: red;
@@ -342,7 +342,7 @@
   height: 240px;
 }
 
-.element-carousel-one {
+/* .element-carousel-one {
   background-color: white;
 }
 
@@ -360,7 +360,7 @@
 
 .element-carousel-five {
   background-color: purple;
-}
+} */
 
 .carousel-slider input[value="one"]:checked ~ .carousel-wrapper .element-carousel-one {
   opacity: 0.5;
