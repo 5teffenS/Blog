@@ -247,11 +247,11 @@
 
   margin-bottom: 32px;
   background-color: black;
-  outline: none;
+
+  overflow: hidden;
 }
 
 .carousel-slider {
-  z-index: 2;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -259,8 +259,10 @@
 
   height: 350px;
   width: 100%;
-  /* min-width: calc(50% - 720px); */
+  
   background-color: red;
+
+  overflow: hidden;
 }
 
 .carousel-slider input {
@@ -301,6 +303,8 @@
   transform-origin: 50% 50%;
 
   transition: all 255ms ease-in-out;
+
+  overflow: hidden;
 }
 
 .carousel-slider-element img {
