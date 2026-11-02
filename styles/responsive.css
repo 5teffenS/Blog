@@ -234,7 +234,7 @@
 
 .carousel-wrapper {
   z-index: 1;
-  width: 75dvw;
+  width: 500%;
   height: 300px;
 
   position: absolute;
@@ -246,6 +246,7 @@
   transition: all 1s ease-in-out;
 
   margin-bottom: 32px;
+  background-color: black;
 }
 
 .carousel-slider {
@@ -257,7 +258,7 @@
   height: 350px;
   width: 100%;
   /* min-width: calc(50% - 720px); */
-  background-color: black;
+  background-color: red;
 }
 
 .carousel-slider input {
@@ -294,7 +295,7 @@
 
   /* background-color: rgba(255, 255, 255, 0.001); */
 
-  transform: perspective(100px) rotateY(10deg) translateX(0px);
+  transform: perspective(100px) rotateY(5deg) translateX(0px);
   transform-origin: 50% 50%;
 
   transition: all 255ms ease-in-out;
@@ -321,7 +322,7 @@
 }
 
 .carousel-slider-element:hover~.carousel-slider-element {
-  transform: perspective(100px) rotateY(-10deg) translateX(0px);
+  transform: perspective(100px) rotateY(-5deg) translateX(0px);
 }
 
 .carousel-slider-element:hover~.carousel-slider-element img {
@@ -347,6 +348,26 @@
 
 .element-carousel-five {
   background-color: purple;
+}
+
+.carousel-slider input[value="one"]:checked~.carousel-wrapper {
+  transform: translateX(calc(250% / 5));
+}
+
+.carousel-slider input[value="two"]:checked~.carousel-wrapper {
+  transform: translateX(calc(125% / 5));
+}
+
+.carousel-slider input[value="three"]:checked~.carousel-wrapper {
+  transform: translateX(calc(0% / 5));
+}
+
+.carousel-slider input[value="four"]:checked~.carousel-wrapper {
+  transform: translateX(calc(-125% / 5));
+}
+
+.carousel-slider input[value="five"]:checked~.carousel-wrapper {
+  transform: translateX(calc(-250% / 5));
 }
 
 /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
