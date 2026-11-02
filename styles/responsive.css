@@ -234,7 +234,7 @@
 
 .carousel-wrapper {
   z-index: 1;
-  width: 500%;
+  width: 100%;
   height: 300px;
 
   position: absolute;
@@ -270,7 +270,7 @@
   height: 22px;
   border-radius: 50%;
   background-color: #4ea48732;
-  margin: 0 5px 0 5px;
+  margin: 0 5px 5px 5px;
   cursor: pointer;
   transition: width 0.3s ease, background-color 0.3s ease;
 
@@ -331,7 +331,7 @@
 }
 
 .element-carousel-one {
-  background-color: red;
+  background-color: white;
 }
 
 .element-carousel-two {
@@ -351,23 +351,27 @@
 }
 
 .carousel-slider input[value="one"]:checked~.carousel-wrapper {
-  transform: translateX(calc(250% / 5));
+  transform: translateX(calc(50% / 5));
 }
 
 .carousel-slider input[value="two"]:checked~.carousel-wrapper {
-  transform: translateX(calc(125% / 5));
+  transform: translateX(calc(25% / 5));
 }
 
-.carousel-slider input[value="three"]:checked~.carousel-wrapper {
+.carousel-slider input[value="three"]:checked~.carousel-slider-element + .element-carousel-three {
   transform: translateX(calc(0% / 5));
+  opacity: 0.5;
+
+  z-index: 5;
+  background-color: rgba(255, 255, 255, 0.001);
 }
 
 .carousel-slider input[value="four"]:checked~.carousel-wrapper {
-  transform: translateX(calc(-125% / 5));
+  transform: translateX(calc(-25% / 5));
 }
 
 .carousel-slider input[value="five"]:checked~.carousel-wrapper {
-  transform: translateX(calc(-250% / 5));
+  transform: translateX(calc(-50% / 5));
 }
 
 /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
