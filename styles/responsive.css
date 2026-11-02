@@ -251,10 +251,9 @@
 
 /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
 
-/* .carousel-inputs {
+.carousel-inputs {
   width: 100%;
-  height: 533px;
-  border-top-right-radius: 100px;
+  height: auto;
 
   display: flex;
   justify-content: center;
@@ -262,28 +261,71 @@
 
   align-items: flex-end;
   overflow: hidden;
-} */
-/* 
+}
+
 .carousel-wrapper {
   z-index: 1;
-  width: 400%;
-  height: 100%;
+  width: 75dvw;
+  height: 300px;
 
   position: absolute;
 
   display: flex;
 
   transition: all 1s ease-in-out;
-} */
+}
 
-/* .carousel-slider-element {
-  width: calc(100% / 4);
-  height: 100%;
-  position: relative;
+.carousel-slider {
+  height: 300px;
+  width: 50dvw;
+  /* min-width: calc(50% - 720px); */
+}
 
-  background-size: cover;
-  background-position: center;
-} */
+.carousel-slider-element {
+  z-index: 1;
+
+  display: flex;
+  justify-content: center;
+
+  width: 160px;
+  height: auto;
+  max-height: 290px;
+
+  /* background-color: rgba(255, 255, 255, 0.001); */
+
+  transform: perspective(300px) rotateY(10deg) translateX(0px);
+  transform-origin: 50% 50%;
+
+  transition: all 255ms ease-in-out;
+}
+
+.carousel-slider-element img {
+  /* opacity: 0.5; */
+  border-radius: 10px;
+
+  width: 100px;
+
+}
+
+.carousel-slider-element:hover {
+  z-index: 2;
+
+  transform: rotateY(0deg) translateX(0px) scaleX(1.05) scaleY(1.05);
+  margin: 0 160px;
+}
+
+.carousel-slider-element:hover img {
+  width: 100px;
+
+}
+
+.carousel-slider-element:hover~.carousel-slider-element {
+  transform: perspective(100px) rotateY(-10deg) translateX(0px);
+}
+
+.carousel-slider-element:hover~.carousel-slider-element img {
+  width: 100px;
+}
 
 .element-carousel-one {
   /* background-image: url(../assets/img/woman-walking-on-beach.jpg); */
@@ -354,20 +396,6 @@
   /* .carousel-inputs input[value"one"]:checked ~ .carousel-wrapper {
   background-color: red;
 } */
-
-  .carousel-inputs {
-    padding-top: 24px;
-    display: flex;
-    gap: 8px;
-  }
-
-  /* .carousel-slider {
-  
-  } */
-
-  /* .carousel-slider-element {
-    
-  } */
 
 /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
 
