@@ -43,7 +43,6 @@
     display: none;
   }
 
-
   header {
     padding: 60px max(120px, calc(50% - 720px));
   }
@@ -73,15 +72,11 @@
     display: none;
   }
 
-
   .carousel-slider {
     overflow: hidden;
 
     width: 100%;
   }
-
-
-
 }
 
 @media screen and (max-width: 1100px) {
@@ -134,7 +129,6 @@
 
   .article01-top {
     flex-direction: column;
-
   }
 
   .profile {
@@ -167,8 +161,6 @@
   }
 }
 
-
-
 @media screen and (max-width:960px) {
 
   .small-animation2,
@@ -176,13 +168,9 @@
     display: none;
   }
 
-
-
   .small_arrow {
     display: none;
   }
-
-
 
   .contact-section {
     width: 100%;
@@ -208,8 +196,6 @@
 
 @media screen and (min-width:768px) {
 
-
-
   .small_arrow {
     display: none;
   }
@@ -218,8 +204,6 @@
   .navbar-mobile {
     display: none;
   }
-
-
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -227,8 +211,6 @@
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 @media (max-width: 768px) {
-
-
   .big_animation1,
   .big_animation2 {
     display: none;
@@ -242,7 +224,6 @@
   .small_arrow {
     display: none;
   }
-
 
   .content {
     margin-left: 5%;
@@ -288,12 +269,12 @@
   justify-content: center;
 
   width: 160px;
-  height: auto;
+  height: 80%;
   max-height: 290px;
 
   /* background-color: rgba(255, 255, 255, 0.001); */
 
-  transform: perspective(300px) rotateY(10deg) translateX(0px);
+  transform: perspective(100px) rotateY(10deg) translateX(0px);
   transform-origin: 50% 50%;
 
   transition: all 255ms ease-in-out;
@@ -311,11 +292,12 @@
   z-index: 2;
 
   transform: rotateY(0deg) translateX(0px) scaleX(1.05) scaleY(1.05);
-  margin: 0 160px;
+  margin: 0 42px;
 }
 
 .carousel-slider-element:hover img {
-  width: 100px;
+  width: 200px;
+  height: 290px;
 
 }
 
