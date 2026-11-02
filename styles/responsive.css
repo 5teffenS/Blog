@@ -358,7 +358,7 @@
   transform: translateX(calc(25% / 5));
 }
 
-.carousel-slider input[value="three"]:checked~.carousel-wrapper {
+.carousel-slider input[value="three"]:checked ~ .carousel-wrapper .element-carousel-three {
   transform: translateX(calc(0% / 5));
   opacity: 0.5;
 
