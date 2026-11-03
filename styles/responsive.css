@@ -281,7 +281,8 @@
     inset 150px 0 0 -5px rgba(255, 255, 255, 1), 
     inset -150px 0 0 -5px rgba(255, 255, 255, 1);
 
-  z-index: 99; 
+  z-index: 99;
+  pointer-events: none;  
 }
 
 .carousel-slider input {
