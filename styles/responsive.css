@@ -263,12 +263,25 @@
   width: 100%;
   
   background-color: red;
-  /* border-left: 100px solid white;
-  border-right: 100px solid white; */
 
   position: relative;
 
   overflow: hidden;
+}
+
+.carousel-slider::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  box-shadow: 
+    inset 150px 0 0 -5px rgba(255, 255, 255, 1), 
+    inset -150px 0 0 -5px rgba(255, 255, 255, 1);
+
+  z-index: 99; 
 }
 
 .carousel-slider input {
