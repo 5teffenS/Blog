@@ -455,13 +455,8 @@
   height: 90%;
 }
 
-.carousel-inputs {
-  padding-top: 48px;
-  display: none;
-}
-
 .carousel-slider {
-  background-color: black;
+  /* background-color: black; */
   height: 70dvh;
 
   width: 1300px;
@@ -487,6 +482,7 @@
   transition: width 0.3s ease, background-color 0.3s ease;
 
   z-index: 2;
+  display: none;
 }
 
 .carousel-slider input:checked {
@@ -1461,6 +1457,13 @@ ul li {
 
   margin-top: 88px;
 
+}
+
+.article03_rain h3 {
+  /* text-align: center; */
+
+  display: flex;
+  justify-content: center;
 }
 
 
