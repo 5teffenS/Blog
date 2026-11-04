@@ -1491,26 +1491,22 @@ ul li {
 }
 
 .two_sections {
-  display: flex;
-
-  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
   gap: 80px;
-  align-items: start;
 }
 
 .one_section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  gap: 24px;
+  display: grid;
+  grid-row: span 3;                
+  grid-template-rows: subgrid;     /* nutzt die Zeilen des äußeren Grids */
+  row-gap: 1rem;
 }
 
 .one_section img {
   width: 100%;
 }
 
-.text-box {
-  height: 14em;
+.one_section h3{
+  justify-content: center;
 }
