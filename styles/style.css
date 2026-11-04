@@ -1011,6 +1011,7 @@
   color: var(--secondary-brown);
 }
 
+
 .checkbox-wrapper p {
   font-size: 16px;
   line-height: 16px;
@@ -1061,7 +1062,6 @@
 
 .checkmark {
   position: absolute;
-  top: 5px;
   left: 5px;
   height: 18px;
   width: 18px;
