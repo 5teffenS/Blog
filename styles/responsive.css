@@ -1089,6 +1089,14 @@
     margin-left: 0px;
   }
 
+  .article03_img img{
+    width: 100%;
+    height: fit-content;
+  }
+
+  .one_section img{
+    width: 100%;
+  }
 
 
 }

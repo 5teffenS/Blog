@@ -1013,12 +1013,15 @@
 
 .checkbox-wrapper p {
   font-size: 16px;
+  line-height: 16px;
 }
 
 .checkbox-wrapper a {
+  display: inline-block;
   font-weight: 500;
   text-decoration: none;
   color: var(--primary-green);
+  line-height: 100%;
 
   padding: 0 5px;
   font-size: 16px;
@@ -1438,6 +1441,7 @@ ul li {
   flex-direction: column;
   align-items: center;
   width: 100%;
+  gap: 24px;
 }
 
 
@@ -1499,7 +1503,7 @@ ul li {
 .one_section {
   display: grid;
   grid-row: span 3;                
-  grid-template-rows: subgrid;     /* nutzt die Zeilen des äußeren Grids */
+  grid-template-rows: subgrid;     
   row-gap: 1rem;
 }
 
