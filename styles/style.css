@@ -1245,9 +1245,9 @@ ul li {
 .big-arrow2 {
   position: absolute;
   /* Löst den Pfeil aus dem Textfluss */
-  left: -40px;
+  left: 0px;
   /* Schiebt den Pfeil nach links außerhalb der Box (Wert anpassen!) */
-  bottom: 15px;
+  bottom: 0px;
   /* Positioniert den Pfeil auf Höhe des Buttons */
 }
 
