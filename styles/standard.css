@@ -87,8 +87,9 @@ footer {
     width: 100%;
     background-color: var(--primary-green);
     display: flex;
+    justify-content: space-between;
     color: var(--font-color);
-    gap: 70px;
+    gap: 16px;
 
     /* ÄNDERUNG: min-height statt height nutzen & border-box hinzufügen */
     min-height: 152px;
