@@ -1014,6 +1014,7 @@
 .checkbox-wrapper p {
   font-size: 16px;
   line-height: 16px;
+  text-align: left;
 }
 
 .checkbox-wrapper a {
@@ -1044,6 +1045,11 @@
 .checkbox-string {
   display: flex;
   flex-direction: row;
+}
+
+.checkbox-string a {
+  width: 115px;
+  text-align: center;
 }
 
 
