@@ -1113,8 +1113,15 @@
     display: none;
   }
 
-  .social-icons {
+  footer {
+    align-items: start;
     flex-direction: column;
+    gap: 40px;
+  }
+
+  .social-icons {
+    flex-direction: row;
     text-align: center;
+
   }
 }
