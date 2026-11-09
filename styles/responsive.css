@@ -340,20 +340,28 @@
 
     transform: rotateY(0deg) translateX(0px) scaleX(1.05) scaleY(1.05);
     margin: 0 42px;
+
+    pointer-events: none;
   }
 
   .carousel-slider-element:hover img {
     width: 200px;
     height: 290px;
+
+    pointer-events: none;
   }
 
   .carousel-slider-element:hover~.carousel-slider-element {
     transform: perspective(100px) rotateY(-5deg) translateX(0px);
+
+    pointer-events: none;
   }
 
   .carousel-slider-element:hover~.carousel-slider-element img {
     width: 100px;
     height: 240px;
+
+    pointer-events: none;
   }
 
   .carousel-slider input[value="one"]:checked~.carousel-wrapper .element-carousel-one {
