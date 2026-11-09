@@ -279,8 +279,8 @@
     bottom: 0;
 
     box-shadow:
-      inset 20dvw 0 0 -5px rgba(255, 255, 255, 1),
-      inset -20dvw 0 0 -5px rgba(255, 255, 255, 1);
+      inset 22dvw 0 10px -10px rgba(255, 255, 255),
+      inset -22dvw 0 10px -10px rgba(255, 255, 255);
 
     z-index: 99;
     pointer-events: none;
