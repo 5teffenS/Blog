@@ -357,26 +357,6 @@
     height: 240px;
   }
 
-  /* .element-carousel-one {
-  background-color: white;
-}
-
-.element-carousel-two {
-  background-color: blue;
-}
-
-.element-carousel-three {
-  background-color: green;
-}
-
-.element-carousel-four {
-  background-color: yellow;
-}
-
-.element-carousel-five {
-  background-color: purple;
-} */
-
   .carousel-slider input[value="one"]:checked~.carousel-wrapper .element-carousel-one {
     opacity: 0.5;
 
