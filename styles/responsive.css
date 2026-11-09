@@ -249,7 +249,7 @@
     transition: all 1s ease-in-out;
 
     margin-bottom: 48px;
-    background-color: black;
+    /* background-color: black; */
 
     gap: 5%;
   }
@@ -263,7 +263,7 @@
     height: 400px;
     width: 100%;
 
-    background-color: red;
+    /* background-color: red; */
 
     position: relative;
 
@@ -329,7 +329,6 @@
   }
 
   .carousel-slider-element img {
-    /* opacity: 0.5; */
     border-radius: 10px;
 
     width: 100%;
@@ -358,7 +357,6 @@
   }
 
   .carousel-slider input[value="one"]:checked~.carousel-wrapper .element-carousel-one {
-    opacity: 0.5;
 
     transform: rotateY(0deg) translateX(0px) scaleX(1.6) scaleY(1.35);
     margin: 0 8px;
@@ -376,8 +374,7 @@
   }
 
   .carousel-slider input[value="two"]:checked~.carousel-wrapper .element-carousel-two {
-    opacity: 0.5;
-
+    
     transform: rotateY(0deg) translateX(0px) scaleX(1.6) scaleY(1.35);
     margin: 0 8px;
 
@@ -394,7 +391,6 @@
   }
 
   .carousel-slider input[value="three"]:checked~.carousel-wrapper .element-carousel-three {
-    opacity: 0.5;
 
     transform: rotateY(0deg) translateX(0px) scaleX(1.6) scaleY(1.35);
     margin: 0 8px;
@@ -412,7 +408,6 @@
   }
 
   .carousel-slider input[value="four"]:checked~.carousel-wrapper .element-carousel-four {
-    opacity: 0.5;
 
     transform: rotateY(0deg) translateX(0px) scaleX(1.6) scaleY(1.35);
     margin: 0 8px;
@@ -430,7 +425,6 @@
   }
 
   .carousel-slider input[value="five"]:checked~.carousel-wrapper .element-carousel-five {
-    opacity: 0.5;
 
     transform: rotateY(0deg) translateX(0px) scaleX(1.6) scaleY(1.35);
     margin: 0 8px;
