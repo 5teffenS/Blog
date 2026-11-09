@@ -391,6 +391,10 @@
     transform: translateX(calc(50% - 72px));
   }
 
+  .carousel-slider input[value="one"]:checked~.carousel-wrapper .element-carousel-two {
+    transform: perspective(100px) rotateY(-10deg) translateX(0px);
+  }
+
   .carousel-slider input[value="two"]:checked~.carousel-wrapper .element-carousel-two {
     opacity: 0.5;
 
