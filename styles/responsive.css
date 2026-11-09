@@ -409,6 +409,10 @@
     transform: translateX(calc(25% - 42px));
   }
 
+  .carousel-slider input[value="two"]:checked~.carousel-wrapper .element-carousel-three {
+    transform: perspective(100px) rotateY(-10deg) translateX(0px);
+  }
+
   .carousel-slider input[value="three"]:checked~.carousel-wrapper .element-carousel-three {
     opacity: 0.5;
 
@@ -423,6 +427,10 @@
     transform: translateX(0);
   }
 
+  .carousel-slider input[value="three"]:checked~.carousel-wrapper .element-carousel-four {
+    transform: perspective(100px) rotateY(-10deg) translateX(0px);
+  }
+
   .carousel-slider input[value="four"]:checked~.carousel-wrapper .element-carousel-four {
     opacity: 0.5;
 
@@ -435,6 +443,10 @@
 
   .carousel-slider input[value="four"]:checked~.carousel-wrapper {
     transform: translateX(calc(-25% + 42px));
+  }
+
+  .carousel-slider input[value="four"]:checked~.carousel-wrapper .element-carousel-five {
+    transform: perspective(100px) rotateY(-10deg) translateX(0px);
   }
 
   .carousel-slider input[value="five"]:checked~.carousel-wrapper .element-carousel-five {
