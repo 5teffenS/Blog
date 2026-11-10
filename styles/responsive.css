@@ -270,8 +270,8 @@
     bottom: 0;
 
     box-shadow:
-      inset 11vw 0 10px -10px rgba(255, 2, 2),
-      inset -11vw 0 10px -10px rgba(255, 2, 2);
+      inset 11vw 0 10px -10px rgba(255, 255, 255),
+      inset -11vw 0 10px -10px rgba(255, 255, 255);
 
     z-index: 5;
     pointer-events: none;
@@ -760,8 +760,8 @@
 
   .carousel-slider::after {
     box-shadow:
-      inset 9vw 0 10px -10px rgba(255, 255, 2),
-      inset -9vw 0 10px -10px rgba(255, 255, 2);
+      inset 12vw 0 10px -10px rgba(255, 255, 255),
+      inset -12vw 0 10px -10px rgba(255, 255, 255);
   }
 }
 
@@ -1095,8 +1095,8 @@
 
   .carousel-slider::after {
     box-shadow:
-      inset 1vw 0 10px -10px rgba(255, 2, 255),
-      inset -1vw 0 10px -10px rgba(255, 2, 255);
+      inset 0 0 0 0px rgba(255, 255, 255),
+      inset 0 0 0 0px rgba(255, 255, 255);
   }
 
   .carousel-slider-element img {
