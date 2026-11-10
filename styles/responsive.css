@@ -279,9 +279,9 @@
     right: 0;
     bottom: 0;
 
-    box-shadow:
+    /* box-shadow:
       inset 22dvw 0 10px -10px rgba(255, 255, 255),
-      inset -22dvw 0 10px -10px rgba(255, 255, 255);
+      inset -22dvw 0 10px -10px rgba(255, 255, 255); */
 
     z-index: 5;
     pointer-events: none;
@@ -315,7 +315,9 @@
     justify-content: center;
     align-items: center;
 
-    width: 200px;
+    /* width: 200px; */
+    width: 50%;
+    /* min-width: 200px; */
     height: 85%;
     max-height: 290px;
 
@@ -323,6 +325,7 @@
     transform-origin: 50% 50%;
 
     transition: all 255ms ease-in-out;
+    background-color: red;
   }
 
   .carousel-slider-element img {
@@ -330,6 +333,7 @@
 
     width: 100%;
     height: 240px;
+    background-color: limegreen;
   }
 
   .carousel-slider-element:hover {
@@ -339,12 +343,13 @@
     margin: 0 42px;
 
     pointer-events: none;
+    
   }
 
   .carousel-slider-element:hover img {
     width: 200px;
     height: 290px;
-
+    
     pointer-events: none;
   }
 
@@ -365,9 +370,9 @@
 
     transform: rotateY(0deg) translateX(0px) scaleX(1.6) scaleY(1.35);
     margin: 0 8px;
-
+    
     z-index: 5;
-    background-color: rgba(255, 255, 255, 0.001);
+    /* background-color: rgba(255, 255, 255, 0.001); */
   }
 
   .carousel-slider input[value="one"]:checked~.carousel-wrapper {
@@ -384,7 +389,7 @@
     margin: 0 8px;
 
     z-index: 5;
-    background-color: rgba(255, 255, 255, 0.001);
+    /* background-color: rgba(255, 255, 255, 0.001); */
   }
 
   .carousel-slider input[value="two"]:checked~.carousel-wrapper {
@@ -401,7 +406,7 @@
     margin: 0 8px;
 
     z-index: 5;
-    background-color: rgba(255, 255, 255, 0.001);
+    /* background-color: rgba(255, 255, 255, 0.001); */
   }
 
   .carousel-slider input[value="three"]:checked~.carousel-wrapper {
@@ -418,7 +423,7 @@
     margin: 0 8px;
 
     z-index: 5;
-    background-color: rgba(255, 255, 255, 0.001);
+    /* background-color: rgba(255, 255, 255, 0.001); */
   }
 
   .carousel-slider input[value="four"]:checked~.carousel-wrapper {
@@ -435,7 +440,7 @@
     margin: 0 8px;
 
     z-index: 5;
-    background-color: rgba(255, 255, 255, 0.001);
+    /* background-color: rgba(255, 255, 255, 0.001); */
   }
 
   .carousel-slider input[value="five"]:checked~.carousel-wrapper {
