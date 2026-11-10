@@ -324,7 +324,7 @@
 
     transform: rotateY(0deg) scaleX(2) scaleY(1.5);
     margin: 0 8px;
-    
+
     z-index: 5;
   }
 
@@ -337,7 +337,7 @@
   }
 
   .carousel-slider input[value="two"]:checked~.carousel-wrapper .element-carousel-two {
-    
+
     transform: rotateY(0deg) scaleX(2) scaleY(1.5);
     margin: 0 8px;
 
@@ -420,6 +420,8 @@
     display: none;
   }
 
+
+
   .moving-element {
     top: 170px;
     left: 100px;
@@ -470,22 +472,87 @@
     }
   }
 
-  .small_animation1 {
-    animation: small_animation1 3s ease-in-out 1s forwards;
-    z-index: 10;
+  .img-background {
+    left: 100%;
+    z-index: 1;
+    
+
+    animation: img-background-slide 3s ease-in-out 0.5s forwards;
   }
 
-  @keyframes small_animation1 {
+
+  @keyframes img-background-slide {
     0% {
-      opacity: 0;
+      transform: translateX(100dvw);
+    }
+
+    100% {
+      transform: translateX(-75%);
+
+    }
+  }
+
+  .weg {
+    animation: banner-start-yellow 3s ease-in-out forwards;
+  }
+
+  @keyframes banner-start-yellow {
+    0% {
+      opacity: 1;
     }
 
     50% {
+      opacity: 0;
+      transform: translateX(-75%)
+    }
+
+    100%{
+      opacity: 0;
+    }
+  }
+  .an {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: auto;
+    z-index: 2;
+
+    animation: banner-initial 3s ease-in-out forwards;
+  }
+
+
+  @keyframes banner-initial {
+    0% {
       opacity: 1;
+      transform: translateX(100dvw);
+    }
+
+    80% {
+      opacity: 1;
+      transform: translateX(-75%);
+
     }
 
     100% {
       opacity: 0;
+    }
+  }
+
+  .small_animation1 {
+    animation: small_animation1 3s ease-in-out 1s forwards;
+    z-index: 20;
+  }
+
+  @keyframes small_animation1 {
+    0% {
+      transform: translateX(100dvw);
+    }
+
+    100% {
+      transform: translateX(-75%);
+
     }
   }
 
@@ -1078,7 +1145,7 @@
     padding: 16px;
 
     width: auto;
-  
+
 
   }
 
