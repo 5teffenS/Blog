@@ -252,6 +252,7 @@
     /* background-color: black; */
 
     gap: 5%;
+    pointer-events: none;
   }
 
   .carousel-slider {
@@ -282,7 +283,7 @@
       inset 22dvw 0 10px -10px rgba(255, 255, 255),
       inset -22dvw 0 10px -10px rgba(255, 255, 255);
 
-    z-index: 99;
+    z-index: 5;
     pointer-events: none;
   }
 
@@ -318,14 +319,10 @@
     height: 85%;
     max-height: 290px;
 
-    /* background-color: rgba(255, 255, 255, 0.001); */
-
     transform: perspective(100px) rotateY(5deg) translateX(0px);
     transform-origin: 50% 50%;
 
     transition: all 255ms ease-in-out;
-
-    /* overflow: clip; */
   }
 
   .carousel-slider-element img {
