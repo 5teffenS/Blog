@@ -192,53 +192,14 @@
     gap: 5%;
     width: 100%;
   }
-}
-
-@media screen and (min-width:768px) {
-
-  .small_arrow {
-    display: none;
-  }
-
-
-  .navbar-mobile {
-    display: none;
-  }
-}
-
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-/* ############################ <= 768px ############################# */
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-
-@media (max-width: 768px) {
-
-  .big_animation1,
-  .big_animation2 {
-    display: none;
-  }
-
-  .moving-element {
-    top: 170px;
-    left: 100px;
-  }
-
-  .small_arrow {
-    display: none;
-  }
-
-  .content {
-    margin-left: 5%;
-    margin-right: 5%;
-
-    /* overflow: clip; */
-  }
 
   /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
 
   .carousel-wrapper {
     z-index: 1;
-    width: 100%;
-    height: 300px;
+    /* width: 100%; */
+    width: 1000px;
+    height: 90%;
 
     position: absolute;
 
@@ -248,10 +209,10 @@
     align-items: flex-start;
     transition: all 1s ease-in-out;
 
-    margin-bottom: 48px;
-    /* background-color: black; */
+    /* margin-bottom: 24px; */
+    background-color: black;
 
-    gap: 5%;
+    /* gap: 5%; */
     pointer-events: none;
   }
 
@@ -261,10 +222,8 @@
     justify-content: center;
     align-items: flex-end;
 
-    height: 400px;
+    height: 500px;
     width: 100%;
-
-    /* background-color: red; */
 
     position: relative;
 
@@ -315,22 +274,17 @@
     justify-content: center;
     align-items: center;
 
-    /* width: 200px; */
-    /* height: 85%;
-    max-height: 290px; */
-
     transform: perspective(100px) rotateY(5deg) translateX(0px);
     transform-origin: 50% 50%;
 
     transition: all 255ms ease-in-out;
-    background-color: red;
   }
 
   .carousel-slider-element img {
     border-radius: 45rw;
-    margin: 0 10px;
+    /* margin: 0 10px; */
 
-    width: 100%;
+    width: 50%;
     min-width: 100px;
     max-height: 240px;
     height: 80%;
@@ -338,14 +292,14 @@
 
   .carousel-slider input[value="one"]:checked~.carousel-wrapper .element-carousel-one {
 
-    transform: rotateY(0deg) translateX(0px) scaleX(1.6) scaleY(1.35);
+    transform: rotateY(0deg) scaleX(2) scaleY(1.5);
     margin: 0 8px;
     
     z-index: 5;
   }
 
   .carousel-slider input[value="one"]:checked~.carousel-wrapper {
-    transform: translateX(calc(50% - 72px));
+    transform: translateX(calc(50% - 40px));
   }
 
   .carousel-slider input[value="one"]:checked~.carousel-wrapper .element-carousel-two {
@@ -354,14 +308,14 @@
 
   .carousel-slider input[value="two"]:checked~.carousel-wrapper .element-carousel-two {
     
-    transform: rotateY(0deg) translateX(0px) scaleX(1.6) scaleY(1.35);
+    transform: rotateY(0deg) scaleX(2) scaleY(1.5);
     margin: 0 8px;
 
     z-index: 5;
   }
 
   .carousel-slider input[value="two"]:checked~.carousel-wrapper {
-    transform: translateX(calc(25% - 42px));
+    transform: translateX(calc(25% - 20px));
   }
 
   .carousel-slider input[value="two"]:checked~.carousel-wrapper .element-carousel-three {
@@ -370,7 +324,7 @@
 
   .carousel-slider input[value="three"]:checked~.carousel-wrapper .element-carousel-three {
 
-    transform: rotateY(0deg) translateX(0px) scaleX(1.6) scaleY(1.35);
+    transform: rotateY(0deg) scaleX(2) scaleY(1.5);
     margin: 0 8px;
 
     z-index: 5;
@@ -386,14 +340,14 @@
 
   .carousel-slider input[value="four"]:checked~.carousel-wrapper .element-carousel-four {
 
-    transform: rotateY(0deg) translateX(0px) scaleX(1.6) scaleY(1.35);
+    transform: rotateY(0deg) scaleX(2) scaleY(1.5);
     margin: 0 8px;
 
     z-index: 5;
   }
 
   .carousel-slider input[value="four"]:checked~.carousel-wrapper {
-    transform: translateX(calc(-25% + 42px));
+    transform: translateX(calc(-25% + 20px));
   }
 
   .carousel-slider input[value="four"]:checked~.carousel-wrapper .element-carousel-five {
@@ -402,17 +356,55 @@
 
   .carousel-slider input[value="five"]:checked~.carousel-wrapper .element-carousel-five {
 
-    transform: rotateY(0deg) translateX(0px) scaleX(1.6) scaleY(1.35);
+    transform: rotateY(0deg) scaleX(2) scaleY(1.5);
     margin: 0 8px;
 
     z-index: 5;
   }
 
   .carousel-slider input[value="five"]:checked~.carousel-wrapper {
-    transform: translateX(calc(-50% + 72px));
+    transform: translateX(calc(-50% + 40px));
+  }
+}
+
+@media screen and (min-width:768px) {
+
+  .small_arrow {
+    display: none;
   }
 
-  /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+  .navbar-mobile {
+    display: none;
+  }
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ############################ <= 767px ############################# */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+@media (max-width: 767px) {
+
+  .big_animation1,
+  .big_animation2 {
+    display: none;
+  }
+
+  .moving-element {
+    top: 170px;
+    left: 100px;
+  }
+
+  .small_arrow {
+    display: none;
+  }
+
+  .content {
+    margin-left: 5%;
+    margin-right: 5%;
+
+    /* overflow: clip; */
+  }
 
   .small_arrow {
     display: none;
@@ -521,10 +513,10 @@
 
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-/* ######################### 480px to 767px ########################## */
+/* ######################### 481px to 767px ########################## */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
-@media screen and (min-width:480px) and (max-width: 767px) {
+@media screen and (min-width:481px) and (max-width: 767px) {
 
 
   .hero-textblock {
@@ -737,7 +729,6 @@
     padding-left: 0px;
     margin-left: 0px;
   }
-
 
 }
 
@@ -1005,19 +996,6 @@
 
   }
 
-
-  /* Falls du das 'transform' direkt auf dem Bild (.carousel-slider-element img) hast: */
-  .carousel-slider-element img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    /* Verhindert, dass das Bild verzerrt wird */
-    border-radius: 20px;
-    /* Abgerundete Ecken aus deinem Design */
-    transform: none !important;
-    /* Sicherheitshalber auch hier zurücksetzen */
-  }
-
   footer img {
     height: 24px;
     width: 24px;
@@ -1027,11 +1005,6 @@
     width: 37px;
     height: 24px;
   }
-
-  /* .mobile-navbar {
-        
-    } */
-
 
   footer {
 
@@ -1086,8 +1059,6 @@
     -webkit-box-orient: vertical;
     overflow: hidden;
   }
-
-
 }
 
 @media screen and (max-width: 380px) {
