@@ -109,6 +109,39 @@
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ######################### 961px to 1280px ########################  */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+@media screen and (min-width:961px) and (max-width: 1280px) {
+
+  .carousel-slider-element {
+    width: 110px;
+    height: 70%;
+    /* max-height: 440px; */
+  }
+
+  .carousel-slider-element img {
+    border-radius: 15px;
+
+    width: 250px;
+  }
+
+  .carousel-slider-element:hover {
+    transform: scaleX(0.9) scaleY(0.9);
+    margin: 0 120px;
+  }
+
+  .carousel-slider-element:hover img {
+    width: 250px;
+
+  }
+
+  .carousel-slider-element:hover~.carousel-slider-element img {
+    width: 250px;
+  }
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* ######################### 768px to 960px ########################## */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
@@ -1068,7 +1101,6 @@
 
   .carousel-slider-element img {
     border-radius: 5vw;
-    /* height: 60%; */
   }
 
 }
