@@ -5,10 +5,11 @@
 @media screen and (min-width: 1441px) {
 
   .small_animation1,
-  .small_animation2 {
+  .small_animation2, .an{
     display: none;
   }
 
+ 
   .small_arrow {
     display: none;
   }
@@ -35,7 +36,7 @@
 @media screen and (min-width: 1440px) {
 
   .small_animation1,
-  .small_animation2 {
+  .small_animation2, .an {
     display: none;
   }
 
@@ -64,7 +65,7 @@
   }
 
   .small_animation1,
-  .small_animation2 {
+  .small_animation2, .an {
     display: none;
   }
 
@@ -151,7 +152,7 @@
 @media screen and (min-width:768px) and (max-width: 960px) {
 
   .small_animation1,
-  .small_animation2 {
+  .small_animation2, .an {
     display: none;
   }
 
