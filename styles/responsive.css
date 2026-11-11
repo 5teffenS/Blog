@@ -5,11 +5,15 @@
 @media screen and (min-width: 1441px) {
 
   .small_animation1,
-  .small_animation2, .an{
+  .small_animation2,
+  .an {
     display: none;
   }
 
- 
+  /*das sind die bilder von der mobilen ansicht. Die sind kleiner 
+      und in großen Bildschirmbreiten brauchen wir sie noch nicht*/
+
+
   .small_arrow {
     display: none;
   }
@@ -36,7 +40,8 @@
 @media screen and (min-width: 1440px) {
 
   .small_animation1,
-  .small_animation2, .an {
+  .small_animation2,
+  .an {
     display: none;
   }
 
@@ -60,14 +65,16 @@
 
 @media screen and (min-width:961px) and (max-width: 1440px) {
 
+  .small_animation1,
+  .small_animation2,
+  .an {
+    display: none;
+  }
+
   .contact-form {
     margin: 0 max(calc(50% - 720px), 120px);
   }
 
-  .small_animation1,
-  .small_animation2, .an {
-    display: none;
-  }
 
   .small_arrow {
     display: none;
@@ -115,6 +122,17 @@
 
 @media screen and (min-width:961px) and (max-width: 1280px) {
 
+  .hero-textblock {
+    width: 40%;
+  }
+
+  @keyframes textblock-shift {
+    to {
+      opacity: 1;
+      transform: translateX(-100%);
+    }
+  }
+
   .carousel-slider-element {
     width: 110px;
     height: 70%;
@@ -152,8 +170,21 @@
 @media screen and (min-width:768px) and (max-width: 960px) {
 
   .small_animation1,
-  .small_animation2, .an {
+  .small_animation2,
+  .an {
     display: none;
+  }
+
+  
+
+  .hero-textblock {
+    width: 45%;
+  }
+
+  @keyframes textblock-shift {
+    to {
+      transform: translateX(-80%);
+    }
   }
 
 
@@ -196,11 +227,6 @@
 }
 
 @media screen and (max-width:960px) {
-
-  .small-animation2,
-  .small_animation1 {
-    display: none;
-  }
 
   .small_arrow {
     display: none;
@@ -416,151 +442,10 @@
 
 @media (max-width: 767px) {
 
-  .big_animation1,
-  .big_animation2 {
-    display: none;
-  }
-
-
-
-  .moving-element {
-    top: 170px;
-    left: 100px;
-  }
-
-  .small_arrow {
-    display: none;
-  }
-
-  .content {
-    margin-left: 5%;
-    margin-right: 5%;
-
-    /* overflow: clip; */
-  }
-
-  .small_arrow {
-    display: none;
-  }
-
-  ul li {
-    word-break: break-word;
-    max-width: 100%;
-
-  }
+  /* HEADER ANIMATION AB HIER */
 
   .hero-textblock {
-    gap: 0px;
-    width: 50%;
-    max-width: 500px;
-    left: 10px;
-    top: 10%;
-
-    animation: textblock-fade-in 3s ease-in-out 0.5s forwards;
-  }
-
-  @keyframes textblock-fade-in {
-    0% {
-      opacity: 0;
-    }
-
-    50% {
-      opacity: 1;
-    }
-
-    100% {
-      opacity: 0;
-    }
-  }
-
-  .img-background {
-    left: 100%;
-    z-index: 1;
-    
-
-    animation: img-background-slide 3s ease-in-out 0.5s forwards;
-
-
-  }
-
-  .img-background .menschen{
-    position: relative;
-  }
-
-
-  @keyframes img-background-slide {
-    0% {
-      transform: translateX(100dvw);
-    }
-
-    100% {
-      transform: translateX(-75%);
-
-    }
-  }
-
-  .weg {
-    animation: banner-start-yellow 3s ease-in-out forwards;
-  }
-
-  @keyframes banner-start-yellow {
-    0% {
-      opacity: 1;
-    }
-
-    50% {
-      opacity: 0;
-      transform: translateX(-75%)
-    }
-
-    100%{
-      opacity: 0;
-    }
-  }
-  .an {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: auto;
-    z-index: 2;
-
-    animation: banner-initial 3s ease-in-out forwards;
-  }
-
-
-  @keyframes banner-initial {
-    0% {
-      opacity: 1;
-      transform: translateX(100dvw);
-    }
-
-    80% {
-      opacity: 1;
-      transform: translateX(-75%);
-
-    }
-
-    100% {
-      opacity: 0;
-    }
-  }
-
-  .small_animation1 {
-    animation: small_animation1 3s ease-in-out 1s forwards;
-    z-index: 20;
-  }
-
-  @keyframes small_animation1 {
-    0% {
-      transform: translateX(100dvw);
-    }
-
-    100% {
-      transform: translateX(-75%);
-
-    }
+    width: 35%;
   }
 
 
@@ -586,6 +471,8 @@
     max-width: 500px;
   }
 
+  /* HEADER ANIMATION CSS FERTIG */
+
 
   .header p {
     display: none;
@@ -596,9 +483,28 @@
     display: none;
   }
 
-  .content {
-    margin-bottom: 160px;
+  .small_arrow {
+    display: none;
   }
+
+  .content {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 160px;
+
+    /* overflow: clip; */
+  }
+
+  .small_arrow {
+    display: none;
+  }
+
+  ul li {
+    word-break: break-word;
+    max-width: 100%;
+
+  }
+
 
   .navbar-footer {
     display: flex;
@@ -620,6 +526,18 @@
 
 @media screen and (min-width:481px) and (max-width: 767px) {
 
+  /* HEADER ANIMATION AB HIER */
+
+  .small_animation1,
+  .small_animation2,
+  .an {
+    display: none;
+  }
+
+  .moving-element {
+    top: 300px;
+    left: 300px;
+  }
 
   .hero-textblock {
     gap: 0px;
@@ -627,59 +545,12 @@
     max-width: 500px;
     top: 20%;
     left: 20%;
-
     animation: textblock-fade-in 3s ease-in-out 0.5s forwards;
-
-
-    /* 2. Setzt das transform: translateX(-145%) vom Desktop wieder auf den Standard zurück */
     transform: none;
-
-    /* 3. Neue feste Koordinaten für die linke Seite auf dem Handy */
     left: 10px;
     top: 25%;
-
     max-width: none;
-
-
   }
-
-  @keyframes textblock-fade-in {
-    0% {
-      opacity: 0;
-    }
-
-    50% {
-      opacity: 1;
-    }
-
-    100% {
-      opacity: 0;
-    }
-  }
-
-  .img-background {
-    left: 100%;
-
-    animation: img-background-slide 3s ease-in-out 0.5s forwards;
-  }
-
-  @keyframes img-background-slide {
-    0% {
-      transform: translateX(100dvw);
-    }
-
-    60% {
-      transform: translateX(calc(40dvw - calc(50% - 10px)));
-    }
-
-    100% {
-      transform: translateX(-80%);
-
-    }
-  }
-
-
-
 
   .hero-textblock h3 {
     font-size: 50px;
@@ -693,19 +564,13 @@
     animation-fill-mode: forwards;
 
     transform: none;
-
-
   }
 
   .hero-textblock p {
     font-size: 20px;
   }
 
-  .big_animation1,
-  .big_animation2 {
-    display: none;
-  }
-
+  /* HEADER ANIMATION CSS FERTIG */
 
   .content {
     gap: 80px;
@@ -847,10 +712,63 @@
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
 
+  /* HEADER ANIMATION AB HIER */
+
   .big_animation1,
   .big_animation2 {
     display: none;
   }
+
+  .small_animation2 {
+
+    animation: small-animation-zoom-in 1.5s ease-in-out 0.5s forwards;
+  }
+
+  @keyframes small-animation-zoom-in {
+    0% {
+      width: 500px;
+    }
+
+    50% {
+      width: 250px;
+    }
+
+    100% {
+      width: 100%;
+    }
+  }
+
+  .textblock>h3 {
+    font-size: 28px;
+  }
+
+  .textblock>p {
+    font-size: 20px;
+  }
+
+  .textblock {
+    top: 93px;
+    left: 14px;
+    margin-right: 14px;
+    padding: 16px;
+
+    width: auto;
+
+
+  }
+
+  .textblock>h3 {
+    text-align: left;
+  }
+
+  .textblock>p {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  /* HEADER ANIMATION CSS FERTIG */
 
   .page-information {
     gap: 16px;
@@ -939,7 +857,6 @@
   }
 
 
-
   .content {
     gap: 80px;
   }
@@ -961,16 +878,6 @@
   .icon-header>h2 {
     font-size: 35px;
   }
-
-
-  .textblock>h3 {
-    font-size: 28px;
-  }
-
-  .textblock>p {
-    font-size: 20px;
-  }
-
 
   .checkbox-wrapper p {
     text-align: left;
@@ -1145,28 +1052,6 @@
 
   }
 
-  .textblock {
-    top: 93px;
-    left: 14px;
-    margin-right: 14px;
-    padding: 16px;
-
-    width: auto;
-
-
-  }
-
-  .textblock>h3 {
-    text-align: left;
-  }
-
-  .textblock>p {
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-  }
-
   .carousel-slider::after {
     box-shadow:
       inset 0 0 0 0px rgba(255, 255, 255),
@@ -1175,15 +1060,6 @@
 
   .carousel-slider-element img {
     border-radius: 5vw;
-  }
-
-}
-
-@media screen and (max-width: 380px) {
-
-  .big_animation1,
-  .big_animation2 {
-    display: none;
   }
 
   .big_arrow {
@@ -1197,6 +1073,8 @@
 
   .social-icons {
     text-align: center;
+    gap: 5px;
 
   }
+
 }
