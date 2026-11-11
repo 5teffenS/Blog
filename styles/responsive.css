@@ -175,7 +175,7 @@
     display: none;
   }
 
-  
+
 
   .hero-textblock {
     width: 45%;
@@ -719,9 +719,13 @@
     display: none;
   }
 
-  .small_animation2 {
+  .moving-element{
+    top: 150px;
+    left: 100px;
+  }
 
-    animation: small-animation-zoom-in 1.5s ease-in-out 0.5s forwards;
+  .small_animation2 {
+    animation: small-animation-zoom-in 1.5s ease-in-out 2s forwards;
   }
 
   @keyframes small-animation-zoom-in {
@@ -746,14 +750,30 @@
     font-size: 20px;
   }
 
-  .textblock {
+  .hero-textblock {
     top: 93px;
     left: 14px;
     margin-right: 14px;
     padding: 16px;
-
+    transform: none;
     width: auto;
+    animation: textblock-fade-in 2.5s linear 0.5s forwards;
+    z-index: 10;
 
+  }
+
+  @keyframes textblock-fade-in {
+    0% {
+      opacity: 0;
+    }
+
+    10% {
+      opacity: 1;
+    }
+
+    100%{
+      opacity: 0;
+    }
 
   }
 
