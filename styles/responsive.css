@@ -528,13 +528,35 @@
 
   /* HEADER ANIMATION AB HIER */
 
- @keyframes banner-end {
-  100% {
-    opacity: 1;
-    transform: translateX(-25%);
+  @keyframes banner-end {
+    100% {
+      opacity: 1;
+      transform: translateX(-25%);
+    }
   }
-}
 
+  @keyframes textblock-h3 {
+    0% {
+      transform: translateY(75%);
+      opacity: 1;
+    }
+
+    100% {
+      transform: translateY(-25%);
+    }
+  }
+
+
+  @keyframes textblock-shift {
+    to {
+      transform: translateX(0%);
+    }
+  }
+
+  .hero-textblock {
+    width: 46%;
+    left: 4%;
+  }
 
   .small_animation1,
   .small_animation2,
@@ -548,16 +570,9 @@
   }
 
   .hero-textblock {
-    gap: 0px;
-    width: 50%;
-    max-width: 500px;
-    top: 20%;
-    left: 20%;
-    animation: textblock-fade-in 3s ease-in-out 0.5s forwards;
-    transform: none;
-    left: 10px;
-    top: 25%;
-    max-width: none;
+
+    width: 40%;
+
   }
 
   .hero-textblock h3 {
@@ -597,9 +612,6 @@
     box-sizing: border-box;
   }
 
-
-
-
   .small_arrow {
     display: none;
   }
@@ -608,8 +620,6 @@
   .contact-form-p {
     display: none;
   }
-
-
 
 
   .test {
