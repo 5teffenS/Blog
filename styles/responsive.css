@@ -528,6 +528,13 @@
 
   /* HEADER ANIMATION AB HIER */
 
+  .img-background {
+    left: calc(45% - 720px);
+   
+  }
+
+  
+
   @keyframes banner-end {
     100% {
       opacity: 1;
@@ -731,6 +738,20 @@
 @media screen and (min-width: 320px) and (max-width: 480px) {
 
   /* HEADER ANIMATION AB HIER */
+  .img-background {
+    left: calc(20% - 720px);
+    animation: slideFromRight 3s linear 0.1s forwards;
+  }
+
+  @keyframes slideFromRight {
+    from {
+      transform: translateX(180px);
+    }
+
+    to {
+      transform: translateX(-20px);
+    }
+  }
 
   .big_animation1,
   .big_animation2 {
@@ -752,7 +773,7 @@
     }
 
     50% {
-      width: 250px;
+      width: 400px;
     }
 
     100% {
@@ -774,8 +795,8 @@
     margin-right: 14px;
     padding: 16px;
     transform: none;
-    width: auto;
-    animation: textblock-fade-in 2.5s linear 0.5s forwards;
+    width: 60%;
+    animation: textblock-fade-in 3s linear 0.5s forwards;
     z-index: 10;
 
   }
@@ -789,14 +810,14 @@
       opacity: 1;
     }
 
+    60% {
+      opacity: 1;
+    }
+
     100% {
       opacity: 0;
     }
 
-  }
-
-  .hero-textblock h3 {
-    animation-name: textblock-h3;
   }
 
   .textblock>h3 {
