@@ -190,6 +190,7 @@
 
   100% {
     transform: translateY(-25%);
+    opacity: 1;
   }
 }
 

@@ -580,13 +580,13 @@
     animation-name: textblock-h3;
     animation-duration: 2s;
     animation-timing-function: fade-in;
-    
+
     animation-delay: 1s;
     animation-iteration-count: 1;
     animation-direction: normal;
     animation-fill-mode: forwards;
 
-  
+
   }
 
   .hero-textblock p {
@@ -793,6 +793,10 @@
       opacity: 0;
     }
 
+  }
+
+  .hero-textblock h3 {
+    animation-name: textblock-h3;
   }
 
   .textblock>h3 {
