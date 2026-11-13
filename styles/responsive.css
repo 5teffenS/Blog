@@ -528,6 +528,14 @@
 
   /* HEADER ANIMATION AB HIER */
 
+ @keyframes banner-end {
+  100% {
+    opacity: 1;
+    transform: translateX(-25%);
+  }
+}
+
+
   .small_animation1,
   .small_animation2,
   .an {
@@ -719,7 +727,7 @@
     display: none;
   }
 
-  .moving-element{
+  .moving-element {
     top: 150px;
     left: 100px;
   }
@@ -771,7 +779,7 @@
       opacity: 1;
     }
 
-    100%{
+    100% {
       opacity: 0;
     }
 
