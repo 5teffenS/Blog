@@ -124,12 +124,15 @@
 
   .hero-textblock {
     width: 40%;
+    top: 25%;
+    left: 20%
   }
 
   @keyframes textblock-shift {
     to {
       opacity: 1;
-      transform: translateX(-100%);
+      transform: translateX(-60%);
+     
     }
   }
 
@@ -543,11 +546,7 @@
   }
 
 
-  @keyframes textblock-shift {
-    to {
-      transform: translateX(-100%);
-    }
-  }
+
 
   @keyframes textblock-h3 {
     0% {
@@ -563,10 +562,17 @@
 
   .hero-textblock {
     width: 40%;
-    left: 44%;
+    left: 30%;
     gap: 10px;
-    animation-name: textblock-shift 1s linear 2s forwards;
+   
   }
+
+  @keyframes textblock-shift {
+  to {
+    opacity: 1;
+    transform: translateX(-64%);
+  }
+}
 
   .small_animation1,
   .small_animation2,
