@@ -183,7 +183,7 @@
 
   @keyframes textblock-shift {
     to {
-      transform: translateX(-90%);
+      transform: translateX(-80%);
     }
   }
 
@@ -535,6 +535,13 @@
     }
   }
 
+
+  @keyframes textblock-shift {
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
   @keyframes textblock-h3 {
     0% {
       transform: translateY(75%);
@@ -543,19 +550,15 @@
 
     100% {
       transform: translateY(-25%);
-    }
-  }
-
-
-  @keyframes textblock-shift {
-    to {
-      transform: translateX(0%);
+      opacity: 1;
     }
   }
 
   .hero-textblock {
-    width: 46%;
-    left: 4%;
+    width: 40%;
+    left: 44%;
+    gap: 10px;
+    animation-name: textblock-shift 1s linear 2s forwards;
   }
 
   .small_animation1,
@@ -569,24 +572,21 @@
     left: 300px;
   }
 
-  .hero-textblock {
-
-    width: 40%;
-
-  }
 
   .hero-textblock h3 {
     font-size: 50px;
 
     animation-name: textblock-p;
+    animation-name: textblock-h3;
     animation-duration: 2s;
     animation-timing-function: fade-in;
+    
     animation-delay: 1s;
     animation-iteration-count: 1;
     animation-direction: normal;
     animation-fill-mode: forwards;
 
-    transform: none;
+  
   }
 
   .hero-textblock p {
