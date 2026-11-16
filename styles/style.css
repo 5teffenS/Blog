@@ -1203,6 +1203,10 @@
 /* ######################### article02 style ######################### */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
+.article-four {
+  margin-bottom: 48px;
+}
+
 .video-container {
   display: flex;
   justify-content: center;
