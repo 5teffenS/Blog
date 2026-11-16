@@ -11,7 +11,7 @@ weil die ist ja auch überall gleich*/
     scroll-behavior: smooth;
 
     /* ################### Debug marking ############################# */
-    outline: 1px solid red !important;
+    /* outline: 1px solid red !important; */
 }
 
 
@@ -75,8 +75,13 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 88px;
-    margin: 0 120px 80px 120px;
+    /* gap: 32px; */
+    margin: 0 120px;
+}
+
+.content
+p, h3 {
+    margin-top: 32px;
 }
 
 
