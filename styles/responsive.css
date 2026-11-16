@@ -1137,11 +1137,13 @@
   }
 
   footer {
-    width: auto;
-    gap: 27px;
+    align-items: start;
+    flex-direction: column;
+    gap: 40px;
   }
 
   .social-icons {
+    flex-direction: row;
     text-align: center;
 
   }
