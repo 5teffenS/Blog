@@ -79,6 +79,11 @@ header {
     margin: 0 120px 80px 120px;
 }
 
+.content h3 {
+    position: relative;
+    top: 100;
+}
+
 
 /* ######################### FOOTER ######################### */
 
