@@ -795,6 +795,7 @@
 
 .faq {
   width: 100%;
+  margin-top: 32px;
 }
 
 .accordeon {
@@ -984,6 +985,7 @@
   align-items: center;
 
   gap: 32px;
+  margin-bottom: 32px;
 }
 
 .privacy-policy:has(.toggle-check:checked) .send-btn {
@@ -1053,6 +1055,10 @@
   flex-direction: row;
 }
 
+.checkbox-string p {
+  margin-top: 0;
+}
+
 .checkbox-string a {
   width: 115px;
   text-align: center;
@@ -1067,6 +1073,7 @@
 
 .checkmark {
   position: absolute;
+  bottom: 0;
   left: 5px;
   height: 18px;
   width: 18px;
@@ -1215,7 +1222,7 @@
   display: flex;
   justify-content: center;
 
-
+  margin: 32px 0;
 }
 
 
@@ -1249,6 +1256,8 @@ ul li {
   margin: 0 auto;
   gap: 24px;
 
+  margin-top: 32px;
+  margin-bottom: 32px;
 }
 
 .big-arrow2 {
@@ -1384,7 +1393,7 @@ ul li {
   padding: 26px 16px 24px 16px;
   border-radius: 30px;
 
-
+  margin-top: 32px;
 }
 
 .protipp-section ol {
