@@ -54,7 +54,7 @@
   }
 
   header {
-    padding: 60px max(120px, calc(50% - 720px));
+    padding: 24px max(120px, calc(50% - 720px)) 32px;
   }
 
   footer {
@@ -691,7 +691,7 @@
   header {
     justify-content: center;
     height: 70px;
-    padding: 20px 15px;
+    padding: 7px 15px;
   }
 
 
