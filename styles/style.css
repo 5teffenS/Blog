@@ -178,7 +178,6 @@
 
   100% {
     opacity: 1;
-    /* transform: translateX(-35dvw); */
   }
 }
 
@@ -457,21 +456,15 @@
 }
 
 .carousel-slider {
-  /* background-color: black; */
   height: 600px;
 
   width: 1300px;
-  /* min-width: calc(50% - 720px); */
 
   display: flex;
   flex-direction: column-reverse;
   justify-content: center;
   align-items: center;
 }
-
-/* .carousel-slider h3 {
-  margin-bottom: 16px;
-} */
 
 .carousel-slider input {
   appearance: none;
@@ -507,8 +500,6 @@
   height: 90%;
   max-height: 440px;
 
-  /* background-color: rgba(255, 255, 255, 0.001); */
-
   transform: perspective(300px) rotateY(10deg) translateX(0px);
   transform-origin: 50% 50%;
 
@@ -516,7 +507,6 @@
 }
 
 .carousel-slider-element img {
-  /* opacity: 0.5; */
   border-radius: 20px;
 
   width: 300px;
@@ -551,8 +541,6 @@
 .carousel-slider-element:hover~.carousel-slider-element img {
   width: 300px;
 }
-
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 .p_under_carousel {
   display: flex;
@@ -775,20 +763,13 @@
   color: #ffffff;
 }
 
-.slide-link { /*da war vorher display: block; nur*/
+.slide-link {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   z-index: 5;
-
-  /* display: block;
-  position: absolute;
-  inset: 0;
-  z-index: 10;
-  width: 100%;
-  height: auto;*/
 }
 
 /* ######################### faq ######################### */
@@ -854,7 +835,6 @@
   background-color: var(--white-color);
   padding: 4px 10px;
   border-radius: 5px;
-  /* Wie im Figma-Layout (Radius 5px) */
   font-size: 16px;
 
 }
@@ -920,7 +900,6 @@
   display: flex;
   flex-direction: column;
   gap: 64px;
-  /* max-width: calc(50% - 720px); */
   width: 100%;
 
   margin: 0 auto;
@@ -949,7 +928,6 @@
   font-weight: 400;
   font-size: 24px;
   color: var(--secondary-brown);
-  /* margin-bottom: 8px; */
 }
 
 
@@ -968,12 +946,7 @@
   font-weight: 500;
 
   caret-shape: auto;
-  /* ################# vertical line in the input field ################ */
-
 }
-
-
-
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* ########################### checkbox ############################## */
@@ -1229,10 +1202,6 @@
 .video-container video {
   border-radius: 53px;
   width: calc(100% - 30px); 
-
-  /*width: 931px;
-  height: 520px;*/
-
 }
 
 ol li,
@@ -1262,11 +1231,11 @@ ul li {
 
 .big-arrow2 {
   position: absolute;
-  /* Löst den Pfeil aus dem Textfluss */
+  
   left: 0px;
-  /* Schiebt den Pfeil nach links außerhalb der Box (Wert anpassen!) */
+  
   bottom: 0px;
-  /* Positioniert den Pfeil auf Höhe des Buttons */
+  
 }
 
 .big_arrow {
@@ -1456,7 +1425,7 @@ ul li {
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 #article03 article {
-  /* ############ 'article' element for longer text content ########### */
+  
   color: #3D3D3D;
 }
 
@@ -1492,8 +1461,6 @@ ul li {
 }
 
 .article03_rain h3 {
-  /* text-align: center; */
-
   display: flex;
   justify-content: center;
 }

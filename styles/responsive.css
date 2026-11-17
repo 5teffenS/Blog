@@ -20,7 +20,6 @@
 
   .content {
     margin: 0 max(calc(50% - 720px), 120px);
-    /* margin-bottom: 80px; */
   }
 
   .content h3 {
@@ -79,14 +78,6 @@
     margin: 0 max(calc(50% - 720px), 120px);
   }
 
-  /* .content {
-    
-  }
-
-  .content h3 {
-    
-  } */
-
 
   .small_arrow {
     display: none;
@@ -120,7 +111,6 @@
 
   .input-group {
     display: flex;
-    /* justify-content: center; */
     align-items: flex-start;
     gap: 5%;
     width: 100%;
@@ -151,7 +141,6 @@
   .carousel-slider-element {
     width: 110px;
     height: 70%;
-    /* max-height: 440px; */
   }
 
   .carousel-slider-element img {
@@ -178,9 +167,6 @@
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* ######################### 768px to 960px ########################## */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-
-
-
 
 @media screen and (min-width:768px) and (max-width: 960px) {
 
@@ -262,7 +248,6 @@
 
   .input-group {
     display: flex;
-    /* justify-content: center; */
     align-items: flex-start;
     gap: 5%;
     width: 100%;
@@ -272,7 +257,6 @@
 
   .carousel-wrapper {
     z-index: 1;
-    /* width: 100%; */
     width: 1000px;
     height: 90%;
 
@@ -283,8 +267,6 @@
     justify-content: center;
     align-items: flex-start;
     transition: all 1s ease-in-out;
-
-    /* background-color: black; */
 
     pointer-events: none;
   }
@@ -486,9 +468,6 @@
     max-width: 500px;
   }
 
-  /* HEADER ANIMATION CSS FERTIG */
-
-
   .header p {
     display: none;
   }
@@ -505,8 +484,6 @@
   .content {
     margin-left: 5%;
     margin-right: 5%;
-    
-    /* overflow: clip; */
   }
 
   .small_arrow {
@@ -617,8 +594,6 @@
     font-size: 20px;
   }
 
-  /* HEADER ANIMATION CSS FERTIG */
-
   ul {
     padding-left: 25px;
   }
@@ -671,9 +646,6 @@
   }
 
   .video-container video {
-
-    /*width: 345px;
-    height: 193px;*/
 
     object-fit: cover;
     border-radius: 50px;
@@ -843,8 +815,6 @@
     overflow: hidden;
   }
 
-  /* HEADER ANIMATION CSS FERTIG */
-
   .page-information {
     gap: 16px;
   }
@@ -896,7 +866,6 @@
 
   .content {
     width: 100%;
-    /* background-color: blanchedalmond; */
   }
 
 
@@ -983,7 +952,6 @@
 
   ol,
   ul {
-    /*padding-left: 20px;*/
     /* Genug Platz für die Nummern, aber bricht nicht aus */
     margin-left: 0;
     width: 100%;
@@ -1053,10 +1021,6 @@
     width: 100%;
     gap: 48px;
   }
-
-  /* .icon-btn { */
-  /*margin-top: 60px;*/
-  /* } */
 
   .share-section>img {
     width: 60px;
