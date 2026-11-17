@@ -763,6 +763,11 @@
   color: #ffffff;
 }
 
+.slider-a-element .textblock h3,
+.slider-a-element .textblock p {
+  margin: 0;
+}
+
 .slide-link {
   position: absolute;
   top: 0;

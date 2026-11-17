@@ -493,6 +493,14 @@
   .carousel-slider input[value="five"]:checked~.carousel-wrapper {
     transform: translateX(-32%);
   }
+
+  .textblock>p {
+    font-size: 20px;
+  }
+
+  .textblock>h3 {
+    font-size: 28px;
+  }
 }
 
 @media screen and (min-width:768px) {
@@ -505,6 +513,8 @@
   .navbar-mobile {
     display: none;
   }
+
+  
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -582,6 +592,16 @@
 
     padding: 10% 5% 5% 5%;
   }
+
+  .textblock>p {
+    font-size: 20px;
+  }
+
+  .textblock>h3 {
+    font-size: 28px;
+  }
+
+
 }
 
 
@@ -688,6 +708,10 @@
 
   .test {
     flex-direction: column;
+  }
+
+  .textblock{
+    gap: 8px;
   }
 
   .textblock>p {
@@ -1051,6 +1075,10 @@
   h3 {
     font-size: 20px;
     text-align: center;
+  }
+
+  .icon-header h2{
+    font-size: 35px;
   }
 
 
