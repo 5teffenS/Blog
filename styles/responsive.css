@@ -515,11 +515,6 @@
 
   /* HEADER ANIMATION AB HIER */
 
-  .hero-textblock {
-    width: 35%;
-  }
-
-
   .hero-textblock h3 {
     font-size: 50px;
 
@@ -535,12 +530,6 @@
 
     transform: none;
   }
-
-  /*.hero-textblock p {
-    font-size: 20px;
-
-    max-width: 500px;
-  }*/
 
   .header p {
     display: none;
@@ -597,12 +586,10 @@
     left: calc(45% - 720px);
   }
 
-
-
   @keyframes banner-end {
     100% {
       opacity: 1;
-      transform: translateX(-25%);
+      transform: translateX(-30%);
     }
   }
 
@@ -621,8 +608,6 @@
   .hero-textblock {
     width: 40%;
     left: 30%;
-    gap: 10px;
-
   }
 
   @keyframes textblock-shift {
@@ -639,8 +624,8 @@
   }
 
   .moving-element {
-    top: 300px;
-    left: 300px;
+    top: 337px;
+    left: 268px;
   }
 
 
@@ -835,23 +820,26 @@
     }
   }
 
-  .textblock>h3 {
-    font-size: 28px;
+  .hero-textblock>h3 {
+    font-size: 30px;
+    text-align: left;
   }
 
-  .textblock>p {
+  .hero-textblock>p {
     font-size: 20px;
+    width: 60%;
   }
 
   .hero-textblock {
     top: 93px;
     left: 14px;
     margin-right: 14px;
-    padding: 16px;
+
     transform: none;
-    width: 60%;
+    width: 100%;
     animation: textblock-fade-in 3s linear 0.5s forwards;
     z-index: 10;
+    padding: 0 20px;
 
   }
 
@@ -874,16 +862,6 @@
 
   }
 
-  .textblock>h3 {
-    text-align: left;
-  }
-
-  .textblock>p {
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-  }
 
   .page-information {
     gap: 16px;
@@ -901,12 +879,10 @@
 
     height: 70px;
     padding: 10px 10px;
-    /* Überschreibt jetzt sauber das 60px 120px Padding */
     gap: 0;
 
 
   }
-
 
   .logo {
     display: flex;
@@ -918,11 +894,6 @@
     width: 56px;
     height: 56px;
   }
-
-  /*.protipp-section {
-    margin-top: 32px;
-  }*/
-
 
 
   .big_arrow {
@@ -1002,10 +973,8 @@
 
 
   .video-container video {
-
     object-fit: cover;
     border-radius: 50px;
-
   }
 
   .article01-top h2 {
@@ -1022,7 +991,6 @@
 
   ol,
   ul {
-    /* Genug Platz für die Nummern, aber bricht nicht aus */
     margin-left: 0;
     width: 100%;
 
@@ -1038,14 +1006,10 @@
     word-break: break-word;
     max-width: 100%;
 
-    /* Das entfernt jetzt das schiebende 40px Margin links */
     margin-left: 0;
     margin-right: 0;
 
     box-sizing: border-box;
-
-
-
   }
 
   h3 {
@@ -1061,12 +1025,9 @@
 
     margin-left: 0;
 
-    /* Gibt den Nummern (1., 2...) links genug Platz */
     padding-right: 16px;
-    /* Verhindert, dass Text rechts an den Rand klatscht */
   }
 
-  /* Die Text- und Listenelemente anpassen */
   .p_under_carousel p,
   .p_under_carousel ul li,
   .p_under_carousel ol li {
@@ -1074,7 +1035,7 @@
     word-break: break-word;
     margin-left: 0px;
     padding-left: 0px;
-    /* WICHTIG: width: 100% ENTFERNEN! */
+
     width: auto;
   }
 
