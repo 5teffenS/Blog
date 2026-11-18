@@ -260,24 +260,6 @@
     font-size: 20px;
   }
 
-  /*.small_animation1,
-    .small_animation2,
-    .an {
-      display: none;
-    }
-
-
-    .hero-textblock {
-      width: 45%;
-    }
-
-    @keyframes textblock-shift {
-      to {
-        transform: translateX(-80%);
-      }
-    } */
-
-
   .small_arrow {
     display: none;
   }
