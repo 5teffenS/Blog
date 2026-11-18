@@ -140,8 +140,8 @@
 
   .hero-textblock {
     width: 40%;
-    top: 25%;
-    left: 32%;
+    top: 15%;
+    left: 25%;
   }
 
   @keyframes textblock-shift {
@@ -215,8 +215,8 @@
   }
 
   .hero-textblock {
-    width: 40%;
-    left: 30%;
+    width: 30%;
+    left: 25%;
     gap: 10px;
 
   }
@@ -883,7 +883,7 @@
 
   .hero-textblock>p {
     font-size: 20px;
-    width: 60%;
+    width: 50%;
   }
 
   .hero-textblock {
