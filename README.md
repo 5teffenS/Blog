@@ -3,7 +3,7 @@ This repository is intended to facilitate collaboration among participants in th
 
 The following participants have used this repo:
 
-    David
+    davidmooo
     mmerry05
     5teffenS
 
